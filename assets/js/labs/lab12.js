@@ -75,7 +75,7 @@
   LAB._t = LAB._t || {}; LAB._t.l12 = { SURF: SURF, numK: numK, kapS: kapS, d1: d1, d2: d2 };
 
   LAB.start({
-    intro: "Egrilik — egri çiziq yoki sirtning töğri çiziq (tekislik)dan qançalik «burilişi». Egri çiziq uçun κ = 1/R (R — egrilik radiusi); sirt uçun <b>Gauss egriligi</b> K = κ<sub>1</sub>·κ<sub>2</sub> (bosh egriliklar köpaytmasi).",
+    intro: "Egrilik — egri çiziq yoki sirtning töğri çiziq (tekislik)dan qançalik «burilişi». Egri çiziq uçun κ = 1/R (R — egrilik radiusi); sirt uçun <b>Gauss egriligi</b> K = κ<sub>1</sub>·κ<sub>2</sub> (boş egriliklar köpaytmasi).",
     tabs: [
       {
         name: "Egri çiziqda egrilik",
@@ -122,7 +122,7 @@
           L.button("Nuqtalarni tiklaş", function () { setPts(); P.draw(); });
           L.note("T = r′/|r′|, N = T ni +90° ga burişdan (çap tomon). κ = (x′y″ − y′x″)/(x′² + y′²)<sup>3/2</sup>, R = 1/|κ|, markaz = r + N/κ. κ > 0 — egri çiziq çapga buriladi, κ < 0 — öngga; κ = 0 nuqta — <b>egilişi nuqtasi</b>, aylana töğri çiziqqa aylanadi.", "main");
           L.tasks([
-            "t ni 0 dan 1 gaça suring va κ ishorasi qayerda özgarişini toping: bu nuqtada R nimaga teng? (R → ∞, «κ = 0 nuqtalar» ≥ 1.)",
+            "t ni 0 dan 1 gaça suring va κ işorasi qayerda özgarişini toping: bu nuqtada R nimaga teng? (R → ∞, «κ = 0 nuqtalar» ≥ 1.)",
             "Taroqda eng uzun tişni toping (egri eng keskin burilgan joy) va t ni şu yerga qöying: R eng kiçik qiymatga yaqinmi?",
             "Tört nuqtani töğri çiziq böylab joylaştiring: κ va taroq qanday özgaradi? (κ → 0, taroq yöqoladi.)"
           ], "a");
@@ -137,14 +137,14 @@
           var base = S.items.slice();
           var R = L.readout([["lo", "K eng kiçik"], ["hi", "K eng katta"], ["cl", "Yoqlar turi"], ["er", "Tekşiruv: |formula − sonli|"]]);
           var bar = EX.el("div", { style: "height:16px;border-radius:8px;border:1px solid var(--line);background:linear-gradient(90deg," + STOPS.map(function (s) { return "rgb(" + s[1].join(",") + ") " + Math.round((s[0] + 1) * 50) + "%"; }).join(",") + ")" });
-          var lg = EX.el("div", { class: "lab-p" }, EX.el("div", { class: "lab-cap" }, "Gauss egriligi K (rang shkalasi, 0 nuqtasiga nisbatan simmetrik)"), bar);
+          var lg = EX.el("div", { class: "lab-p" }, EX.el("div", { class: "lab-cap" }, "Gauss egriligi K (rang şkalasi, 0 nuqtasiga nisbatan simmetrik)"), bar);
           var lab = EX.el("div", { style: "display:flex;justify-content:space-between;font-size:13px;font-weight:600;margin-top:4px" });
           lg.appendChild(lab); L.add(lg, "main");
           var inf = L.add(EX.el("div", { class: "note" }), "main");
-          var MEAN = { sphere: "Ellipik nuqtalar (K > 0): ikkala bosh egrilik bir ishorali, sirt bir tomonga egilgan.",
-            cyl: "Parabolik nuqtalar (K = 0): bitta bosh egrilik nolga teng — silindrni cözmay-sozmay tekislikka yoyiş mumkin.",
-            saddle: "Giperbolik nuqtalar (K < 0): bosh egriliklar qarama-qarşi ishorali — egar.",
-            torus: "Aralaş: taşqi yarim (cos v > 0) ellipik (K > 0), ichki yarim giperbolik (K < 0), tepa va pastki aylanalarda K = 0." };
+          var MEAN = { sphere: "Ellipik nuqtalar (K > 0): ikkala boş egrilik bir işorali, sirt bir tomonga egilgan.",
+            cyl: "Parabolik nuqtalar (K = 0): bitta boş egrilik nolga teng — silindrni cözmay-sozmay tekislikka yoyiş mumkin.",
+            saddle: "Giperbolik nuqtalar (K < 0): boş egriliklar qarama-qarşi işorali — egar.",
+            torus: "Aralaş: taşqi yarim (cos v > 0) ellipik (K > 0), içki yarim giperbolik (K < 0), tepa va pastki aylanalarda K = 0." };
           function params() { return st.kind === "torus" ? { R: st.tR, r: st.tr } : { R: st.R }; }
           function rebuild() {
             var D = SURF[st.kind], p = params(), nu = st.kind === "sphere" ? 32 : st.kind === "saddle" ? 24 : 32, nv = st.kind === "sphere" ? 16 : st.kind === "saddle" ? 24 : st.kind === "cyl" ? 8 : 16;
@@ -171,7 +171,7 @@
             L.slider({ label: "Katta radius R", min: 1, max: 1.6, step: 0.05, value: st.tR, nd: 2 }, function (v) { st.tR = v; rebuild(); });
             L.slider({ label: "Kiçik radius r", min: 0.25, max: 0.7, step: 0.05, value: st.tr, nd: 2 }, function (v) { st.tr = v; rebuild(); });
           }); gT.hidden = true;
-          L.note("Sfera: K = 1/R². Silindr: K = 0. Egar z = x² − y²: K = −4/(1 + 4x² + 4y²)². Tor: K = cos v / (r(R + r·cos v)), v — kiçik aylana (naycha) burçagi. Rang har bir yoqning markazidagi K qiymati böyiça; shkala 0 ga nisbatan simmetrik, yoruğlik rangni biroz özgartiradi.", "main");
+          L.note("Sfera: K = 1/R². Silindr: K = 0. Egar z = x² − y²: K = −4/(1 + 4x² + 4y²)². Tor: K = cos v / (r(R + r·cos v)), v — kiçik aylana (nayça) burçagi. Rang har bir yoqning markazidagi K qiymati böyiça; şkala 0 ga nisbatan simmetrik, yoruğlik rangni biroz özgartiradi.", "main");
           L.tasks([
             "Sferada R ni 0,6 dan 1,6 gaça özgartiring va K ni yozing: K = 1/R² bilan solişitiring. (R = 1 da K = 1; R = 2 da 0,25.)",
             "Egar sirtda «K eng kiçik» va «K eng katta»ni körin: K qayerda eng manfiy? (Markazda, K = −4; çetga qarab nolga yaqinlaşadi.)",

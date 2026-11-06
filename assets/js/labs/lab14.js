@@ -84,11 +84,11 @@
     tabs: [
       {
         name: "Yuz proporsiyalari",
-        lead: "Stilizatsiyalangan bosh çizmasida yuz proporsiyalari çiziqlarini yoqing: uçdan bir qismlar, köz çizigi, beş köz kengligi. Bu — taxminiy qoidalar, har bir yuz biroz farq qiladi.",
+        lead: "Stilizatsiyalangan boş çizmasida yuz proporsiyalari çiziqlarini yoqing: uçdan bir qismlar, köz çizigi, beş köz kengligi. Bu — taxminiy qoidalar, har bir yuz biroz farq qiladi.",
         build: function (L) {
           var st = { view: "front", W: 0.78, e: 0.156, thirds: true, eyeline: true, five: true, ear: true };
           var cv = L.canvas({ aspect: 1.05, maxH: 520 });
-          var R = L.readout([["h", "Bosh / yuz balandligi"], ["t", "Yuzning uçdan bir qismi"], ["eye", "Köz çizigi (iyakdan, bosh yarmi)"], ["we", "Yuz kengligi / köz kengligi"]], "main");
+          var R = L.readout([["h", "Boş / yuz balandligi"], ["t", "Yuzning uçdan bir qismi"], ["eye", "Köz çizigi (iyakdan, boş yarmi)"], ["we", "Yuz kengligi / köz kengligi"]], "main");
           cv.draw = function (c, w, h) {
             var sc = (h - 44) / (HH + 0.05), ox = w * 0.5, y0 = h - 22, front = st.view === "front";
             function X_(x) { return ox + x * sc; } function Y_(y) { return y0 - y * sc; }
@@ -135,7 +135,7 @@
               hline(1, C.x, "Soç çizigi"); hline(2 / 3, C.x, "Qoş (1/3)"); hline(1 / 3, C.x, "Burun asosi (2/3)"); hline(0, C.x, "Iyak");
               c.fillStyle = "rgba(229,72,77,.9)"; c.textAlign = "right"; [5 / 6, 1 / 2, 1 / 6].forEach(function (y) { c.fillText("1/3", w - 8, Y_(y) + 4); }); c.textAlign = "start";
             }
-            if (st.eyeline) { hline(YE, C.z, "", [2, 3]); c.fillStyle = C.z; c.fillText("Köz çizigi (bosh yarmi)", 8, Y_(YE) + 13); hline(HH, C.z, "Bosh tepasi", [2, 3]); }
+            if (st.eyeline) { hline(YE, C.z, "", [2, 3]); c.fillStyle = C.z; c.fillText("Köz çizigi (boş yarmi)", 8, Y_(YE) + 13); hline(HH, C.z, "Boş tepasi", [2, 3]); }
             if (st.ear) {
               c.fillStyle = "rgba(232,89,12,.14)"; c.fillRect(front ? X_(-W / 2 - 0.2) : X_(-0.5), Y_(2 / 3), front ? (W + 0.4) * sc : 0.75 * sc, sc / 3);
               c.fillStyle = C.orange; c.fillText("quloq: qoş ↔ burun asosi", 8, Y_(0.5) + 4);
@@ -153,17 +153,17 @@
           };
           L.seg("Körinişi", [["front", "Old"], ["side", "Yon"]], "front", function (v) { st.view = v; cv.redraw(); });
           L.toggle("Uçdan bir qismlar", true, function (v) { st.thirds = v; cv.redraw(); });
-          L.toggle("Köz çizigi (bosh yarmi)", true, function (v) { st.eyeline = v; cv.redraw(); });
+          L.toggle("Köz çizigi (boş yarmi)", true, function (v) { st.eyeline = v; cv.redraw(); });
           L.toggle("Beş köz kengligi (faqat old)", true, function (v) { st.five = v; cv.redraw(); });
           L.toggle("Quloq oralığı", true, function (v) { st.ear = v; cv.redraw(); });
           L.slider({ label: "Yuz kengligi (F ning uluşi)", min: 0.6, max: 0.95, step: 0.01, value: st.W, nd: 2 }, function (v) { st.W = v; cv.redraw(); });
           L.slider({ label: "Köz kengligi (F ning uluşi)", min: 0.1, max: 0.22, step: 0.002, value: st.e, nd: 3 }, function (v) { st.e = v; cv.redraw(); });
-          L.note("Stilizatsiya qoidalari: yuz balandligi F (soç çizigidan iyakkaça) uç teng qismga bölinadi — soç çizigi, qoş çizigi, burun asosi, iyak. Köz çizigi bosh balandligining (tepadan iyakkaça) taxminan yarmida; yuz kengligi ≈ 5 köz kengligi (köz orasi = bitta köz). Quloq qoş va burun asosi oralığida. Bosh balandligi bu çizmada 1,25 F deb olingan. Bu taxminiy yöl-yöriq, qatʼiy qonun emas.", "main");
+          L.note("Stilizatsiya qoidalari: yuz balandligi F (soç çizigidan iyakkaça) uç teng qismga bölinadi — soç çizigi, qoş çizigi, burun asosi, iyak. Köz çizigi boş balandligining (tepadan iyakkaça) taxminan yarmida; yuz kengligi ≈ 5 köz kengligi (köz orasi = bitta köz). Quloq qoş va burun asosi oralığida. Boş balandligi bu çizmada 1,25 F deb olingan. Bu taxminiy yöl-yöriq, qatʼiy qonun emas.", "main");
           cv.redraw();
           L.tasks([
             "Hamma çiziqni yoqing: burun asosi va qoş çizigi yuzni uç teng qismga böladimi? (Har biri 1/3.)",
             "«Yon» körinişga ötib quloq oralığini yoqing: quloq qaysi ikki çiziq oralığida?",
-            "Yuz kengligini 0,78 qilib, köz kengligini 0,156 ga qöying: nisbat 5 ga teng bölishini körsatkiçdan tekşiring. Köz kengligini 0,12 ga tuşiring — beş köz qoidasi bajariladimi?"
+            "Yuz kengligini 0,78 qilib, köz kengligini 0,156 ga qöying: nisbat 5 ga teng bölişini körsatkiçdan tekşiring. Köz kengligini 0,12 ga tuşiring — beş köz qoidasi bajariladimi?"
           ], "a");
         }
       },
@@ -200,7 +200,7 @@
           L.slider({ label: "Köz qisiş", min: 0, max: 1, step: 0.01, value: 0, nd: 2 }, function (v) { st.blink = v; upd(); });
           L.slider({ label: "Tabassum", min: 0, max: 1, step: 0.01, value: 0, nd: 2 }, function (v) { st.smile = v; upd(); });
           L.add(EX.el("div", { class: "legend", html: '<span><i style="background:' + C.z + '"></i>Köz halqalari</span><span><i style="background:' + C.x + '"></i>Oğiz halqasi</span>' }), "main");
-          L.note("Köz va oğiz atrofidagi mushaklar halqasimon (orbicularis oculi, orbicularis oris). Tör qirralari ham şu halqalar böylab ötsa, qisiliş va tabassum paytida sirt tabiiy burişadi; qirralar «töğri» çiziq böylab kesişsa, qatlam körinişi buziladi. Bu yerda sfera asosidagi sodda stilizatsiya: halqalar sirt ustiga sxematik çizilgan.", "main");
+          L.note("Köz va oğiz atrofidagi muşaklar halqasimon (orbicularis oculi, orbicularis oris). Tör qirralari ham şu halqalar böylab ötsa, qisiliş va tabassum paytida sirt tabiiy burişadi; qirralar «töğri» çiziq böylab kesişsa, qatlam körinişi buziladi. Bu yerda sfera asosidagi sodda stilizatsiya: halqalar sirt ustiga sxematik çizilgan.", "main");
           upd();
           L.tasks([
             "Halqalar sonini 1 dan 3 ga özgartiring: köz va oğiz atrofida nima özgaradi?",
@@ -211,11 +211,11 @@
       },
       {
         name: "Barmoq böğimi (skinning)",
-        lead: "Ikkita suyakli nay (barmoq) böğimda egiladi. Chap tomonda böğimda faqat 1 halqa, ong tomonda — 5 halqa. Egilişni oşirib, hajm yöqotilişini solişitiring.",
+        lead: "Ikkita suyakli nay (barmoq) böğimda egiladi. Çap tomonda böğimda faqat 1 halqa, ong tomonda — 5 halqa. Egilişni oşirib, hajm yöqotilişini solişitiring.",
         build: function (L) {
           var st = { th: 90 };
           var Z1 = 1.55, Z5 = -1.55;
-          var S = L.scene({ dist: 6.4, yaw: -Math.PI / 2, pitch: 0.06, target: [-0.3, 0, 0], grid: false, axes: false, aspect: 0.95 });
+          var S = L.scene({ dist: 7.2, yaw: -Math.PI / 2, pitch: 0.06, target: [-0.3, 0, 0.6], grid: false, axes: false, aspect: 0.95 });
           var m1 = S.add(new X.Mesh({ mesh: { v: [], f: [] }, color: "#C9D4F5", points: true, pointSize: 2.6 }));
           var m5 = S.add(new X.Mesh({ mesh: { v: [], f: [] }, color: "#C9D4F5", points: true, pointSize: 2.6 }));
           var bones = S.add(new X.Line({ pts: [], color: C.ink, lw: 3 }));
@@ -223,8 +223,8 @@
           var jt = S.add(new X.Points({ pts: [[0, 0, Z1], [0, 0, Z5]], color: C.ink, r: 5, front: true }));
           S.onDraw = function (c) {
             c.font = "700 13px Inter, system-ui, sans-serif"; c.fillStyle = C.ink;
-            var a = S.project([-TL, 0, Z1 - 0.75]), b = S.project([-TL, 0, Z5 - 0.75]);
-            c.fillText("1 halqa", a[0], a[1]); c.fillText("5 halqa", b[0], b[1]);
+            var a = S.project([-TL - 0.15, 0, Z1 - 0.1]), b = S.project([-TL - 0.15, 0, Z5 - 0.1]);
+            c.textAlign = "right"; c.fillText("1 halqa", a[0], a[1]); c.fillText("5 halqa", b[0], b[1]); c.textAlign = "start";
           };
           var wp = L.canvas({ aspect: 0.5 });
           var R = L.readout([["a", "Egiliş burçagi θ"], ["v1", "Hajm: 1 halqa"], ["v5", "Hajm: 5 halqa"], ["d", "Böğim kesimi diametri cos(θ/2)"]], "main");
@@ -256,7 +256,7 @@
           L.note("Çiziqli aralaş skinning: <b>v′ = Σ w<sub>i</sub> M<sub>i</sub> v</b>, ikki suyakda v′ = (1 − w)·M<sub>1</sub>v + w·M<sub>2</sub>v, w<sub>1</sub> + w<sub>2</sub> = 1. M<sub>1</sub> = I, M<sub>2</sub> — böğim atrofida θ burçakka aylantiriş; w₂ ≈ (s + 0,5)/1 ([−0,5; 0,5] oralığida çiziqli). Böğim halqasida w = 0,5 bölgani uçun nuqta ikki aylantirilgan holatning örtasiga tuşadi — kesim cos(θ/2) marta kiçrayadi. 1 halqada bu «tarang» kiçrayiş uzun bölakka yoyilib qoladi, 5 halqada esa vazn yumşoq özgaradi va hajm kamroq yöqoladi. Hajm yopiq tör böyiça hisoblangan; çiziqli aralaş skinningda hajm töliq saqlanmaydi (buning uçun masalan dual quaternion skinning qöllanadi).", "main");
           upd();
           L.tasks([
-            "θ = 90° qiling: hajm 1 halqada ≈ 87,5 %, 5 halqada ≈ 93,5 % bölishini körsatkiçdan tekşiring.",
+            "θ = 90° qiling: hajm 1 halqada ≈ 87,5 %, 5 halqada ≈ 93,5 % bölişini körsatkiçdan tekşiring.",
             "θ = 150° ga çiqaring: ikkala variantda ham hajm yöqotilişini solişitiring (≈ 76,7 % va ≈ 87,9 %). Böğim sirti qanday körinadi?",
             "Vazn grafigiga qarang: 1 halqada w₂ böğimda sakrab (0 → 0,5 → 1) özgaradi, 5 halqada esa silliq. Rang nuqtalari (kök → qizil) buni tasdiqlaydimi?"
           ], "c");

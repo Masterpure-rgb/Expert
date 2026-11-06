@@ -122,7 +122,7 @@
             });
           }
           function sched() { if (!pending) { pending = true; requestAnimationFrame(render); } }
-          L.pages("Chiroq", order.map(function (k) {
+          L.pages("Çiroq", order.map(function (k) {
             return [k, lights[k].name, function () {
               var Lg = lights[k];
               L.toggle(Lg.name + " yoqilgan", true, function (v) { Lg.on = v; sched(); });
@@ -136,14 +136,14 @@
           render();
           L.tasks([
             "Faqat Key ni qoldiring (Fill va Rim ni öçiring): soyali tomon qanday körinadi? Söng Fill ni qaytaring.",
-            "Key kuçini 1,0, Fill kuçini 0,5 qiling: nisbat 2 : 1 (1 stop) bölishini körsatkiçdan tekşiring.",
+            "Key kuçini 1,0, Fill kuçini 0,5 qiling: nisbat 2 : 1 (1 stop) bölişini körsatkiçdan tekşiring.",
             "Rim azimutini 150° dan 0° ga özgartiring: kontur yoruğligi qayerga ketadi? Key ni 3200 K, Fill ni 8000 K qiling — rang kontrastini körasizmi?"
           ], "a");
         }
       },
       {
         name: "Teskari kvadrat qonuni",
-        lead: "Nuqtaviy manbadan masofa ikki baravar oşsa, yoruğlik tuşishi (illuminance) tört baravar kamayadi, çunki nur uç barobar emas, tört barobar kattaroq yuzaga yoyiladi.",
+        lead: "Nuqtaviy manbadan masofa ikki baravar oşsa, yoruğlik tuşişi (illuminance) tört baravar kamayadi, çunki nur uç barobar emas, tört barobar kattaroq yuzaga yoyiladi.",
         build: function (L) {
           var st = { I: 100, d: 1.5, log: false };
           var E = function (d) { return st.I / (d * d); };
@@ -200,13 +200,13 @@
           }
           L.slider({ label: "Manba kuçi I", min: 20, max: 400, step: 10, value: st.I, nd: 0, unit: "cd" }, function (v) { st.I = v; upd(); });
           L.slider({ label: "Masofa d", min: 0.5, max: 2.6, step: 0.05, value: st.d, nd: 2, unit: "m" }, function (v) { st.d = v; upd(); });
-          L.toggle("Vertikal öqni logarifmik qilish", false, function (v) { st.log = v; upd(); });
-          L.note("E = I / d²  (E — yoruğlik tuşişi, lyuks (lx); I — yoruğlik kuçi, kandela (cd); d — masofa, m). Sirt nurga perpendikulyar va manba nuqtaviy deb olinadi; qiya tuşganda E = I·cos θ / d². Kattaligi masofadan ancha kiçik bölmagan manbalarda qonun yaqinlaşiş sifatida qöllanadi.", "main");
+          L.toggle("Vertikal öqni logarifmik qiliş", false, function (v) { st.log = v; upd(); });
+          L.note("E = I / d²  (E — yoruğlik tuşişi, lyuks (lx); I — yoruğlik kuçi, kandela (cd); d — masofa, m). Sirt nurga perpendikulyar va manba nuqtaviy deb olinadi; qiya tuşganda E = I·cos θ / d². Kattaligi masofadan ança kiçik bölmagan manbalarda qonun yaqinlaşiş sifatida qöllanadi.", "main");
           upd();
           L.tasks([
-            "d = 1 m dan 2 m ga özgartiring: E(2d)/E(d) = 0,25 bölishini körsatkiçdan tekşiring.",
+            "d = 1 m dan 2 m ga özgartiring: E(2d)/E(d) = 0,25 bölişini körsatkiçdan tekşiring.",
             "Logarifmik öqni yoqing: grafik nima uçun töğri çiziqqa aylanadi? (E ∝ d⁻²)",
-            "I = 100 cd bölganda E = 25 lx bölishi uçun d qançaga teng? (Javob: 2 m.)"
+            "I = 100 cd bölganda E = 25 lx bölişi uçun d qançaga teng? (Javob: 2 m.)"
           ], "b");
         }
       },
@@ -273,7 +273,7 @@
           L.add(EX.el("div", { class: "legend", html: '<span><i style="background:' + C.orange + '"></i>Yarim soya (penumbra) çegarasi</span><span><i style="background:' + C.ink2 + '"></i>Tola soya (umbra) çegarasi</span>' }), "main");
           upd();
           L.tasks([
-            "s = 0,5 m, d_o = 1 m, d_r = 3 m qiling: w = 0,5·(3 − 1)/1 = 1,0 m bölishini tekşiring. Söng s ni 0,25 m ga tuşiring: w ikki marta kamayadi.",
+            "s = 0,5 m, d_o = 1 m, d_r = 3 m qiling: w = 0,5·(3 − 1)/1 = 1,0 m bölişini tekşiring. Söng s ni 0,25 m ga tuşiring: w ikki marta kamayadi.",
             "s = 0,5 m va d_o = 1,5 m da sirtni uzoqlaştiring (d_r ni oşiring): w va umbra kengligi qanday özgaradi?",
             "s = 0 ga tuşiring: yarim soya yöqoladimi? Umbra kengligi töşiq balandligiga (1 m) yaqinlaşadimi — d_r ≈ d_o da?"
           ], "c");

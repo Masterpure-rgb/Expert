@@ -151,7 +151,7 @@
     L.tasks([
       "Kubni 0 → 3 daraja subdivide qiling: yoqlar soni 6, 24, 96, 384 ekanini tekşiring. Valentligi 3 bölgan çöqqilar soni özgaradimi? [8 ta, özgarmaydi]",
       "Tayanç qirrali kubda halqa masofasini 0,05 va 0,6 qiling: nima uçun masofa kiçik bölganda burçaklar «keskin» qoladi?",
-      "Silindrni daraja 1 ga ötkazing: qopqoq markazida valentligi n bölgan qutb paydo bölishini kuzating. F₀ va F₁ ni soliştiring."
+      "Silindrni daraja 1 ga ötkazing: qopqoq markazida valentligi n bölgan qutb paydo bölişini kuzating. F₀ va F₁ ni soliştiring."
     ], "a");
   }
 
@@ -200,7 +200,7 @@
     L.note("Törtburçakli cageʼda har bir yoq 4 ta yoqqa bölinadi: F<sub>k</sub> = F<sub>0</sub>·4<sup>k</sup>. n-burçakli yoq (silindr qopqoği) birinçi qadamda n ta törtburçak beradi, şuning uçun F<sub>1</sub> = Σn = 2E<sub>0</sub>, söng ×4. Eyler sonlari V − E + F cageʼniki bilan bir xil qoladi (sfera töpologiyasida 2, dastali krujkada 0).", "main");
     cv.redraw();
     L.tasks([
-      "Kub qatorida F ustunini tekşiring: 6, 24, 96, 384. «qonun» ustunida har satr ✓ bölishi kerak.",
+      "Kub qatorida F ustunini tekşiring: 6, 24, 96, 384. «qonun» ustunida har satr ✓ bölişi kerak.",
       "Silindr: F<sub>0</sub> = 10 (8 yon + 2 qopqoq), F<sub>1</sub> = 48. Nima uçun F<sub>1</sub> ≠ 4·F<sub>0</sub> = 40? [qopqoqlar 8 ta törtburçakdan]",
       "Krujkada V − E + F = 0 çiqadi: dasta teşik hosil qiladi (genus = 1). Subdivision uni özgartiradimi? [yöq]"
     ], "b");
@@ -210,7 +210,7 @@
     intro: "Catmull–Clark subdivision har bir qadamda cageʼni silliqlaydi va yoqlarni törtburçaklarga böladi. Bu laboratoriyada daraja, tayanç qirralar va çöqqi valentligi (qutblar) sirtga qanday taʼsir qilişini körasiz.",
     tabs: [
       { name: "Subdivision va qutblar", lead: "Cageʼni va darajani tanlang. Çöqqilar valentligiga qarab ranglangan: muntazam çöqqida 4 ta qirra uçraşadi, qutblarda esa 3 yoki 5 va undan köp.", build: tab1 },
-      { name: "Yoqlar soni qonuni", lead: "Har bir qadamda yoqlar soni qanday ösishini jadval va grafikdan körib çiqing.", build: tab2 }
+      { name: "Yoqlar soni qonuni", lead: "Har bir qadamda yoqlar soni qanday ösişini jadval va grafikdan körib çiqing.", build: tab2 }
     ]
   });
 })();

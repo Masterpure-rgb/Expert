@@ -127,7 +127,7 @@
               },
               controls: function (rb) {
                 L.add(EX.el("div", { class: "legend", html: '<span><i style="background:' + C.z + '"></i>C₀(u), v = 0</span><span><i style="background:' + C.violet + '"></i>C₁(u), v = 1</span><span><i style="background:' + C.y + '"></i>D₀(v), u = 0</span><span><i style="background:' + C.x + '"></i>D₁(v), u = 1</span>' }));
-                [["a0", "C₀ chetining kötarilişi"], ["a1", "C₁ chetining kötarilişi"], ["d0", "D₀ chetining kötarilişi"], ["d1", "D₁ chetining kötarilişi"]].forEach(function (a) {
+                [["a0", "C₀ çetining kötarilişi"], ["a1", "C₁ çetining kötarilişi"], ["d0", "D₀ çetining kötarilişi"], ["d1", "D₁ çetining kötarilişi"]].forEach(function (a) {
                   L.slider({ label: a[1], min: -1.5, max: 1.5, step: 0.1, value: cb[a[0]], nd: 1 }, function (v) { cb[a[0]] = v; rb(); });
                 });
                 L.slider({ label: "D₀, D₁ yon egilişi b", min: -0.8, max: 0.8, step: 0.1, value: cb.b, nd: 1 }, function (v) { cb.b = v; rb(); });
@@ -166,14 +166,14 @@
           L.note("<b>Bilinear:</b> S = (1−u)(1−v)P<sub>00</sub> + u(1−v)P<sub>10</sub> + (1−u)vP<sub>01</sub> + uvP<sub>11</sub>. <b>Coons (bilinear aralaştirilgan):</b> S(u,v) = (1−v)C<sub>0</sub>(u) + vC<sub>1</sub>(u) + (1−u)D<sub>0</sub>(v) + uD<sub>1</sub>(v) − [bilinear lavha, 4 burçak]; sirt 4 çegara egri çiziqni <i>aniq</i> takrorlaydi. <b>Bezier:</b> S = Σ<sub>i</sub>Σ<sub>j</sub> B<sub>i,3</sub>(u)B<sub>j,3</sub>(v)P<sub>ij</sub> — sirt faqat 4 burçak nuqtadan ötadi.", "main");
           L.tasks([
             "Bilinearda h₁₁ ni özgartiring (qolganlari 0): «Burama z» nolga teng bölgan holat qaysi? (Burama = 0 bölsa, lavha tekis.)",
-            "Coonsda 4 chetni özgartiring va «Çegara xatosi»ni körin: nega ≈ 0? Sirt ichki nuqtalarni qanday toldiradi?",
+            "Coonsda 4 çetni özgartiring va «Çegara xatosi»ni körin: nega ≈ 0? Sirt içki nuqtalarni qanday toldiradi?",
             "Bezierda P11 yoki P12 ni tanlab z ni özgartiring: sirt nuqtadan ötadimi yoki faqat «tortiladi»? Burçak nuqta P00 uçun-çi?"
           ], "a");
         }
       },
       {
         name: "Ekstruziya, aylanma sirt, loft",
-        lead: "Egri çiziqlardan sirt hosil qilişning üç usuli. Profilni almaştiring, parametrlarni özgartiring va izoparametrik çiziqlarga qarang.",
+        lead: "Egri çiziqlardan sirt hosil qilişning uç usuli. Profilni almaştiring, parametrlarni özgartiring va izoparametrik çiziqlarga qarang.",
         build: function (L) {
           var ex = { kind: "star", H: 2, sc: 1, tw: 0 }, rv = { prof: "vase", ang: 360, k: 1 }, lf = { n: 3, kinds: ["circle", "star", "circle"], s: [1.2, 0.7, 1.1], H: 3 };
           function secLines(arr) { return arr.map(function (a) { return new X.Line({ pts: a, color: C.pink, lw: 3.5, front: true }); }); }
@@ -221,7 +221,7 @@
               controls: function (rb) {
                 L.seg("Kesimlar soni", [[2, "2 kesim"], [3, "3 kesim"]], lf.n, function (v) { lf.n = Number(v); rb(); });
                 for (var i = 0; i < 3; i++) (function (i) {
-                  L.select("Kesim " + (i + 1) + " shakli", KINDS, lf.kinds[i], function (v) { lf.kinds[i] = v; rb(); });
+                  L.select("Kesim " + (i + 1) + " şakli", KINDS, lf.kinds[i], function (v) { lf.kinds[i] = v; rb(); });
                   L.slider({ label: "Kesim " + (i + 1) + " radiusi", min: 0.3, max: 1.6, step: 0.05, value: lf.s[i], nd: 2 }, function (v) { lf.s[i] = v; rb(); });
                 })(i);
                 L.slider({ label: "Umumiy balandlik H", min: 1, max: 4, step: 0.1, value: lf.H, nd: 1 }, function (v) { lf.H = v; rb(); });

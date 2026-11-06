@@ -141,7 +141,7 @@
       });
       gM.hidden = st.mode !== "man";
       if (st.mode === "man") { st.man = openKnots(st.N, st.p); refreshMan(); }
-      L.toggle("Tanlangan nuqtaning lokal taʼsirini ajratish", true, function (v) { st.local = v; P.draw(); cv.redraw(); });
+      L.toggle("Tanlangan nuqtaning lokal taʼsirini ajratiş", true, function (v) { st.local = v; P.draw(); cv.redraw(); });
       L.toggle("Egri bölaklari çegarasini körsatiş", true, function (v) { st.knotsOnCurve = v; P.draw(); });
       L.button("Nuqtalarni tiklaş", function () { var N = st.N; setPts(); colorSel(); P.draw(); });
       L.note(cfg.note, "main");
@@ -168,14 +168,14 @@
       },
       {
         name: "Tugunlarni qölda özgartiriş",
-        lead: "Ichki tugunlardan birini tanlang va slayder bilan suring (tartib özgarmaydi: U<sub>j−1</sub> ≤ U<sub>j</sub> ≤ U<sub>j+1</sub>). Karralilik oşsa, egri öşa joyda silliqligini yöqotadi.",
+        lead: "Içki tugunlardan birini tanlang va slayder bilan suring (tartib özgarmaydi: U<sub>j−1</sub> ≤ U<sub>j</sub> ≤ U<sub>j+1</sub>). Karralilik oşsa, egri öşa joyda silliqligini yöqotadi.",
         build: builder({
           modes: ["man"], key: "b", p: 3,
-          note: "Ichki tugun karraliği k bölsa, egri tugunda C<sup>p−k</sup> silliq. k = p da egri tugunda C⁰ (burçak), k = p + 1 da — uzilişi mumkin. Tugunlar vektorining qiymatlari — [0; 1] oraliğida, <b>tartibi özgarmasligi</b> şart.",
+          note: "Içki tugun karraliği k bölsa, egri tugunda C<sup>p−k</sup> silliq. k = p da egri tugunda C⁰ (burçak), k = p + 1 da — uzilişi mumkin. Tugunlar vektorining qiymatlari — [0; 1] oraliğida, <b>tartibi özgarmasligi</b> şart.",
           tasks: [
-            "p = 3 da bitta ichki tugunni «Oldingi tugunga tenglaştir» tugmasi bilan 2 karrali qiling: egri öşa tugunda nechanci tartibgaçha silliq? (C² dan C¹ ga.)",
-            "Ichki tugunni uç tomon surib, bazis funksiyalar grafigida N<sub>i,p</sub> ning tayanç oraliği qanday özgarişini kuzating.",
-            "p = 2 da ichki tugunni ikki marta takrorlang (karralilik 2 = p): egri qaysi nuqta yaqinida burçak hosil qiladi?"
+            "p = 3 da bitta içki tugunni «Oldingi tugunga tenglaştir» tugmasi bilan 2 karrali qiling: egri öşa tugunda neçançi tartibgaçha silliq? (C² dan C¹ ga.)",
+            "Içki tugunni uç tomon surib, bazis funksiyalar grafigida N<sub>i,p</sub> ning tayanç oraliği qanday özgarişini kuzating.",
+            "p = 2 da içki tugunni ikki marta takrorlang (karralilik 2 = p): egri qaysi nuqta yaqinida burçak hosil qiladi?"
           ]
         })
       }

@@ -16,9 +16,8 @@
     cyl: { name: "Silindr", exp: "yopiq, χ = 2", p: [["n", "Çöqqilar (Vertices)", 3, 64, 32]], cap: true, build: function (p, o) { return X.mesh.cylinder(p.n, 1, 2, o.cap ? "ngon" : "none"); } },
     cone: { name: "Konus", exp: "yopiq, χ = 2", p: [["n", "Çöqqilar (Vertices)", 3, 64, 32]], build: function (p) { return X.mesh.cone(p.n, 1, 2); } },
     torus: { name: "Tor", exp: "yopiq, χ = 0 (tor)", p: [["M", "Asosiy segmentlar", 3, 64, 48], ["m", "Halqa segmentlari", 3, 32, 12]], build: function (p) { return X.mesh.torus(p.M, p.m, 1.1, 0.4); } },
-    grid: { name: "Panjara", exp: "oçiq, χ = 1 (disk)", p: [["nx", "X böyiça tugunlar", 2, 32, 10], ["ny", "Y böyiça tugunlar", 2, 32, 10]], build: function (p) { return X.mesh.grid(p.nx, p.ny, 2.4); } }
+    grid: { name: "Panjara", exp: "oçiq, χ = 1 (disk)", p: [["nx", "X Subdivisions (oraliqlar)", 1, 31, 10], ["ny", "Y Subdivisions (oraliqlar)", 1, 31, 10]], build: function (p) { return X.mesh.grid(p.nx + 1, p.ny + 1, 2.4); } }
   };
-  SHAPES.grid.p[0][1] = "X böyiça tugunlar"; SHAPES.grid.p[1][1] = "Y böyiça tugunlar";
 
   function tab1(L) {
     var S = L.scene({ dist: 5, pitch: 0.5, yaw: -0.8, aspect: 0.78, gridOpts: { n: 12, step: 0.5 } });
@@ -213,7 +212,7 @@
     update();
     L.tasks([
       "Burçakni 15° qilib, nusxalar sonini 24 ga yetkazing: jami burilişi 345°. Qaysi son uçun zina töğri bir aylanaga yetadi? [360° / burçak = 24 nusxa dan keyin 24-nusxa 360°]",
-      "Qadamni 0 ga tuşiring: zinapoya yassi gülga aylanadi. Burçakni 0 ga tuşirsangiz-çi? [vertikal minora]",
+      "Qadamni 0 ga tuşiring: zinapoya yassi gulga aylanadi. Burçakni 0 ga tuşirsangiz-çi? [vertikal minora]",
       "Radiusni 0 ga tuşiring va burçakni 90° qiling: nusxalar bir-biriga qanday joylaşadi? [öq atrofida burilgan kesişuvçi tahtalar]"
     ], "d");
   }
@@ -222,7 +221,7 @@
     intro: "Murakkab model oddiy primitivlardan (kub, sfera, silindr, konus, tor, panjara) va ularni qayta işlaydigan amallardan (Lathe, Extrusion, Array) qurilgan. Har bir primitivning çöqqi, qirra va yoq soni segmentlar soniga boğliq.",
     tabs: [
       { name: "Primitivlar", lead: "Primitivni tanlab, segmentlar slayderlarini suring: V, E, F va Eyler yiğindisi jonli hisoblanadi.", build: tab1 },
-      { name: "Aylana ≈ n-burçak", lead: "Kompyuterda aylana — n burçakli köpburçak. n qança katta bölsa, xato (sagitta s) şuncha kam.", build: tab2 },
+      { name: "Aylana ≈ n-burçak", lead: "Kompyuterda aylana — n burçakli köpburçak. n qança katta bölsa, xato (sagitta s) şunça kam.", build: tab2 },
       { name: "Lathe va Extrusion", lead: "Profilni z öqi atrofida aylantiring (Lathe) yoki yassi asosni balandlik böyiça çiqaring (Extrusion).", build: tab3 },
       { name: "Array spiral", lead: "Bitta zinapoya tagligini Array amali bilan köpaytirib, spiral hosil qiling.", build: tab4 }
     ]

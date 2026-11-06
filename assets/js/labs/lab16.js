@@ -71,7 +71,7 @@
             c.imageSmoothingEnabled = true; c.imageSmoothingQuality = "high";
             c.drawImage(off, (w - sz) / 2, (h - sz) / 2, sz, sz);
           };
-          var R = L.readout([["f0", "F₀ (chiziqli RGB)"], ["a", "α = Roughness²"], ["c", "Markaziy piksel (sRGB)"], ["kd", "Diffuz uluş (1 − Metallic)"]], "main");
+          var R = L.readout([["f0", "F₀ (çiziqli RGB)"], ["a", "α = Roughness²"], ["c", "Markaziy piksel (sRGB)"], ["kd", "Diffuz uluş (1 − Metallic)"]], "main");
           function render() {
             pending = false;
             renderSphere(st, img); octx.putImageData(img, 0, 0); cv.redraw();
@@ -96,19 +96,19 @@
           L.slider({ label: "Yoruğlik manbai: balandlik", min: 0, max: 90, step: 1, value: st.el, nd: 0, unit: "°" }, function (v) { st.el = v; sched(); });
           L.slider({ label: "Yoruğlik quvvati", min: 0.5, max: 6, step: 0.1, value: st.I, nd: 1 }, function (v) { st.I = v; sched(); });
           L.toggle("Oddiy muhit yoruğligi (ambient)", true, function (v) { st.amb = v; sched(); });
-          L.toggle("Chiziqli → sRGB kodlaş", true, function (v) { st.srgb = v; sched(); });
-          L.note("f<sub>r</sub> = k<sub>d</sub>·c/π + D·G·F / (4·(n·l)·(n·v)); D — GGX, α = Roughness²; G — Smith/Schlick-GGX (k = (r+1)²/8); F = F₀ + (1 − F₀)(1 − h·v)<sup>5</sup>; F₀ = ((n−1)/(n+1))² (IOR 1,5 → 0,04); metalda F₀ = Base Color; k<sub>d</sub> = (1 − F)(1 − Metallic). Tayyor materiallar — taxminiy qiymatlar (oltin F₀ ≈ (1,00; 0,71; 0,29), mis ≈ (0,95; 0,64; 0,54)). Ranglar chiziqli fazoda hisoblanib, ekran uçun sRGB ga ötkaziladi.", "main");
+          L.toggle("Çiziqli → sRGB kodlaş", true, function (v) { st.srgb = v; sched(); });
+          L.note("f<sub>r</sub> = k<sub>d</sub>·c/π + D·G·F / (4·(n·l)·(n·v)); D — GGX, α = Roughness²; G — Smith/Schlick-GGX (k = (r+1)²/8); F = F₀ + (1 − F₀)(1 − h·v)<sup>5</sup>; F₀ = ((n−1)/(n+1))² (IOR 1,5 → 0,04); metalda F₀ = Base Color; k<sub>d</sub> = (1 − F)(1 − Metallic). Tayyor materiallar — taxminiy qiymatlar (oltin F₀ ≈ (1,00; 0,71; 0,29), mis ≈ (0,95; 0,64; 0,54)). Ranglar çiziqli fazoda hisoblanib, ekran uçun sRGB ga ötkaziladi.", "main");
           render();
           L.tasks([
             "«Plastik» materialida Roughness ni 0,1 dan 0,9 gaça özgartiring: yaltiroq doğ qanday özgaradi?",
             "«Tilla» ni tanlab, Metallic ni 0 ga tuşiring: material nima uçun plastikka aylanadi? F₀ qiymatiga qarang (dielektrikda ≈ 0,04).",
-            "«Chiziqli → sRGB kodlaş» ni öçiring: tasvir nima uçun qoraroq körinadi?"
+            "«Çiziqli → sRGB kodlaş» ni öçiring: tasvir nima uçun qoraroq körinadi?"
           ], "a");
         }
       },
       {
         name: "Fresnel grafigi",
-        lead: "Yoruğlik sirtga qiya tuşgan sari akslanish keskin oşadi. Schlick yaqinlaşişi aniq dielektrik Fresnel formulasi bilan soliştiriladi.",
+        lead: "Yoruğlik sirtga qiya tuşgan sari akslaniş keskin oşadi. Schlick yaqinlaşişi aniq dielektrik Fresnel formulasi bilan soliştiriladi.",
         build: function (L) {
           var st = { n: 1.5, th: 60, rsrp: false };
           var cv = L.canvas({ aspect: 0.72, maxH: 380 });

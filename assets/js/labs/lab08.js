@@ -131,7 +131,7 @@
   }
 
   LAB.start({
-    intro: "Spline — nuqtalar ketma-ketligidan ötuvçi silliq egri çiziq. Tür tanlanişiga qarab egri çiziqning <b>silliqlik sinfi</b> (C¹ yoki C²) va <b>egrilik taroği</b> özgaradi: egrilik taroği — har bir nuqtada normal böylab κ ga proporsional çiziqçalar.",
+    intro: "Spline — nuqtalar ketma-ketligidan ötuvçi silliq egri çiziq. Tur tanlanişiga qarab egri çiziqning <b>silliqlik sinfi</b> (C¹ yoki C²) va <b>egrilik taroği</b> özgaradi: egrilik taroği — har bir nuqtada normal böylab κ ga proporsional çiziqçalar.",
     tabs: [
       {
         name: "Splaynlar va taroq",
@@ -194,7 +194,7 @@
       },
       {
         name: "Turlarni taqqoslaş",
-        lead: "Bir xil nuqtalardan ötuvçi tört spline bir sahnada. Kök — tabiiy kubik, zarğaldoq — Catmull–Rom, yaşil — Cardinal, pushti punktir — Kochanek–Bartels (T = C = B = 0): u Catmull–Rom bilan ustma-ust tutaşadi.",
+        lead: "Bir xil nuqtalardan ötuvçi tört spline bir sahnada. Kök — tabiiy kubik, zarğaldoq — Catmull–Rom, yaşil — Cardinal, puşti punktir — Kochanek–Bartels (T = C = B = 0): u Catmull–Rom bilan ustma-ust tutaşadi.",
         build: function (L) {
           var st = { c: 0.5, comb: false, scale: 0.4 };
           var P = L.plot({ x: [-0.6, 7.1], y: [-0.9, 4.9], aspect: 0.72, equal: true });

@@ -34,7 +34,7 @@
     tabs: [
       {
         name: "Vazn slayderi",
-        lead: "Egri çiziq nuqtalarini sudrang yoki nuqtani tanlang va vaznini özgartiring. Punktir — barcha vazn 1 bölgan (oddiy B-spline) egri çiziq.",
+        lead: "Egri çiziq nuqtalarini sudrang yoki nuqtani tanlang va vaznini özgartiring. Punktir — barça vazn 1 bölgan (oddiy B-spline) egri çiziq.",
         build: function (L) {
           var st = { sel: 2, W: [1, 1, 1, 1, 1, 1] }, p = 3, U = X.knots(6, p, "open");
           var P = L.plot({ x: [-0.3, 6.9], y: [-0.4, 4.8], aspect: 0.7 });
@@ -120,7 +120,7 @@
           L.note("Knot vektori U = (0, 0, 0, ¼, ¼, ½, ½, ¾, ¾, 1, 1, 1), vaznlar (1, √2/2, 1, √2/2, 1, √2/2, 1, √2/2, 1). «Xato» — max | ‖C(u)‖ − 1 | (4000 nuqtada). Aniq vaznda xato ~ 10⁻¹⁶ (suzuvçi nuqta yaxlitlaşi), köphadli egri çiziqda ≈ 0,0607 (burçak yönalişida ‖C‖ = 3√2/4 ≈ 1,0607).", "main");
           L.tasks([
             "«Xato: aniq» va «Xato: köphadli» qiymatlarini solişitiring: qançaga farq qiladi? (≈ 10⁻¹⁶ va ≈ 0,06.)",
-            "Burçak vaznini 0,60 va 1,00 ga qöying: qaysi holda egri çiziq aylanadan taşqariga çiqadi? (w > √2/2 da taşqariga, w < √2/2 da ichkariga.)",
+            "Burçak vaznini 0,60 va 1,00 ga qöying: qaysi holda egri çiziq aylanadan taşqariga çiqadi? (w > √2/2 da taşqariga, w < √2/2 da içkariga.)",
             "Nega qöşiq (burçak) nuqtalar vazni aynan √2/2 = cos 45°? (9 nuqta: har bir yoy 90° ni qamraydi, cos(90°/2) = √2/2.)"
           ], "c");
         }

@@ -186,8 +186,8 @@
     L.note("I = k<sub>a</sub> + k<sub>d</sub>(N·L) + k<sub>s</sub>(R·V)<sup>n</sup>, R = 2(N·L)N − L. Bu yerda k<sub>a</sub> = " + f(KA, 2) + ", k<sub>d</sub> = " + f(KD, 2) + ", k<sub>s</sub> = " + f(KS, 2) + ". <b>Flat</b>: bitta qiymat har bir yoqqa. <b>Gouraud</b>: I faqat çöqqilarda hisoblanadi va interpolyatsiya qilinadi. <b>Phong</b>: normal interpolyatsiya qilinadi, I har pikselda hisoblanadi.", "main");
     layout();
     L.tasks([
-      "Törni 6 ga tüşiring (eng qöpol): Phong da silliq yaltiroq dog körinadimi, Gouraud da-çi? Siluet çeti (köpburçak) hamma usulda bir xil qoladi.",
-      "n ni 10 dan 150 gaça oşiring: yaltiroq dog kiçrayadi. Qaysi usulda «Maks. yaltiroq» ayniqsa pastga tüşadi? [Gouraud, yirik yoqlarda]",
+      "Törni 6 ga tuşiring (eng qöpol): Phong da silliq yaltiroq dog körinadimi, Gouraud da-çi? Siluet çeti (köpburçak) hamma usulda bir xil qoladi.",
+      "n ni 10 dan 150 gaça oşiring: yaltiroq dog kiçrayadi. Qaysi usulda «Maks. yaltiroq» ayniqsa pastga tuşadi? [Gouraud, yirik yoqlarda]",
       "Yoruğlikni yoqlar ortasiga qaratib (burçaklarni özgartirib) Gouraud yöqotişini kuzating: yaltiroq nuqta çöqqi yaqinida bölsa, Gouraud uni saqlab qoladi."
     ], "b");
     refresh();

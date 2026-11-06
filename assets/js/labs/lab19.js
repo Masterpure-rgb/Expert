@@ -190,7 +190,7 @@
   }
 
   LAB.start({
-    intro: "Real vaqtda har bir kadr uçun resurslar çeklangan. Bu laboratoriyada üç narsani sinaysiz: LOD darajalarida uçburçaklar soni, ekrandagi ölçamga qarab LOD almaşişi va teksturalar egallaydigan xotira.",
+    intro: "Real vaqtda har bir kadr uçun resurslar çeklangan. Bu laboratoriyada uç narsani sinaysiz: LOD darajalarida uçburçaklar soni, ekrandagi ölçamga qarab LOD almaşişi va teksturalar egallaydigan xotira.",
     tabs: [
       { name: "LOD darajalari", lead: "Tört daraja yonma-yon: har bir keyingi daraja ança kam uçburçakka ega. Sfera va boş modeli uçun sonlarni solişitiring.", build: tab1 },
       { name: "LOD almaşişi", lead: "Obyektning ekrandagi balandligi p masofaga teskari proportsional. Masofa, balandlik, FOV va ekran ölçamini özgartirib, qaysi LOD faol bölişini kuzating.", build: tab2 },

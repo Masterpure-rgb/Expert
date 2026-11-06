@@ -219,7 +219,7 @@
       },
       {
         name: "GSD va RANSAC",
-        lead: "Ikki kalkulyator: suratdagi bir pikselning yerdagi ölçami (GSD) va RANSAC algoritmi uçun kerakli iteratsiyalar soni. Boşlangiç qiymatlar — shartli misollar.",
+        lead: "Ikki kalkulyator: suratdagi bir pikselning yerdagi ölçami (GSD) va RANSAC algoritmi uçun kerakli iteratsiyalar soni. Boşlangiç qiymatlar — şartli misollar.",
         build: function (L) {
           var g = { S: 13.2, F: 8.8, W: 5472, H: 50, T: 5 }, rs = { p: 0.99, e: 0.5, s: 8 };
           L.heading("GSD kalkulyatori");
@@ -229,7 +229,7 @@
           L.number({ label: "Obyektgaça masofa H", unit: "m", min: 0.01, step: 0.5, value: g.H }, function (v) { g.H = v; upd(); });
           L.number({ label: "Maqsad GSD", unit: "mm/px", min: 0.01, step: 0.5, value: g.T }, function (v) { g.T = v; upd(); });
           L.heading("RANSAC kalkulyatori");
-          L.slider({ label: "Ishonçlilik p", min: 0.9, max: 0.999, step: 0.001, value: rs.p, nd: 3 }, function (v) { rs.p = v; upd(); });
+          L.slider({ label: "Işonçlilik p", min: 0.9, max: 0.999, step: 0.001, value: rs.p, nd: 3 }, function (v) { rs.p = v; upd(); });
           L.slider({ label: "Notöğri juftliklar uluşi ε", min: 0, max: 0.9, step: 0.01, value: rs.e, nd: 2 }, function (v) { rs.e = v; upd(); });
           L.slider({ label: "Minimal tanlanma hajmi s", min: 2, max: 10, step: 1, value: rs.s, nd: 0 }, function (v) { rs.s = v; upd(); });
           L.heading("GSD natijasi", "main");
@@ -238,7 +238,7 @@
           L.heading("RANSAC natijasi", "main");
           var R2 = L.readout([["n", "Kerakli iteratsiyalar N"], ["w", "Toza tanlanma ehtimoli (1 − ε)^s"], ["n8", "N (s = 8)"], ["n7", "N (s = 7)"], ["n5", "N (s = 5)"]], "main");
           var cv = L.canvas({ aspect: 0.55 });
-          L.note("N = ⌈ log(1 − p) / log(1 − (1 − ε)<sup>s</sup>) ⌉. Tekşiriş: p = 0,99, ε = 0,5 da s = 8 → 1177; s = 7 → 588; s = 5 → 146. Tanlanma hajmi s oşsa, N keskin oşadi: 8 nuqtali algoritm 5 nuqtalidan taxminan 8 baravar köp iteratsiya talab qiladi (shu ε da).", "main");
+          L.note("N = ⌈ log(1 − p) / log(1 − (1 − ε)<sup>s</sup>) ⌉. Tekşiriş: p = 0,99, ε = 0,5 da s = 8 → 1177; s = 7 → 588; s = 5 → 146. Tanlanma hajmi s oşsa, N keskin oşadi: 8 nuqtali algoritm 5 nuqtalidan taxminan 8 baravar köp iteratsiya talab qiladi (şu ε da).", "main");
           function upd() {
             var gsd = fin(g.S * g.H * 1000 / (g.F * g.W)), fp = fin(gsd * g.W / 1000), need = fin(g.T * g.F * g.W / (g.S * 1000));
             R1.setMany({ gsd: f(gsd, 2) + " mm/px", fp: f(fp, 1) + " m", need: f(need, 1) + " m" });
@@ -267,7 +267,7 @@
           };
           upd();
           L.tasks([
-            "Ushbu misolda masofani 50 m dan 100 m ga çiqaring: GSD ikki baravar oşadi (taxminan 27,4 mm/px).",
+            "Uşbu misolda masofani 50 m dan 100 m ga çiqaring: GSD ikki baravar oşadi (taxminan 27,4 mm/px).",
             "p = 0,99 va s = 8 da ε ni 0,5 dan 0,3 ga tuşiring: N 1177 dan 78 ga kamayadi. Nima uçun bunçalik keskin?",
             "Maqsad GSD = 5 mm/px bölsa, kamerani qançalik pastda (taxminan 18,2 m) uçirişingiz kerak?"
           ], "c");

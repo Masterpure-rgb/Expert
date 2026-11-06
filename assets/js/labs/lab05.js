@@ -240,7 +240,7 @@
   }
 
   LAB.start({
-    intro: "Har qanday polygonal model üç narsadan iborat: çöqqilar (Vertex), ularni boğlaydigan qirralar (Edge) va qirralar bilan çegaralangan yoqlar (Face). Bu laboratoriyada ularni tanlaysiz, normallarni körasiz va yoq üstida Extrude hamda Inset amallarini bajarasiz.",
+    intro: "Har qanday polygonal model uç narsadan iborat: çöqqilar (Vertex), ularni boğlaydigan qirralar (Edge) va qirralar bilan çegaralangan yoqlar (Face). Bu laboratoriyada ularni tanlaysiz, normallarni körasiz va yoq ustida Extrude hamda Inset amallarini bajarasiz.",
     tabs: [
       {
         name: "Tanlaş va normallar",
