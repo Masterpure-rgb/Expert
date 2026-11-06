@@ -143,7 +143,7 @@
       },
       {
         name: "Teskari kvadrat qonuni",
-        lead: "Nuqtaviy manbadan masofa ikki baravar oşsa, yoruğlik tüşishi (illuminance) tört baravar kamayadi, çunki nur uç barobar emas, tört barobar kattaroq yuzaga yoyiladi.",
+        lead: "Nuqtaviy manbadan masofa ikki baravar oşsa, yoruğlik tuşishi (illuminance) tört baravar kamayadi, çunki nur uç barobar emas, tört barobar kattaroq yuzaga yoyiladi.",
         build: function (L) {
           var st = { I: 100, d: 1.5, log: false };
           var E = function (d) { return st.I / (d * d); };
@@ -201,7 +201,7 @@
           L.slider({ label: "Manba kuçi I", min: 20, max: 400, step: 10, value: st.I, nd: 0, unit: "cd" }, function (v) { st.I = v; upd(); });
           L.slider({ label: "Masofa d", min: 0.5, max: 2.6, step: 0.05, value: st.d, nd: 2, unit: "m" }, function (v) { st.d = v; upd(); });
           L.toggle("Vertikal öqni logarifmik qilish", false, function (v) { st.log = v; upd(); });
-          L.note("E = I / d²  (E — yoruğlik tüşişi, lyuks (lx); I — yoruğlik kuçi, kandela (cd); d — masofa, m). Sirt nurga perpendikulyar va manba nuqtaviy deb olinadi; qiya tüşganda E = I·cos θ / d². Kattaligi masofadan ancha kiçik bölmagan manbalarda qonun yaqinlaşiş sifatida qöllanadi.", "main");
+          L.note("E = I / d²  (E — yoruğlik tuşişi, lyuks (lx); I — yoruğlik kuçi, kandela (cd); d — masofa, m). Sirt nurga perpendikulyar va manba nuqtaviy deb olinadi; qiya tuşganda E = I·cos θ / d². Kattaligi masofadan ancha kiçik bölmagan manbalarda qonun yaqinlaşiş sifatida qöllanadi.", "main");
           upd();
           L.tasks([
             "d = 1 m dan 2 m ga özgartiring: E(2d)/E(d) = 0,25 bölishini körsatkiçdan tekşiring.",
@@ -217,7 +217,7 @@
           var st = { s: 0.5, o: 1.5, r: 4.5 }, A = 0.5;
           var dg = L.canvas({ aspect: 0.7 });
           var R = L.readout([["w", "Yarim soya kengligi w"], ["k", "d_r / d_o"], ["u", "Umbra (tola soya) kengligi"], ["chk", "Profildan ölçangan w"]], "main");
-          function vis(y) { // manbaning körinadigan ulüşi (receiver nuqtasi y uçun)
+          function vis(y) { // manbaning körinadigan uluşi (receiver nuqtasi y uçun)
             if (st.s <= 0) return Math.abs(y * st.o / st.r) < A ? 0 : 1;
             var k = st.r / st.o, q = 1 - 1 / k, lo = (-A - y / k) / q, hi = (A - y / k) / q;
             var a = Math.max(lo, -st.s / 2), b = Math.min(hi, st.s / 2), blocked = Math.max(0, b - a);
@@ -269,13 +269,13 @@
           L.slider({ label: "Manba ölçami s", min: 0, max: 1.5, step: 0.05, value: st.s, nd: 2, unit: "m" }, function (v) { st.s = v; upd(); });
           var so = L.slider({ label: "Manbadan töşiqqaça d_o", min: 0.5, max: 4, step: 0.1, value: st.o, nd: 1, unit: "m" }, function (v) { st.o = v; if (st.r < v + 0.3) { st.r = Math.min(8, v + 0.3); sr.set(st.r, true); } upd(); });
           var sr = L.slider({ label: "Manbadan sirtgaça d_r", min: 1, max: 8, step: 0.1, value: st.r, nd: 1, unit: "m" }, function (v) { st.r = Math.max(v, st.o + 0.3); if (st.r !== v) sr.set(st.r, true); upd(); });
-          L.note("Yarim soya kengligi: <b>w = s · (d<sub>r</sub> − d<sub>o</sub>) / d<sub>o</sub></b>. Bu yerda s — manba ölçami, d<sub>o</sub> — manbadan töşiqqaça, d<sub>r</sub> — manbadan soya tüşadigan sirtgaça masofa (uçburçaklar oxşaşligi). Töşiq balandligi 1 m deb olingan. Manba nuqta (s = 0) bölsa, w = 0 — soya keskin.", "main");
+          L.note("Yarim soya kengligi: <b>w = s · (d<sub>r</sub> − d<sub>o</sub>) / d<sub>o</sub></b>. Bu yerda s — manba ölçami, d<sub>o</sub> — manbadan töşiqqaça, d<sub>r</sub> — manbadan soya tuşadigan sirtgaça masofa (uçburçaklar oxşaşligi). Töşiq balandligi 1 m deb olingan. Manba nuqta (s = 0) bölsa, w = 0 — soya keskin.", "main");
           L.add(EX.el("div", { class: "legend", html: '<span><i style="background:' + C.orange + '"></i>Yarim soya (penumbra) çegarasi</span><span><i style="background:' + C.ink2 + '"></i>Tola soya (umbra) çegarasi</span>' }), "main");
           upd();
           L.tasks([
-            "s = 0,5 m, d_o = 1 m, d_r = 3 m qiling: w = 0,5·(3 − 1)/1 = 1,0 m bölishini tekşiring. Söng s ni 0,25 m ga tüşiring: w ikki marta kamayadi.",
+            "s = 0,5 m, d_o = 1 m, d_r = 3 m qiling: w = 0,5·(3 − 1)/1 = 1,0 m bölishini tekşiring. Söng s ni 0,25 m ga tuşiring: w ikki marta kamayadi.",
             "s = 0,5 m va d_o = 1,5 m da sirtni uzoqlaştiring (d_r ni oşiring): w va umbra kengligi qanday özgaradi?",
-            "s = 0 ga tüşiring: yarim soya yöqoladimi? Umbra kengligi töşiq balandligiga (1 m) yaqinlaşadimi — d_r ≈ d_o da?"
+            "s = 0 ga tuşiring: yarim soya yöqoladimi? Umbra kengligi töşiq balandligiga (1 m) yaqinlaşadimi — d_r ≈ d_o da?"
           ], "c");
         }
       }

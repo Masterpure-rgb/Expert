@@ -1,0 +1,20 @@
+{
+ "topic": 1,
+ "file": "audio/01.mp3",
+ "duration": 57.52,
+ "voice": "Ovoz: Gemini 3.8 Flash TTS (sunʼiy intellekt), matn mualliflar tomonidan tayyorlangan.",
+ "paragraphs": [
+  {
+   "text": "Assalomu alaykum, aziz talabalar! Bugungi asosiy ğoya şu: 3D model — obyektning raqamli nusxasi, kompyuter esa uni koordinatalar, vektorlar va matritsalar tilida tuşunadi. Har bir nuqtaning manzili bor, har bir harakat esa köçiriş, aylantiriş yoki masştablaşdan iborat.",
+   "start": 0.0
+  },
+  {
+   "text": "Keçqurungi yangiliklarni eslang. Boşlovçi ulkan virtual studiyada turganday körinadi, aslida esa u yaşil fon oldida. Kamera surilganda kompyuter butun dekoratsiyani xuddi şu nuqtadan qayta çizadi — sekundiga yigirma beş marta.",
+   "start": 19.36
+  },
+  {
+   "text": "Almaştirişlar tartibi muhim: avval masştab, söng aylantiriş, oxirida köçiriş. Tartib özgarsa, obyekt butunlay boşqa joyga tuşadi. Bu bilim Blender, 3ds Max yoki öyin dvigatelida modelni töğri joylaştiriş va boşqa dasturga xatosiz ötkaziş uçun kerak. Laboratoriyada sinab köring va QR-topşiriqni bajaring.",
+   "start": 33.48
+  }
+ ]
+}

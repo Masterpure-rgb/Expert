@@ -71,7 +71,7 @@
             c.imageSmoothingEnabled = true; c.imageSmoothingQuality = "high";
             c.drawImage(off, (w - sz) / 2, (h - sz) / 2, sz, sz);
           };
-          var R = L.readout([["f0", "F₀ (chiziqli RGB)"], ["a", "α = Roughness²"], ["c", "Markaziy piksel (sRGB)"], ["kd", "Diffuz ulüş (1 − Metallic)"]], "main");
+          var R = L.readout([["f0", "F₀ (chiziqli RGB)"], ["a", "α = Roughness²"], ["c", "Markaziy piksel (sRGB)"], ["kd", "Diffuz uluş (1 − Metallic)"]], "main");
           function render() {
             pending = false;
             renderSphere(st, img); octx.putImageData(img, 0, 0); cv.redraw();
@@ -101,14 +101,14 @@
           render();
           L.tasks([
             "«Plastik» materialida Roughness ni 0,1 dan 0,9 gaça özgartiring: yaltiroq doğ qanday özgaradi?",
-            "«Tilla» ni tanlab, Metallic ni 0 ga tüşiring: material nima uçun plastikka aylanadi? F₀ qiymatiga qarang (dielektrikda ≈ 0,04).",
+            "«Tilla» ni tanlab, Metallic ni 0 ga tuşiring: material nima uçun plastikka aylanadi? F₀ qiymatiga qarang (dielektrikda ≈ 0,04).",
             "«Chiziqli → sRGB kodlaş» ni öçiring: tasvir nima uçun qoraroq körinadi?"
           ], "a");
         }
       },
       {
         name: "Fresnel grafigi",
-        lead: "Yoruğlik sirtga qiya tüşgan sari akslanish keskin oşadi. Schlick yaqinlaşişi aniq dielektrik Fresnel formulasi bilan soliştiriladi.",
+        lead: "Yoruğlik sirtga qiya tuşgan sari akslanish keskin oşadi. Schlick yaqinlaşişi aniq dielektrik Fresnel formulasi bilan soliştiriladi.",
         build: function (L) {
           var st = { n: 1.5, th: 60, rsrp: false };
           var cv = L.canvas({ aspect: 0.72, maxH: 380 });
@@ -119,7 +119,7 @@
             c.font = "11px Inter, system-ui, sans-serif"; c.lineWidth = 1;
             for (i = 0; i <= 90; i += 15) { c.strokeStyle = "rgba(24,32,47,.10)"; c.beginPath(); c.moveTo(sx(i), pad.t); c.lineTo(sx(i), pad.t + H); c.stroke(); c.fillStyle = C.ink3; c.fillText(i + "°", sx(i) - 8, h - 18); }
             for (i = 0; i <= 5; i++) { c.strokeStyle = "rgba(24,32,47,.10)"; c.beginPath(); c.moveTo(pad.l, sy(i / 5)); c.lineTo(pad.l + W, sy(i / 5)); c.stroke(); c.fillStyle = C.ink3; c.fillText(f(i / 5, 1), 8, sy(i / 5) + 4); }
-            c.fillStyle = C.ink2; c.fillText("θ — tüşiş burçagi (normaldan)", pad.l + W / 2 - 80, h - 3); c.fillText("F", 22, pad.t + 8);
+            c.fillStyle = C.ink2; c.fillText("θ — tuşiş burçagi (normaldan)", pad.l + W / 2 - 80, h - 3); c.fillText("F", 22, pad.t + 8);
             var f0 = f0of(st.n);
             function curve(fn, col, lw, dash) {
               c.beginPath(); for (var t = 0; t <= 89.9; t += 0.5) { var x = sx(t), y = sy(fn(t * RAD)); if (t) c.lineTo(x, y); else c.moveTo(x, y); }
@@ -138,7 +138,7 @@
           }
           cv.draw = draw;
           L.slider({ label: "IOR (n)", min: 1.05, max: 3, step: 0.01, value: st.n, nd: 2 }, function (v) { st.n = v; cv.redraw(); });
-          L.slider({ label: "Tüşiş burçagi θ", min: 0, max: 89, step: 1, value: st.th, nd: 0, unit: "°" }, function (v) { st.th = v; cv.redraw(); });
+          L.slider({ label: "Tuşiş burçagi θ", min: 0, max: 89, step: 1, value: st.th, nd: 0, unit: "°" }, function (v) { st.th = v; cv.redraw(); });
           L.toggle("Rs va Rp ni alohida körsatiş", false, function (v) { st.rsrp = v; cv.redraw(); });
           L.add(EX.el("div", { class: "legend", html: '<span><i style="background:' + C.z + '"></i>Aniq (Rs + Rp)/2</span><span><i style="background:' + C.orange + '"></i>Schlick</span>' }), "main");
           L.note("Schlick: F(θ) = F₀ + (1 − F₀)(1 − cos θ)<sup>5</sup>. Aniq (havo → n, qutblanmagan yoruğlik): F = (R<sub>s</sub> + R<sub>p</sub>)/2, R<sub>s</sub> = ((cos θ − n cos θ<sub>t</sub>)/(cos θ + n cos θ<sub>t</sub>))², R<sub>p</sub> = ((n cos θ − cos θ<sub>t</sub>)/(n cos θ + cos θ<sub>t</sub>))², sin θ<sub>t</sub> = sin θ / n. θ = 0° da ikkalasi F₀ ga teng. Misol: n = 1,5 da θ = 60° uçun aniq 0,089, Schlick 0,070.", "main");

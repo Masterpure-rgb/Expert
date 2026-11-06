@@ -2,7 +2,7 @@
 (function () {
   var X = window.X3D, V = X.v, C = LAB.C, f = X.fmt, RAD = Math.PI / 180;
 
-  // tasodifiy sonlar (urug'li): şovqin sliderni surganda «titramasligi» uçun
+  // tasodifiy sonlar (urugʼli): şovqin sliderni surganda «titramasligi» uçun
   function rng(seed) { return function () { seed |= 0; seed = seed + 0x6D2B79F5 | 0; var t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
   function normals(seed, n) {
     var r = rng(seed), out = [];
@@ -131,7 +131,7 @@
           build();
           L.tasks([
             "Kameralar sonini 24 dan 12 ga tuşiring: Δ = 30° va qoplaniş taxminan 55 % ga tuşadi — «yetarli emas».",
-            "Halqalar sonini 4 dan 2 ga tüşiring: halqalar 50° ga uzoqlaşadi va balandlik böyiça qoplaniş taxminan 2 % ga tüşadi. Yana 4 ga qaytaring: taxminan 67 % bölişi kerak.",
+            "Halqalar sonini 4 dan 2 ga tuşiring: halqalar 50° ga uzoqlaşadi va balandlik böyiça qoplaniş taxminan 2 % ga tuşadi. Yana 4 ga qaytaring: taxminan 67 % bölişi kerak.",
             "Köriş burçagini 40° dan 80° ga özgartiring: Δ ni özgartirmay qoplaniş qanday özgaradi? Masofa D taʼsir qiladimi?"
           ], "a");
         }
@@ -230,7 +230,7 @@
           L.number({ label: "Maqsad GSD", unit: "mm/px", min: 0.01, step: 0.5, value: g.T }, function (v) { g.T = v; upd(); });
           L.heading("RANSAC kalkulyatori");
           L.slider({ label: "Ishonçlilik p", min: 0.9, max: 0.999, step: 0.001, value: rs.p, nd: 3 }, function (v) { rs.p = v; upd(); });
-          L.slider({ label: "Notöğri juftliklar ulüşi ε", min: 0, max: 0.9, step: 0.01, value: rs.e, nd: 2 }, function (v) { rs.e = v; upd(); });
+          L.slider({ label: "Notöğri juftliklar uluşi ε", min: 0, max: 0.9, step: 0.01, value: rs.e, nd: 2 }, function (v) { rs.e = v; upd(); });
           L.slider({ label: "Minimal tanlanma hajmi s", min: 2, max: 10, step: 1, value: rs.s, nd: 0 }, function (v) { rs.s = v; upd(); });
           L.heading("GSD natijasi", "main");
           var R1 = L.readout([["gsd", "GSD"], ["fp", "Kadr kengligi yerda"], ["need", "Maqsad GSD uçun masofa"]], "main");

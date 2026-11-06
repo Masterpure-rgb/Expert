@@ -277,11 +277,11 @@
       },
       {
         name: "Tekstura zişligi",
-        lead: "Texel density (TD) — obyektning 1 metriga qançalik piksel tüşishi. Barça obyektlarda TD bir xil bölsa, tekstura sifati sahnada bir xil körinadi.",
+        lead: "Texel density (TD) — obyektning 1 metriga qançalik piksel tuşishi. Barça obyektlarda TD bir xil bölsa, tekstura sifati sahnada bir xil körinadi.",
         build: function (L) {
           var st = { res: 2048, frac: 0.5, size: 2, td: 512, sizeB: 0.5 };
           var cv = L.canvas({ aspect: 0.8, maxH: 330 });
-          var R = L.readout([["td", "Texel density (TD)"], ["cm", "TD santimetrda"], ["px", "Bir piksel ölçami"], ["need", "Maqsad TD uçun tekstura"], ["fb", "2-obyekt uçun UV ulüşi"]], "main");
+          var R = L.readout([["td", "Texel density (TD)"], ["cm", "TD santimetrda"], ["px", "Bir piksel ölçami"], ["need", "Maqsad TD uçun tekstura"], ["fb", "2-obyekt uçun UV uluşi"]], "main");
           cv.draw = function (c, w, h) {
             var sz = Math.min(w, h) - 30, ox = (w - sz) / 2, oy = (h - sz) / 2;
             c.fillStyle = "#F6F8FC"; c.fillRect(ox, oy, sz, sz); c.strokeStyle = C.ink2; c.lineWidth = 1.5; c.strokeRect(ox, oy, sz, sz);
@@ -304,16 +304,16 @@
             cv.redraw();
           }
           L.seg("Tekstura ruxsati", [[512, "512"], [1024, "1024"], [2048, "2048"], [4096, "4096"]], 2048, function (v) { st.res = Number(v); upd(); });
-          L.slider({ label: "UV oroli ulüşi (tekstura tomonining qismi)", min: 0.05, max: 1, step: 0.01, value: st.frac, nd: 2 }, function (v) { st.frac = v; upd(); });
+          L.slider({ label: "UV oroli uluşi (tekstura tomonining qismi)", min: 0.05, max: 1, step: 0.01, value: st.frac, nd: 2 }, function (v) { st.frac = v; upd(); });
           L.number({ label: "Obyekt ölçami", unit: "m", min: 0.01, step: 0.1, value: st.size }, function (v) { st.size = v; upd(); });
           L.seg("Maqsad TD (shartli misollar)", [[256, "256"], [512, "512"], [1024, "1024"], [2048, "2048"]], 512, function (v) { st.td = Number(v); upd(); });
           L.number({ label: "2-obyekt ölçami", unit: "m", min: 0.01, step: 0.1, value: st.sizeB }, function (v) { st.sizeB = v; upd(); });
-          L.note("TD = (tekstura ruxsati, px × UV oroli ulüşi) / obyekt ölçami, m → px/m. Misol: 2048 px, ulüş 0,5, ölçam 2 m → 2048·0,5/2 = 512 px/m (≈ 5,1 px/sm). Maqsad TD (256…2048 px/m) — faqat misol; haqiqiy qiymat loyiha talabi va platformaga boğliq. «Maqsad TD uçun tekstura» — 2 ning darajasigaça yuqoriga yaxlitlanadi.", "main");
+          L.note("TD = (tekstura ruxsati, px × UV oroli uluşi) / obyekt ölçami, m → px/m. Misol: 2048 px, uluş 0,5, ölçam 2 m → 2048·0,5/2 = 512 px/m (≈ 5,1 px/sm). Maqsad TD (256…2048 px/m) — faqat misol; haqiqiy qiymat loyiha talabi va platformaga boğliq. «Maqsad TD uçun tekstura» — 2 ning darajasigaça yuqoriga yaxlitlanadi.", "main");
           upd();
           L.tasks([
-            "2048 px, ulüş 0,5, ölçam 2 m: TD = 512 px/m bölishini tekşiring. Ruxsatni 1024 ga tüşiring — TD qancha bölishi kerak? (256 px/m.)",
+            "2048 px, uluş 0,5, ölçam 2 m: TD = 512 px/m bölishini tekşiring. Ruxsatni 1024 ga tuşiring — TD qancha bölishi kerak? (256 px/m.)",
             "Maqsad TD = 512 px/m va 2-obyekt ölçami 0,5 m bölsa, u tekstura tomonining qançasini egallashi kerak? (2048 px da 12,5 %.)",
-            "Ulüşni 1 ga çiqaring va ölçamni 4 m qiling: TD qanday özgardi, bir piksel qançalik (mm) bölib qoldi?"
+            "Uluşni 1 ga çiqaring va ölçamni 4 m qiling: TD qanday özgardi, bir piksel qançalik (mm) bölib qoldi?"
           ], "c");
         }
       }
