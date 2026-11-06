@@ -200,6 +200,8 @@
     S.light = V.norm(opts.light || [0.4, -0.7, 0.8]);
     S.items = []; S.onDraw = null; S.minDist = opts.minDist || 1.2; S.maxDist = opts.maxDist || 40;
     S.aspect = opts.aspect || 0.75;
+    // ixtiyoriy (qöşimça): fon rangi va ekrandagi markaz (uluşda); standart — oq fon, markaz örtada
+    S.bg = opts.bg || "#fff"; S.cx = opts.cx != null ? opts.cx : 0.5; S.cy = opts.cy != null ? opts.cy : 0.5;
     S.resize = function () {
       var r = canvas.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2.5);
       var w = Math.max(200, r.width), h = Math.round(w * S.aspect);
@@ -223,7 +225,7 @@
       var d = V.sub(p, B.e), x = V.dot(d, B.r), y = V.dot(d, B.u), z = V.dot(d, B.f);
       var s = S.h / 2 / Math.tan(S.fov / 2);
       var k = S.ortho ? s / S.dist : s / Math.max(z, 0.01);
-      return [S.w / 2 + x * k, S.h / 2 - y * k, z];
+      return [S.w * S.cx + x * k, S.h * S.cy - y * k, z];
     };
     S.add = function (it) { S.items.push(it); return it; };
     S.clear = function () { S.items = []; };
@@ -231,7 +233,7 @@
       var c = S.ctx; if (!S.w) return;
       c.setTransform(S.dpr, 0, 0, S.dpr, 0, 0);
       c.clearRect(0, 0, S.w, S.h);
-      c.fillStyle = "#fff"; c.fillRect(0, 0, S.w, S.h);
+      c.fillStyle = S.bg; c.fillRect(0, 0, S.w, S.h);
       S._B = S.basis();
       var prims = [];
       S.items.forEach(function (it) { if (it.visible !== false) it.collect(S, prims); });
@@ -304,6 +306,16 @@
         c.globalAlpha = 1;
       } });
     });
+    // ixtiyoriy: siluet (faol obyekt) konturi — old va orqa yoqlar orasidagi qirralar
+    if (o.outline) {
+      if (!m._ef) { m._ef = {}; m.f.forEach(function (f, fi) { for (var i = 0; i < f.length; i++) { var a = f[i], b = f[(i + 1) % f.length], k = a < b ? a + "_" + b : b + "_" + a; (m._ef[k] = m._ef[k] || { a: a, b: b, f: [] }).f.push(fi); } }); }
+      var fac = m.f.map(function (f) { var pts3 = f.map(function (k) { return m.v[k]; }), cen = [0, 0, 0]; pts3.forEach(function (p) { cen = V.add(cen, p); }); return V.dot(X.mesh.normal(pts3), V.sub(eye, V.mul(cen, 1 / f.length))) >= 0; });
+      Object.keys(m._ef).forEach(function (k) {
+        var e = m._ef[k]; if (e.f.length === 2 && fac[e.f[0]] === fac[e.f[1]]) return;
+        var a = P[e.a], b = P[e.b];
+        out.push({ z: -1e6, draw: function (c) { c.beginPath(); c.moveTo(a[0], a[1]); c.lineTo(b[0], b[1]); c.strokeStyle = o.outline; c.lineWidth = o.outlineW || 2.5; c.lineCap = "round"; c.stroke(); c.lineCap = "butt"; } });
+      });
+    }
     if (o.wire) X.mesh.edges(m).forEach(function (e) {
       var a = P[e[0]], b = P[e[1]];
       out.push({ z: (a[2] + b[2]) / 2 - (o.wire === "only" ? 0 : 0.001), draw: function (c) { c.beginPath(); c.moveTo(a[0], a[1]); c.lineTo(b[0], b[1]); c.strokeStyle = o.wireColor || "#2B3A67"; c.lineWidth = o.lw || 1; c.stroke(); } });
@@ -354,6 +366,7 @@
   };
   X.Grid = function (o) { this.o = o || {}; this.visible = true; };
   X.Grid.prototype.collect = function (S, out) {
+    if (this.o.fade || this.o.axisColors) return gridFancy(this.o, S, out);
     var n = this.o.n || 10, s = this.o.step || 0.5, h = n * s / 2, zUp = S.zUp;
     for (var i = 0; i <= n; i++) {
       var t = -h + i * s;
@@ -365,6 +378,36 @@
       });
     }
   };
+
+  // ixtiyoriy tör: {color, alpha, fade (markazdan uzoqlaşgan sari söniş), axisColors: [X, Y], lw}
+  function gridFancy(o, S, out) {
+    var n = o.n || 10, s = o.step || 0.5, h = n * s / 2, zUp = S.zUp, B = S._B;
+    var col = hex2rgb(o.color || "#9AA3B2"), base = o.alpha == null ? 0.22 : o.alpha, segN = o.fade ? 14 : 1, lines = [];
+    for (var i = 0; i <= n; i++) {
+      var t = -h + i * s, ax = Math.abs(t) < 1e-9;
+      lines.push({ a: [t, -h], b: [t, h], ax: ax ? 1 : -1 }, { a: [-h, t], b: [h, t], ax: ax ? 0 : -1 });
+    }
+    function w3(p) { return zUp ? [p[0], p[1], 0] : [p[0], 0, p[1]]; }
+    out.push({ z: 1e9, draw: function (c) {
+      c.lineWidth = o.lw || 1;
+      lines.forEach(function (L) {
+        var cc = L.ax >= 0 && o.axisColors ? o.axisColors[L.ax] : null;
+        for (var k = 0; k < segN; k++) {
+          var u0 = k / segN, u1 = (k + 1) / segN;
+          var p0 = [L.a[0] + (L.b[0] - L.a[0]) * u0, L.a[1] + (L.b[1] - L.a[1]) * u0], p1 = [L.a[0] + (L.b[0] - L.a[0]) * u1, L.a[1] + (L.b[1] - L.a[1]) * u1];
+          var q0 = S.project(w3(p0), B), q1 = S.project(w3(p1), B);
+          if (q0[2] < 0.15 || q1[2] < 0.15) continue;
+          var al = base;
+          if (o.fade) al = base * Math.pow(Math.max(0, 1 - Math.hypot((p0[0] + p1[0]) / 2, (p0[1] + p1[1]) / 2) / h), 1.6);
+          if (al < 0.008) continue;
+          if (cc) { c.strokeStyle = cc; c.globalAlpha = Math.min(1, al / base * 0.85); }
+          else { c.strokeStyle = "rgba(" + col.join(",") + "," + al.toFixed(3) + ")"; c.globalAlpha = 1; }
+          c.beginPath(); c.moveTo(q0[0], q0[1]); c.lineTo(q1[0], q1[1]); c.stroke();
+        }
+      });
+      c.globalAlpha = 1;
+    } });
+  }
 
   /* ---------------- 2D çizma (egri çiziqlar uçun) ---------------- */
   X.Plot = function (canvas, opts) {

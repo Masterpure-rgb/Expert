@@ -27,6 +27,35 @@
     document.body.appendChild(a); a.click(); a.remove();
   }
 
+  /* ================= server ulaş yordamçisi ================= */
+  var README = "https://github.com/Masterpure-rgb/Expert/blob/main/platform/README.md";
+  function copyText(txt) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(txt);
+    return new Promise(function (ok, no) {
+      var ta = el("textarea", { style: "position:fixed;left:-9999px;top:0" }); ta.value = txt; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy") ? ok() : no(new Error("copy")); } catch (e) { no(e); } finally { ta.remove(); }
+    });
+  }
+  function setupHelp(btnLabel, open) {
+    var copy = el("button", { class: "btn small", type: "button", onclick: async function () {
+      try {
+        var r = await fetch(EX.base + "platform/Code.gs", { cache: "no-cache" });
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        await copyText(await r.text());
+        EX.toast("Kod nusxalandi — Apps Script oynasiga qöying", "ok");
+      } catch (e) { EX.toast("Kodni nusxalab bölmadi. Qöllanmadagi havola orqali Code.gs faylini oçib, qölda nusxalang.", "bad"); }
+    } }, "Kodni nusxalaş");
+    return el("details", { class: "setup", open: !!open },
+      el("summary", null, "Serverni ulaş: 4 qadam"),
+      el("ol", { class: "setup-steps" },
+        el("li", null, el("p", null, "Google hisobingizda yangi jadval yarating."),
+          el("a", { class: "btn small", href: "https://sheets.new", target: "_blank", rel: "noopener" }, "Google Sheets oçiş")),
+        el("li", null, el("p", { html: "Jadval menyusidan <b>Kengaytmalar → Apps Script</b> bölimini oçing." })),
+        el("li", null, el("p", { html: "Platforma kodini nusxalang va Apps Script oynasidagi namunaviy kod örniga qöyib saqlang. Söng <b>Run → setup</b> ni bosing va Google ruxsat söraganda tasdiqlang." }), copy),
+        el("li", null, el("p", { html: "<b>Deploy → New deployment → Web app</b> ni tanlang (Execute as: <b>Me</b>, Who has access: <b>Anyone</b>). Hosil bölgan <b>…/exec</b> manzilini nusxalab, yuqoridagi maydonga qöying va «" + btnLabel + "» tugmasini bosing." }))),
+      el("p", { class: "muted" }, "Batafsil qöllanma: ", el("a", { href: README, target: "_blank", rel: "noopener" }, "platform/README.md")));
+  }
+
   /* ================= kiriş ================= */
   async function boot() {
     document.title = "Öqituvçi paneli — 3D modellaştiriş";
@@ -65,16 +94,16 @@
       } },
       el("label", { class: "f" }, "Server (Google Apps Script) manzili"), apiIn,
       el("p", { class: "muted" }, ping.ok ? (EX.isDemo() ? "Demo rejim: maʼlumotlar faqat şu brauzerda saqlanadi." : "Server bilan aloqa bor ✓ (versiya " + ping.version + ")") : "Serverga ulanib bölmadi: " + (ping.error || "")),
+      setupHelp(first ? "Parolni örnatiş va kiriş" : "Kiriş", EX.isDemo()),
       el("label", { class: "f" }, first ? "Yangi parol (kamida 6 belgi)" : "Parol"), pass,
       el("div", { style: "height:12px" }), btn,
       msg ? el("p", { class: "note bad", style: "margin-top:12px" }, msg) : null));
-    w.appendChild(el("p", { class: "muted" }, "Server hali ulanmagan bölsa, manzil maydonini böş qoldirib demo rejimda sinab köring. Ulaş tartibi: ",
-      el("a", { href: "https://github.com/Masterpure-rgb/Expert/blob/main/platform/README.md", target: "_blank" }, "platform/README.md")));
+    w.appendChild(el("p", { class: "muted" }, "Server hali ulanmagan bölsa, manzil maydonini böş qoldirib demo rejimda sinab köring."));
   }
 
   /* ================= qobiq ================= */
   var PAGES = [
-    ["home", "Bosh sahifa"], ["live", "Jonli dars"], ["students", "Talabalar"], ["attendance", "Davomat"],
+    ["home", "Boş sahifa"], ["live", "Jonli dars"], ["students", "Talabalar"], ["attendance", "Davomat"],
     ["gradebook", "Jurnal"], ["bank", "Savollar banki"], ["settings", "Sozlamalar"]
   ];
   function shell() {
@@ -99,7 +128,7 @@
 
   /* ================= bosh sahifa ================= */
   async function pageHome() {
-    main.appendChild(el("h1", null, "Bosh sahifa"));
+    main.appendChild(el("h1", null, "Boş sahifa"));
     if (EX.isDemo()) main.appendChild(el("p", { class: "note warn" }, "Demo rejim: maʼlumotlar şu brauzerda saqlanadi. Haqiqiy dars uçun Sozlamalar böliminda server manzilini kiriting."));
     var [st, ls, bk] = await Promise.all([call("a_students"), call("a_lessons"), call("a_bank")]);
     S.students = st.talabalar || []; S.lessons = ls.darslar || [];
@@ -166,7 +195,8 @@
     var t = window.topicInfo(d.mavzu);
     document.documentElement.style.setProperty("--accent", t.color);
     document.documentElement.style.setProperty("--accent-soft", t.soft);
-    var box = el("div", { class: "panel" });
+    document.documentElement.style.setProperty("--acc", t.hi);
+    var box = el("div", { class: "panel live-panel" });
     main.appendChild(box);
     var codeEl = el("div", { class: "live-code" }, d.kod || "—");
     var stageInfo = el("p", { class: "muted" });
@@ -196,7 +226,7 @@
       el("label", { class: "muted" }, "Savollar soni ", pickIn), el("label", { class: "muted" }, "Vaqt (daqiqa, 0 — çeklovsiz) ", minIn)));
     box.appendChild(stageBtns);
     box.appendChild(el("div", { class: "row", style: "margin-top:12px;align-items:flex-end" },
-      el("div", { class: "grow" }, el("div", { class: "muted" }, "Sessiya kodi"), codeEl, stageInfo),
+      el("div", { class: "grow" }, el("div", { class: "muted live-label" }, "Sessiya kodi"), codeEl, stageInfo),
       el("div", { class: "row" },
         el("button", { class: "btn", onclick: projector }, "Projektor rejimi"),
         el("button", { class: "btn", onclick: async function () { await call("a_stage_close", { darsId: d.id }); EX.toast("Bosqiç yopildi", "ok"); refresh(); } }, "Bosqiçni yopiş"),
@@ -215,6 +245,7 @@
       if (!r.ok) return;
       d = r.dars;
       codeEl.textContent = d.bosqich ? d.kod : "—";
+      box.classList.toggle("is-live", !!d.bosqich);
       stageInfo.textContent = d.bosqich ? ("Faol bosqiç: " + d.bosqich + (d.tugash ? " · tugaşiga " + Math.max(0, Math.round((Number(d.tugash) - r.serverVaqt) / 1000)) + " s" : "")) : "Hozir faol bosqiç yöq";
       counts.innerHTML = "";
       counts.appendChild(kpi(r.kirgan + " / " + r.guruhSoni, "kirgan talabalar"));
@@ -246,7 +277,7 @@
       respBox.appendChild(el("h2", null, "Javoblar (" + r.javoblar.length + ")"));
       var bankR = await call("a_bank", { mavzu: d.mavzu });
       var qmap = {}; (bankR.savollar || []).forEach(function (q) { qmap[q.id] = q; });
-      respBox.appendChild(table(["Talaba", "Bosqiç", "Ball", "Holat", "Ochiq javoblar"], r.javoblar.map(function (x) {
+      respBox.appendChild(table(["Talaba", "Bosqiç", "Ball", "Holat", "Oçiq javoblar"], r.javoblar.map(function (x) {
         var ans = JSON.parse(x.javoblar || "{}"), marks = JSON.parse(x.baholar || "{}");
         var opens = Object.keys(ans).filter(function (k) { return qmap[k] && qmap[k].tur === "open"; });
         var cell = el("div");
@@ -264,7 +295,7 @@
       })));
     }
     function projector() {
-      var ov = el("div", { class: "projector" });
+      var ov = el("div", { class: "projector" + (box.classList.contains("is-live") ? " is-live" : "") });
       var c = el("div", null,
         el("div", { class: "muted", style: "font-size:2.2vw" }, "M" + d.mavzu + ". " + t.short),
         el("div", { class: "live-code", id: "pcode" }, codeEl.textContent),
@@ -400,7 +431,7 @@
       var tbody = [], painters = [];
       studs.forEach(function (s, i) {
         var st = state[s.id];
-        var bK = el("button", { class: "keldi" }, "Keldi"), bN = el("button", { class: "kelmadi" }, "Kelmadi"), bL = el("button", { class: "kech" }, "Kech qoldi");
+        var bK = el("button", { class: "keldi" }, "Keldi"), bN = el("button", { class: "kelmadi" }, "Kelmadi"), bL = el("button", { class: "kech" }, "Keç qoldi");
         var mins = el("input", { type: "number", min: 0, max: 240, value: st.kechikish || "", placeholder: "daq." });
         var note = el("input", { value: st.izoh, placeholder: "izoh", style: "width:140px;min-height:34px;padding:5px 8px" });
         function paint() {
@@ -421,7 +452,7 @@
           painters.forEach(function (p) { p(); });
         } }, "Belgilanmaganlarni «Keldi»")));
       function renderTable() {
-        box.appendChild(table(["№", "F.I.Ş.", "Holat va kechikiş (daqiqa)", "Izoh", "Manba"], tbody));
+        box.appendChild(table(["№", "F.I.Ş.", "Holat va keçikiş (daqiqa)", "Izoh", "Manba"], tbody));
         box.appendChild(el("div", { style: "height:12px" }));
         box.appendChild(el("button", { class: "btn primary", onclick: async function () {
           var rows = studs.filter(function (s) { return state[s.id].holat; }).map(function (s) { return { talabaId: s.id, holat: state[s.id].holat, kechikish: state[s.id].kechikish, izoh: state[s.id].izoh }; });
@@ -449,7 +480,7 @@
       last = res.jurnal || [];
       var used = {}; last.forEach(function (s) { Object.keys(s.mavzular).forEach(function (k) { used[k] = 1; }); });
       var cols = Object.keys(used).map(Number).sort(function (a, b) { return a - b; });
-      var head = ["F.I.Ş.", "ID"].concat(cols.map(function (c) { return "M" + c; })).concat(["Jami", "Keldi", "Kech", "Kelmadi", "Kech (daq.)"]);
+      var head = ["F.I.Ş.", "ID"].concat(cols.map(function (c) { return "M" + c; })).concat(["Jami", "Keldi", "Keç", "Kelmadi", "Keç (daq.)"]);
       box.appendChild(table(head, last.sort(function (a, b) { return b.jami - a.jami; }).map(function (s) {
         return [s.fio, s.id].concat(cols.map(function (c) { return EX.fmt(s.mavzular[c] || 0); }))
           .concat([el("b", null, EX.fmt(s.jami)), String(s.keldi), String(s.kech), String(s.kelmadi), String(s.kechDaqiqa)]);
@@ -508,7 +539,7 @@
     main.appendChild(table(["Mavzu", "A. Test", "B. Nazariy", "C. Masala", ""], window.TOPICS.map(function (t) {
       var c = by[t.n] || { A: 0, B: 0, C: 0 };
       return ["M" + t.n + ". " + t.short, String(c.A), String(c.B), String(c.C),
-        el("button", { class: "btn small", onclick: function () { showTopic(t.n); } }, "Körish")];
+        el("button", { class: "btn small", onclick: function () { showTopic(t.n); } }, "Köriş")];
     })));
     var view = el("div"); main.appendChild(view);
     function showTopic(n) {
@@ -537,7 +568,7 @@
     main.appendChild(el("div", { class: "panel" }, el("h2", null, "Baholaş va davomat"),
       el("label", { class: "f" }, one, " Har bir töğri javob = 1 ball (bankdagi ball qiymatlari örniga)"),
       el("label", { class: "f" }, "Talabaga natijani körsatiş"), show,
-      el("label", { class: "f" }, "QR orqali kirganda «kech qoldi» deb hisoblaş çegarasi (daqiqa)"), late,
+      el("label", { class: "f" }, "QR orqali kirganda «keç qoldi» deb hisoblaş çegarasi (daqiqa)"), late,
       el("label", { class: "f" }, code, " Sessiya kodini talab qiliş (auditoriyadan taşqarida javob berişning oldini oladi)"),
       el("div", { style: "height:12px" }),
       el("button", { class: "btn primary", onclick: async function () {
@@ -550,7 +581,7 @@
     var apiIn = el("input", { value: EX.apiUrl() });
     main.appendChild(el("div", { class: "panel" }, el("h2", null, "Server manzili"),
       el("p", { class: "muted" }, "Bu manzil faqat şu brauzerda saqlanadi. Talabalar sahifalari uçun manzilni GitHubʼdagi config.js fayliga ham yozing."),
-      apiIn, el("div", { style: "height:10px" }),
+      apiIn, setupHelp("Saqlaş va tekşiriş", !EX.apiUrl()), el("div", { style: "height:10px" }),
       el("button", { class: "btn", onclick: async function () {
         try { if (apiIn.value.trim()) localStorage.setItem("ex_api", apiIn.value.trim()); else localStorage.removeItem("ex_api"); } catch (e) {}
         var p = await EX.api("ping", {}); EX.toast(p.ok ? "Aloqa bor ✓" : ("Xato: " + p.error), p.ok ? "ok" : "bad");

@@ -102,7 +102,7 @@
         c.fillText("u = " + f(uu, 3) + ";  Σ N = " + f(sum, 3), x0 + 6, 14);
       };
 
-      L.add(EX.el("div", { class: "legend", html: '<span><i style="background:rgba(47,158,68,.35)"></i>Haqiqiy oraliq [U<sub>p</sub>; U<sub>m−p</sub>]</span><span><i style="background:rgba(232,89,12,.45)"></i>Tanlangan nuqta taʼsiri</span><span><i style="background:#fff;border:1.5px solid #18202F"></i>Egri bölaklari çegarasi C(U<sub>j</sub>)</span>' }), "main");
+      L.add(EX.el("div", { class: "legend", html: '<span><i style="background:rgba(47,158,68,.35)"></i>Haqiqiy oraliq [U<sub>p</sub>; U<sub>m−p</sub>]</span><span><i style="background:rgba(232,89,12,.45)"></i>Tanlangan nuqta taʼsiri</span><span><i style="background:#fff;border:1.5px solid #18202F;box-shadow:0 0 0 1px #AEB6C2"></i>Egri bölaklari çegarasi C(U<sub>j</sub>)</span>' }), "main");
 
       function refreshU() { var r = range(knots()); sU.setRange(r[0], r[1]); if (st.u < r[0] || st.u > r[1]) { st.u = Math.min(Math.max(st.u, r[0]), r[1]); } sU.set(st.u, true); }
       function interior() { var a = []; for (var j = st.p + 1; j <= M() - st.p - 1; j++) a.push(j); return a; }

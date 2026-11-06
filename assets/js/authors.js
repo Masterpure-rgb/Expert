@@ -6,7 +6,7 @@
     var wrap = EX.el("main", { class: "wrap authors-page" });
     document.body.appendChild(wrap);
     var cfg = window.EXPERT_CONFIG || {};
-    wrap.appendChild(EX.el("section", { class: "hero" },
+    wrap.appendChild(EX.el("section", { class: "hero plain" },
       EX.el("h1", null, "Mualliflar"),
       EX.el("p", null, "«" + (cfg.kitob || "3D modellaştiriş texnologiyalari") + "» öquv qöllanmasi. " + (cfg.universitet || ""))));
     var data = { authors: [] };
@@ -16,10 +16,12 @@
     data.authors.forEach(function (a) {
       var img = EX.el("img", { src: EX.base + a.img, alt: a.full || a.name, style: a.pos ? "object-position:" + a.pos : null });
       img.addEventListener("click", function () { big.src = EX.base + (a.full_img || a.img); big.alt = a.full || a.name; if (dlg.showModal) dlg.showModal(); });
-      wrap.appendChild(EX.el("article", { class: "acard", id: a.id }, img,
-        EX.el("div", null,
-          EX.el("h2", null, a.full || a.name),
-          EX.el("p", { class: "role" }, a.role || ""),
+      img.setAttribute("title", "Kattalaştiriş");
+      wrap.appendChild(EX.el("article", { class: "acard", id: a.id }, EX.el("div", { class: "ac-photo" }, img),
+        EX.el("div", { class: "ac-txt" },
+          EX.el("div", { class: "ac-lt" },
+            EX.el("h2", null, a.full || a.name),
+            EX.el("p", { class: "role" }, a.role || "")),
           (a.bio || []).map(function (p) { return EX.el("p", null, p); }))));
     });
     wrap.appendChild(EX.el("p", null, EX.el("a", { href: EX.base }, "← Bosh sahifa")));

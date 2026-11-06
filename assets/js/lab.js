@@ -26,7 +26,10 @@
     var st = EX.el("div", { class: "stage" });
     var cv = EX.el("canvas", { role: "img", "aria-label": hint || "Interaktiv sahna" });
     st.appendChild(cv);
-    if (hint) st.appendChild(EX.el("div", { class: "hint" }, hint));
+    // monitor pastki ramkasi: izoh va butun ekran tugmasi
+    var chin = EX.el("div", { class: "stage-bar" });
+    chin.appendChild(EX.el("div", { class: "hint" }, hint || ""));
+    st.appendChild(chin);
     var fs = EX.el("button", { class: "fs", type: "button", title: "Butun ekran", "aria-label": "Butun ekran",
       html: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>' });
     fs.addEventListener("click", function () {
@@ -39,7 +42,7 @@
     document.addEventListener("fullscreenchange", function () {
       if (!document.fullscreenElement && st.classList.contains("full")) { st.classList.remove("full"); document.body.classList.remove("noscroll"); }
     });
-    st.appendChild(fs);
+    chin.appendChild(fs);
     (this._target || this.top).appendChild(st);
     this._stages++;
     this.top.classList.toggle("one", this._stages === 1);
@@ -98,7 +101,7 @@
     var inp = EX.el("input", { type: "range", min: o.min, max: o.max, step: o.step || 1, value: o.value, "aria-label": o.label });
     var wrap = EX.el("div", { class: "ctl" }, EX.el("label", null, EX.el("span", null, o.label), out), inp);
     function val() { return Number(inp.value); }
-    function show() { out.textContent = fmt(val()); }
+    function show() { out.textContent = fmt(val()); EX.rangeFill(inp); }
     inp.addEventListener("input", function () { show(); if (cb) cb(val()); });
     show();
     this._put(wrap, o.where);
@@ -249,6 +252,10 @@
     show(h - 1);
     window.addEventListener("hashchange", function () { var k = Number((location.hash || "").replace("#", "")) || 1; show(k - 1); });
   };
+  // tugma bosilgandan keyin (masalan «Kitob misoli») diapazonlar töldirişini yangilaş
+  document.addEventListener("click", function () {
+    setTimeout(function () { EX.$$("input[type=range]").forEach(EX.rangeFill); }, 0);
+  });
   // laboratoriya fayli hali joylanmagan bölsa — vaqtinçalik sahifa
   document.addEventListener("DOMContentLoaded", function () {
     if (LAB._started) return;

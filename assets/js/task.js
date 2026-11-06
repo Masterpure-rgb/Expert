@@ -223,7 +223,7 @@
     try { data = await EX.fetchJSON("data/practice/" + t.nn + ".json"); }
     catch (e) { root.appendChild(el("p", { class: "note bad" }, "Maşq savollari hali joylanmagan.")); return; }
     var score = 0, done = 0;
-    var info = el("p", { class: "muted" }, "Har bir savolni belgilang — javob darhol tekşiriladi.");
+    var info = el("p", { class: "muted prac-score", "aria-live": "polite" }, "Har bir savolni belgilang — javob darhol tekşiriladi.");
     root.appendChild(info);
     data.items.forEach(function (q, i) {
       var box = el("section", { class: "q" }, el("div", { class: "qh" }, el("span", { class: "qn" }, (i + 1) + "."), el("span", { class: "qt" }, q.q)));

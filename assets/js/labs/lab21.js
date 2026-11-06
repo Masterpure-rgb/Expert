@@ -103,12 +103,12 @@
   var SYM = ["○", "▲", "●"], SCOL = ["#9AA3B2", C.gold, C.green];
   function tab2(L) {
     var st = { fm: "gltf", req: {} };
-    var box = EX.el("div", { class: "stage", style: "padding:6px;touch-action:auto;overflow-x:auto" });
+    var box = EX.el("div", { class: "stage sheet", style: "padding:6px;touch-action:auto;overflow-x:auto" });
     L.inTop(box);
     var card = L.note("", "main"), R = L.readout([["m", "Mos formatlar"], ["k", "Tanlangan talablar"]], "main");
     function ok(fm) { return Object.keys(st.req).every(function (k) { return !st.req[k] || FE.filter(function (e) { return e.id === k; })[0].v[fm.id][0] >= 1; }); }
     function render() {
-      var h = '<table style="width:100%;border-collapse:collapse;font-size:12.5px;text-align:center"><thead><tr><th style="text-align:left;padding:4px 2px;font-size:12px;color:#7A8396">Xususiyat (bosing — talab)</th>';
+      var h = '<table style="width:100%;border-collapse:collapse;font-size:12.5px;text-align:center"><thead><tr><th style="text-align:left;padding:4px 2px;font-size:12px;color:#5E6778">Xususiyat (bosing — talab)</th>';
       FM.forEach(function (fm) { var on = fm.id === st.fm, mt = ok(fm); h += '<th data-fm="' + fm.id + '" style="padding:5px 1px;cursor:pointer;border-radius:8px 8px 0 0;' + (on ? "background:" + C.violet + ";color:#fff;" : "") + (mt ? "" : "opacity:.35;") + '">' + fm.n + "</th>"; });
       h += "</tr></thead><tbody>";
       FE.forEach(function (e) {
@@ -185,15 +185,15 @@
     var cv = L.canvas({ aspect: 1.04 });
     var info = L.note("", "side");
     var R = L.readout([["j", "JSON bölagi"], ["b", "BIN bölagi"], ["t", "GLB jami"]], "main");
-    var pre = EX.el("pre", { style: "margin:0;padding:10px;background:#F3F5FA;border:1px solid #DCE1EA;border-radius:10px;font-size:12px;line-height:1.5;overflow-x:auto;white-space:pre-wrap;word-break:break-all" });
+    var pre = EX.el("pre", { style: "margin:0;padding:10px;background:var(--room);color:var(--ink);border:1px solid var(--line);border-radius:8px;font-size:12px;line-height:1.5;overflow-x:auto;white-space:pre-wrap;word-break:break-all" });
     L.add(EX.el("div", { class: "lab-cap" }, "Minimal glTF 2.0: bitta uçburçak (3 çöqqi), indekssiz"), "main");
     L.add(pre, "main");
-    var snip = EX.el("pre", { style: "margin:0;padding:10px;background:#F4EEFA;border:1px solid #DCE1EA;border-radius:10px;font-size:12px;line-height:1.5;overflow-x:auto;white-space:pre-wrap", hidden: true });
+    var snip = EX.el("pre", { style: "margin:0;padding:10px;background:var(--room);color:var(--ink);border:1px solid var(--line);border-left:3px solid #C890F9;border-radius:8px;font-size:12px;line-height:1.5;overflow-x:auto;white-space:pre-wrap", hidden: true });
     L.add(snip, "main");
     function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
     function renderJson() {
       var sel = st.sel, key = sel === "prim" ? "prim" : sel;
-      pre.innerHTML = JL.map(function (q) { var on = q[1].split(" ").indexOf(key) >= 0; var t = q[0]; if (t.indexOf("base64,") > 0) t = t.replace(/base64,[A-Za-z0-9+\/=]+/, "base64," + URI.slice(URI.indexOf("base64,") + 7, URI.indexOf("base64,") + 19) + "…"); return '<span style="display:block;' + (on ? "background:rgba(255,212,59,.45);font-weight:700" : "color:#4A5468") + '">' + esc(t) + "</span>"; }).join("");
+      pre.innerHTML = JL.map(function (q) { var on = q[1].split(" ").indexOf(key) >= 0; var t = q[0]; if (t.indexOf("base64,") > 0) t = t.replace(/base64,[A-Za-z0-9+\/=]+/, "base64," + URI.slice(URI.indexOf("base64,") + 7, URI.indexOf("base64,") + 19) + "…"); return '<span style="display:block;' + (on ? "background:rgba(255,212,59,.3);color:var(--ink);font-weight:700" : "color:var(--ink-3)") + '">' + esc(t) + "</span>"; }).join("");
     }
     var BM = {}; BOX.forEach(function (b) { BM[b.id] = b; });
     function tx(b) { return b; }
@@ -239,7 +239,7 @@
       { id: "b", t: "BIN bölagi", s: "8 bayt + maʼlumot", col: C.green, d: "<b>BIN bölagi (ixtiyoriy):</b> chunkLength, chunkType = 0x004E4942 («BIN\\0»), söng xom baytlar (çöqqilar, indekslar, tasvirlar); 4 baytga karrali qilib nollar bilan töldiriladi. JSON dagi urisiz birinçi buffer şu bölakka işora qiladi." }
     ];
     GS.forEach(function (s) {
-      var b = EX.el("button", { type: "button", style: "flex:" + (s.id === "h" ? 1 : s.id === "j" ? 2.2 : 1.6) + ";border:2px solid " + s.col + ";background:#fff;border-radius:10px;padding:8px 4px;font:inherit;cursor:pointer;min-height:56px", html: "<b style='display:block;font-size:13px;color:" + s.col + "'>" + s.t + "</b><span style='font-size:11px;color:#4A5468'>" + s.s + "</span>" });
+      var b = EX.el("button", { type: "button", style: "flex:" + (s.id === "h" ? 1 : s.id === "j" ? 2.2 : 1.6) + ";border:2px solid " + s.col + ";background:var(--deck-2);color:var(--ink);border-radius:8px;padding:8px 4px;font:inherit;cursor:pointer;min-height:56px", html: "<b style='display:block;font-size:13px'>" + s.t + "</b><span style='font-size:11px;color:var(--ink-2)'>" + s.s + "</span>" });
       b.addEventListener("click", function () { glbNote.innerHTML = s.d + (s.id === "h" ? " Bu misolda: length = " + f(g.total, 0) + " bayt." : s.id === "j" ? " Bu misolda JSON " + f(g.n, 0) + " bayt, 4 ga karrali: " + f(g.jp, 0) + " bayt (+" + g.pad + " probel)." : " Bu misolda 36 bayt (3 çöqqi × 12 bayt)."); });
       glb.appendChild(b);
     });

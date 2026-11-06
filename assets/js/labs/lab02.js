@@ -62,15 +62,15 @@
     function renderDetail(scroll) {
       var e = EV[st.sel];
       detail.style.borderLeftColor = CAT[e.c].col;
-      detail.innerHTML = '<div style="font-weight:800;font-size:22px;color:' + CAT[e.c].col + '">' + e.y + '</div><div style="font-weight:700;font-size:17px">' + e.t + '</div><div style="color:var(--ink-2);font-size:14px;margin:2px 0 6px">' + e.w + " · " + CAT[e.c].name + "</div><div>" + e.d + "</div>";
+      detail.innerHTML = '<div style="font-weight:800;font-size:22px">' + e.y + '</div><div style="font-weight:700;font-size:17px">' + e.t + '</div><div style="color:var(--ink-2);font-size:14px;margin:2px 0 6px">' + e.w + " · " + CAT[e.c].name + "</div><div>" + e.d + "</div>";
       Array.prototype.forEach.call(list.children, function (b, k) { b.style.outline = k === st.sel ? "3px solid " + CAT[EV[k].c].col : "none"; });
       cv.redraw();
       if (scroll && detail.scrollIntoView) detail.scrollIntoView({ block: "nearest", behavior: "smooth" });
     }
     function select(k, scroll) { st.sel = k; renderDetail(scroll); }
     EV.forEach(function (e, k) {
-      var b = EX.el("button", { type: "button", style: "text-align:left;border:1px solid var(--line);border-left:5px solid " + CAT[e.c].col + ";background:#fff;border-radius:10px;padding:8px 10px;font:600 14px var(--font);cursor:pointer" },
-        EX.el("span", { style: "color:" + CAT[e.c].col + ";font-weight:800" }, e.y + "  "), e.t);
+      var b = EX.el("button", { type: "button", style: "text-align:left;border:1px solid var(--line);border-left:5px solid " + CAT[e.c].col + ";background:var(--deck-2);color:var(--ink);border-radius:8px;padding:8px 10px;min-height:40px;font:600 14px var(--font);cursor:pointer" },
+        EX.el("span", { style: "color:var(--ink-2);font-weight:800" }, e.y + "  "), e.t);
       b.addEventListener("click", function () { select(k, true); });
       b.dataset.k = k; list.appendChild(b);
     });

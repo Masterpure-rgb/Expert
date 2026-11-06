@@ -114,7 +114,7 @@
             var e1 = radialErr(ctrl, circW(S2), p, U, 4000), e2 = radialErr(ctrl, null, p, U, 4000), e3 = radialErr(ctrl, circW(st.wc), p, U, 4000);
             R.setMany({ e1: sci(e1), e2: sci(e2), e3: sci(e3), w3: f(st.wc, Math.abs(st.wc - S2) < 1e-12 ? 4 : 2) });
           };
-          L.add(EX.el("div", { class: "legend", html: '<span><i style="background:' + C.violet + '"></i>Aniq NURBS (w = √2/2 ≈ 0,7071)</span><span><i style="background:' + C.orange + '"></i>Köphadli (w = 1)</span><span><i style="background:' + C.green + '"></i>Qöldan vazn (punktir)</span><span><i style="background:rgba(24,32,47,.4)"></i>Birlik aylana</span>' }), "main");
+          L.add(EX.el("div", { class: "legend", html: '<span><i style="background:' + C.violet + '"></i>Aniq NURBS (w = √2/2 ≈ 0,7071)</span><span><i style="background:' + C.orange + '"></i>Köphadli (w = 1)</span><span><i style="background:' + C.green + '"></i>Qöldan vazn (punktir)</span><span><i style="background:#A3A6AC"></i>Birlik aylana</span>' }), "main");
           var sw = L.slider({ label: "Burçak nuqtalari vazni w", min: 0.3, max: 1.5, step: 0.01, value: st.wc, nd: 2 }, function (v) { st.wc = v; P.draw(); });
           L.button("w = √2/2 qöyiş", function () { st.wc = S2; sw.set(0.71, true); P.draw(); });
           L.note("Knot vektori U = (0, 0, 0, ¼, ¼, ½, ½, ¾, ¾, 1, 1, 1), vaznlar (1, √2/2, 1, √2/2, 1, √2/2, 1, √2/2, 1). «Xato» — max | ‖C(u)‖ − 1 | (4000 nuqtada). Aniq vaznda xato ~ 10⁻¹⁶ (suzuvçi nuqta yaxlitlaşi), köphadli egri çiziqda ≈ 0,0607 (burçak yönalişida ‖C‖ = 3√2/4 ≈ 1,0607).", "main");

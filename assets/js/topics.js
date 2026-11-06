@@ -1,13 +1,14 @@
-/* 21 mavzu va 8 blok — kitob bilan bir xil sarlavhalar va ranglar. */
+/* 21 mavzu va 8 blok — kitob bilan bir xil sarlavhalar va ranglar.
+   hi — şu rangning qoronği fon uçun yorqinlaştirilgan varianti (ton saqlangan, kontrast ≥ 6:1). */
 window.BLOCKS = {
-  1: { name: "Nazariy asoslar", color: "#3E63DD", soft: "#E8EDFB" },
-  2: { name: "Polygonal modellaştiriş", color: "#0C9488", soft: "#E1F5F2" },
-  3: { name: "Egri çiziqlar nazariyasi", color: "#8E4EC6", soft: "#F2EAFA" },
-  4: { name: "NURBS, sirtlar va differensial geometriya", color: "#6E56CF", soft: "#EEEBFB" },
-  5: { name: "Geometrik obyektlar va avatarlar", color: "#E8590C", soft: "#FDEDE3" },
-  6: { name: "Teksturalaş va materiallar", color: "#D6336C", soft: "#FBE7EE" },
-  7: { name: "Yoritiş va renderlaş", color: "#B98900", soft: "#FBF3D9" },
-  8: { name: "Optimallaştiriş, VR/AR va eksport", color: "#2F9E44", soft: "#E6F4E9" }
+  1: { name: "Nazariy asoslar", color: "#3E63DD", soft: "#E8EDFB", hi: "#8BA5F9" },
+  2: { name: "Polygonal modellaştiriş", color: "#0C9488", soft: "#E1F5F2", hi: "#19C3B1" },
+  3: { name: "Egri çiziqlar nazariyasi", color: "#8E4EC6", soft: "#F2EAFA", hi: "#C890F9" },
+  4: { name: "NURBS, sirtlar va differensial geometriya", color: "#6E56CF", soft: "#EEEBFB", hi: "#AE9BFA" },
+  5: { name: "Geometrik obyektlar va avatarlar", color: "#E8590C", soft: "#FDEDE3", hi: "#FF8F57" },
+  6: { name: "Teksturalaş va materiallar", color: "#D6336C", soft: "#FBE7EE", hi: "#F883AC" },
+  7: { name: "Yoritiş va renderlaş", color: "#B98900", soft: "#FBF3D9", hi: "#E3AA1B" },
+  8: { name: "Optimallaştiriş, VR/AR va eksport", color: "#2F9E44", soft: "#E6F4E9", hi: "#4CC764" }
 };
 window.TOPICS = [
   { n: 1, b: 1, title: "Uç ölçovli modellaştiriş texnologiyalariga kiriş", short: "3D modellaştirişga kiriş", lab: "Koordinatalar va transformatsiyalar", amaliy: [1, 3] },
@@ -36,5 +37,5 @@ window.topicInfo = function (n) {
   var t = window.TOPICS[Number(n) - 1];
   if (!t) return null;
   var b = window.BLOCKS[t.b];
-  return Object.assign({}, t, { color: b.color, soft: b.soft, blockName: b.name, nn: (t.n < 10 ? "0" : "") + t.n });
+  return Object.assign({}, t, { color: b.color, soft: b.soft, hi: b.hi, blockName: b.name, nn: (t.n < 10 ? "0" : "") + t.n });
 };

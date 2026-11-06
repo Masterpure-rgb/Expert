@@ -186,6 +186,7 @@
     if (!t) return t;
     document.documentElement.style.setProperty("--accent", t.color);
     document.documentElement.style.setProperty("--accent-soft", t.soft);
+    if (t.hi) document.documentElement.style.setProperty("--acc", t.hi);
     return t;
   };
 })();
