@@ -1,0 +1,20 @@
+{
+ "topic": 9,
+ "file": "audio/09.mp3",
+ "duration": 56.08,
+ "voice": "Ovoz: Gemini 3.8 Flash TTS (sunʼiy intellekt), matn mualliflar tomonidan tayyorlangan.",
+ "paragraphs": [
+  {
+   "text": "Assalomu alaykum! Bugungi asosiy ğoya: B-spline egri çiziği köp kiçik bölaklardan iborat, ular özaro silliq ulanadi va har bir boşqaruv nuqtasi egri çiziqning faqat kiçik bir qismini boşqaradi. Qaysi qismni boşqarişini tugunlar vektori deb ataladigan sonlar qatori belgilaydi.",
+   "start": 0.0
+  },
+  {
+   "text": "Virtual studiyada kamera boşlovçi atrofida uzun silliq yöl böylab harakatlanayotganini tasavvur qiling. Rejissyor faqat oxirgi burilişni yumşatişni söraydi. Oddiy Bezier egri çiziğida bitta nuqtani surganingizda butun yöl özgarib ketadi, B-spline egri çiziğida esa faqat öşa buriliş özgaradi, qolgan kadrlar joyida qoladi.",
+   "start": 20.52
+  },
+  {
+   "text": "Aynan şu lokal boşqaruv tufayli B-spline va uning davomi bölgan NURBS dizayn, avtomobilsozlik va televideniye grafikasida asosiy vositaga aylangan. Laboratoriyada sinab köring va QR-topşiriqni bajaring.",
+   "start": 41.92
+  }
+ ]
+}

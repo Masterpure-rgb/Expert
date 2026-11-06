@@ -32,7 +32,7 @@
   function pstr(p) { return "(" + f(p[0], 2) + "; " + f(p[1], 2) + ")"; }
 
   LAB.start({
-    intro: "Bezier egri çizigi boşqaruv nuqtalari bilan beriladi: egri birinçi va oxirgi nuqtadan ötadi, oraliq nuqtalar esa uni özi tomon «tortadi». Har bir nuqta de Casteljau algoritmida ketma-ket çiziqli interpolyatsiya bilan topiladi.",
+    intro: "Bezier egri çiziği boşqaruv nuqtalari bilan beriladi: egri birinçi va oxirgi nuqtadan ötadi, oraliq nuqtalar esa uni özi tomon «tortadi». Har bir nuqta de Casteljau algoritmida ketma-ket çiziqli interpolyatsiya bilan topiladi.",
     tabs: [
       {
         name: "De Casteljau qurilişi",

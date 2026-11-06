@@ -151,7 +151,7 @@
   }
 
   LAB.start({
-    intro: "B-spline egri çizigi C(u) = Σ N<sub>i,p</sub>(u)·P<sub>i</sub> boşqaruv nuqtalari va <b>tugunlar vektori</b> U = (U<sub>0</sub> ≤ … ≤ U<sub>m</sub>) bilan aniqlanadi. Bazis funksiyalar Cox–de Boor rekurrensi bilan hisoblanadi, har biri faqat p + 1 ta tugun oraliğida nolmas.",
+    intro: "B-spline egri çiziği C(u) = Σ N<sub>i,p</sub>(u)·P<sub>i</sub> boşqaruv nuqtalari va <b>tugunlar vektori</b> U = (U<sub>0</sub> ≤ … ≤ U<sub>m</sub>) bilan aniqlanadi. Bazis funksiyalar Cox–de Boor rekurrensi bilan hisoblanadi, har biri faqat p + 1 ta tugun oraliğida nolmas.",
     tabs: [
       {
         name: "Daraja va tugunlar turi",

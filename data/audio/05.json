@@ -1,0 +1,20 @@
+{
+ "topic": 5,
+ "file": "audio/05.mp3",
+ "duration": 52.36,
+ "voice": "Ovoz: Gemini 3.8 Flash TTS (sunʼiy intellekt), matn mualliflar tomonidan tayyorlangan.",
+ "paragraphs": [
+  {
+   "text": "Assalomu alaykum, aziz talabalar! Bugungi asosiy ğoya juda oddiy: ekrandagi har qanday uç ölçovli model — çöqqilar, ularni tutaştiruvçi qirralar va qirralar bilan çegaralangan yoqlardan iborat tör. Nuqtalarning joyi şaklni, ularning qanday ulangani esa model bilan qanday işlaşimizni belgilaydi.",
+   "start": 0.0
+  },
+  {
+   "text": "Keçki yangiliklar studiyasini eslang. Boşlovçi ortidagi yaltiroq stol va ulkan ekranlar aslida yaşil fon oldida real vaqtda çizilgan polygonal törlar. Har bir kadr soniyaning ellikdan bir qismida tayyor bölişi kerak, şuning uçun dizayner har bir yoqni hisoblab işlatadi, silliq körinişni esa normallar yordamida beradi.",
+   "start": 20.96
+  },
+  {
+   "text": "Bu bilim sizga toza, yengil va xatosiz model yaratiş imkonini beradi. Laboratoriyada sinab köring va QR-topşiriqni bajaring.",
+   "start": 42.4
+  }
+ ]
+}

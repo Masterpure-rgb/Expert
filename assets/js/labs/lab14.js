@@ -5,7 +5,7 @@
   function gauss(az, el, a0, e0, sa, se) { return Math.exp(-((az - a0) * (az - a0) / (2 * sa * sa) + (el - e0) * (el - e0) / (2 * se * se))); }
 
   /* ---------- 1-tajriba: yuz proporsiyalari (stilizatsiya) ---------- */
-  // birlik: F — yuz balandligi (soç çizigidan iyakkaça). Bosh balandligi H = 1,25 F (stilizatsiya).
+  // birlik: F — yuz balandligi (soç çiziğidan iyakkaça). Bosh balandligi H = 1,25 F (stilizatsiya).
   var HH = 1.25, YE = HH / 2;
   function catmull(c, P, closed) {
     var n = P.length;
@@ -84,11 +84,11 @@
     tabs: [
       {
         name: "Yuz proporsiyalari",
-        lead: "Stilizatsiyalangan boş çizmasida yuz proporsiyalari çiziqlarini yoqing: uçdan bir qismlar, köz çizigi, beş köz kengligi. Bu — taxminiy qoidalar, har bir yuz biroz farq qiladi.",
+        lead: "Stilizatsiyalangan boş çizmasida yuz proporsiyalari çiziqlarini yoqing: uçdan bir qismlar, köz çiziği, beş köz kengligi. Bu — taxminiy qoidalar, har bir yuz biroz farq qiladi.",
         build: function (L) {
           var st = { view: "front", W: 0.78, e: 0.156, thirds: true, eyeline: true, five: true, ear: true };
           var cv = L.canvas({ aspect: 1.05, maxH: 520 });
-          var R = L.readout([["h", "Boş / yuz balandligi"], ["t", "Yuzning uçdan bir qismi"], ["eye", "Köz çizigi (iyakdan, boş yarmi)"], ["we", "Yuz kengligi / köz kengligi"]], "main");
+          var R = L.readout([["h", "Boş / yuz balandligi"], ["t", "Yuzning uçdan bir qismi"], ["eye", "Köz çiziği (iyakdan, boş yarmi)"], ["we", "Yuz kengligi / köz kengligi"]], "main");
           cv.draw = function (c, w, h) {
             var sc = (h - 44) / (HH + 0.05), ox = w * 0.5, y0 = h - 22, front = st.view === "front";
             function X_(x) { return ox + x * sc; } function Y_(y) { return y0 - y * sc; }
@@ -107,7 +107,7 @@
               var sp = SIDE.map(function (p) { return [X_(p[0]), Y_(p[1])]; }); catmull(c, sp, true);
             }
             c.fillStyle = "#F3D9C4"; c.fill(); c.strokeStyle = C.ink2; c.lineWidth = 2; c.stroke();
-            // quloq (qoş çizig: qoş va burun asosi oralığida)
+            // quloq (qoş çizig: qoş va burun asosi oraliğida)
             c.fillStyle = "#EBC9AE"; c.lineWidth = 1.5;
             if (front) { [-1, 1].forEach(function (s) { c.beginPath(); c.ellipse(X_(s * (W / 2 + 0.025)), Y_(0.5), 0.045 * sc, 0.17 * sc, 0, 0, 7); c.fill(); c.stroke(); }); }
             else { c.beginPath(); c.ellipse(X_(-0.05), Y_(0.5), 0.07 * sc, 0.17 * sc, 0, 0, 7); c.fill(); c.stroke(); }
@@ -132,10 +132,10 @@
             c.font = "600 11px Inter, system-ui, sans-serif"; c.lineWidth = 1.6;
             function hline(y, col, label, dash, x1) { c.beginPath(); c.moveTo(6, Y_(y)); c.lineTo(w - 6, Y_(y)); c.strokeStyle = col; c.setLineDash(dash || [6, 4]); c.stroke(); c.setLineDash([]); c.fillStyle = col; c.fillText(label, 8, Y_(y) - 4); }
             if (st.thirds) {
-              hline(1, C.x, "Soç çizigi"); hline(2 / 3, C.x, "Qoş (1/3)"); hline(1 / 3, C.x, "Burun asosi (2/3)"); hline(0, C.x, "Iyak");
+              hline(1, C.x, "Soç çiziği"); hline(2 / 3, C.x, "Qoş (1/3)"); hline(1 / 3, C.x, "Burun asosi (2/3)"); hline(0, C.x, "Iyak");
               c.fillStyle = "rgba(229,72,77,.9)"; c.textAlign = "right"; [5 / 6, 1 / 2, 1 / 6].forEach(function (y) { c.fillText("1/3", w - 8, Y_(y) + 4); }); c.textAlign = "start";
             }
-            if (st.eyeline) { hline(YE, C.z, "", [2, 3]); c.fillStyle = C.z; c.fillText("Köz çizigi (boş yarmi)", 8, Y_(YE) + 13); hline(HH, C.z, "Boş tepasi", [2, 3]); }
+            if (st.eyeline) { hline(YE, C.z, "", [2, 3]); c.fillStyle = C.z; c.fillText("Köz çiziği (boş yarmi)", 8, Y_(YE) + 13); hline(HH, C.z, "Boş tepasi", [2, 3]); }
             if (st.ear) {
               c.fillStyle = "rgba(232,89,12,.14)"; c.fillRect(front ? X_(-W / 2 - 0.2) : X_(-0.5), Y_(2 / 3), front ? (W + 0.4) * sc : 0.75 * sc, sc / 3);
               c.fillStyle = C.orange; c.fillText("quloq: qoş ↔ burun asosi", 8, Y_(0.5) + 4);
@@ -153,16 +153,16 @@
           };
           L.seg("Körinişi", [["front", "Old"], ["side", "Yon"]], "front", function (v) { st.view = v; cv.redraw(); });
           L.toggle("Uçdan bir qismlar", true, function (v) { st.thirds = v; cv.redraw(); });
-          L.toggle("Köz çizigi (boş yarmi)", true, function (v) { st.eyeline = v; cv.redraw(); });
+          L.toggle("Köz çiziği (boş yarmi)", true, function (v) { st.eyeline = v; cv.redraw(); });
           L.toggle("Beş köz kengligi (faqat old)", true, function (v) { st.five = v; cv.redraw(); });
-          L.toggle("Quloq oralığı", true, function (v) { st.ear = v; cv.redraw(); });
+          L.toggle("Quloq oraliği", true, function (v) { st.ear = v; cv.redraw(); });
           L.slider({ label: "Yuz kengligi (F ning uluşi)", min: 0.6, max: 0.95, step: 0.01, value: st.W, nd: 2 }, function (v) { st.W = v; cv.redraw(); });
           L.slider({ label: "Köz kengligi (F ning uluşi)", min: 0.1, max: 0.22, step: 0.002, value: st.e, nd: 3 }, function (v) { st.e = v; cv.redraw(); });
-          L.note("Stilizatsiya qoidalari: yuz balandligi F (soç çizigidan iyakkaça) uç teng qismga bölinadi — soç çizigi, qoş çizigi, burun asosi, iyak. Köz çizigi boş balandligining (tepadan iyakkaça) taxminan yarmida; yuz kengligi ≈ 5 köz kengligi (köz orasi = bitta köz). Quloq qoş va burun asosi oralığida. Boş balandligi bu çizmada 1,25 F deb olingan. Bu taxminiy yöl-yöriq, qatʼiy qonun emas.", "main");
+          L.note("Stilizatsiya qoidalari: yuz balandligi F (soç çiziğidan iyakkaça) uç teng qismga bölinadi — soç çiziği, qoş çiziği, burun asosi, iyak. Köz çiziği boş balandligining (tepadan iyakkaça) taxminan yarmida; yuz kengligi ≈ 5 köz kengligi (köz orasi = bitta köz). Quloq qoş va burun asosi oraliğida. Boş balandligi bu çizmada 1,25 F deb olingan. Bu taxminiy yöl-yöriq, qatʼiy qonun emas.", "main");
           cv.redraw();
           L.tasks([
-            "Hamma çiziqni yoqing: burun asosi va qoş çizigi yuzni uç teng qismga böladimi? (Har biri 1/3.)",
-            "«Yon» körinişga ötib quloq oralığini yoqing: quloq qaysi ikki çiziq oralığida?",
+            "Hamma çiziqni yoqing: burun asosi va qoş çiziği yuzni uç teng qismga böladimi? (Har biri 1/3.)",
+            "«Yon» körinişga ötib quloq oraliğini yoqing: quloq qaysi ikki çiziq oraliğida?",
             "Yuz kengligini 0,78 qilib, köz kengligini 0,156 ga qöying: nisbat 5 ga teng bölişini körsatkiçdan tekşiring. Köz kengligini 0,12 ga tuşiring — beş köz qoidasi bajariladimi?"
           ], "a");
         }
@@ -253,7 +253,7 @@
           }
           L.slider({ label: "Egiliş burçagi θ", min: 0, max: 150, step: 1, value: st.th, nd: 0, unit: "°" }, function (v) { st.th = v; upd(); });
           L.add(EX.el("div", { class: "legend", html: '<span><i style="background:#3E63DD"></i>1-suyak vazni (w₁ = 1)</span><span><i style="background:#E5484D"></i>2-suyak vazni (w₂ = 1)</span><span>qora çiziq — suyaklar</span>' }), "main");
-          L.note("Çiziqli aralaş skinning: <b>v′ = Σ w<sub>i</sub> M<sub>i</sub> v</b>, ikki suyakda v′ = (1 − w)·M<sub>1</sub>v + w·M<sub>2</sub>v, w<sub>1</sub> + w<sub>2</sub> = 1. M<sub>1</sub> = I, M<sub>2</sub> — böğim atrofida θ burçakka aylantiriş; w₂ ≈ (s + 0,5)/1 ([−0,5; 0,5] oralığida çiziqli). Böğim halqasida w = 0,5 bölgani uçun nuqta ikki aylantirilgan holatning örtasiga tuşadi — kesim cos(θ/2) marta kiçrayadi. 1 halqada bu «tarang» kiçrayiş uzun bölakka yoyilib qoladi, 5 halqada esa vazn yumşoq özgaradi va hajm kamroq yöqoladi. Hajm yopiq tör böyiça hisoblangan; çiziqli aralaş skinningda hajm töliq saqlanmaydi (buning uçun masalan dual quaternion skinning qöllanadi).", "main");
+          L.note("Çiziqli aralaş skinning: <b>v′ = Σ w<sub>i</sub> M<sub>i</sub> v</b>, ikki suyakda v′ = (1 − w)·M<sub>1</sub>v + w·M<sub>2</sub>v, w<sub>1</sub> + w<sub>2</sub> = 1. M<sub>1</sub> = I, M<sub>2</sub> — böğim atrofida θ burçakka aylantiriş; w₂ ≈ (s + 0,5)/1 ([−0,5; 0,5] oraliğida çiziqli). Böğim halqasida w = 0,5 bölgani uçun nuqta ikki aylantirilgan holatning örtasiga tuşadi — kesim cos(θ/2) marta kiçrayadi. 1 halqada bu «tarang» kiçrayiş uzun bölakka yoyilib qoladi, 5 halqada esa vazn yumşoq özgaradi va hajm kamroq yöqoladi. Hajm yopiq tör böyiça hisoblangan; çiziqli aralaş skinningda hajm töliq saqlanmaydi (buning uçun masalan dual quaternion skinning qöllanadi).", "main");
           upd();
           L.tasks([
             "θ = 90° qiling: hajm 1 halqada ≈ 87,5 %, 5 halqada ≈ 93,5 % bölişini körsatkiçdan tekşiring.",

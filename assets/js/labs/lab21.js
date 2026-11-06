@@ -73,7 +73,7 @@
     L.note("Z-yuqori ↔ Y-yuqori: X atrofida ∓90° buriliş. Matritsaning determinanti −1 bölsa, tizimlar qöl kelişuvi bilan farq qiladi (öng ↔ çap) — bir öq işorasi almaşadi. Unrealda birlik santimetr, qolganlarida odatda metr.");
     upd();
     L.tasks([
-      "«glTF» ni tanlab P = (2; 3; 5) qöying: glTF koordinatalari (2; 5; −3) ekanini tekşiring. Qaysi koordinata işorasi almaştı?",
+      "«glTF» ni tanlab P = (2; 3; 5) qöying: glTF koordinatalari (2; 5; −3) ekanini tekşiring. Qaysi koordinata işorasi almaşti?",
       "«Unreal» ni tanlang: koordinatalar (200; −300; 500) bölişini körib, nima uçun y işorasi teskari va nima uçun sonlar 100 marta katta ekanini tuşuntiring.",
       "«Xato» tugmasini yoqing: Y-yuqori sonlari Blenderʼda qanday «yotib qolgan» model beradi? (1,75 m ni sm ga hisoblang: 175 sm.)"
     ], "a");

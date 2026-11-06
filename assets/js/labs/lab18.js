@@ -226,7 +226,7 @@
       for (var k = 0; k <= KMAX; k += 2) { c.beginPath(); c.moveTo(sx(k), t); c.lineTo(sx(k), t + H); c.stroke(); c.fillText(f(1 << k, 0), sx(k), t + H + 14); }
       c.fillStyle = "#4A5468"; c.fillText("namunalar soni N (log, har qadam ×4)", l + W / 2, h - 6);
       c.save(); c.translate(11, t + H / 2); c.rotate(-Math.PI / 2); c.fillText("RMSE (log)", 0, 0); c.restore(); c.textAlign = "left";
-      // 1/sqrt(N) tayanç çizigi
+      // 1/sqrt(N) tayanç çiziği
       c.beginPath(); for (k = 0; k <= KMAX; k++) { var v = rm[0] / Math.sqrt(1 << k); if (k) c.lineTo(sx(k), sy(v)); else c.moveTo(sx(k), sy(v)); }
       c.strokeStyle = "#7A8396"; c.lineWidth = 2; c.setLineDash([6, 4]); c.stroke(); c.setLineDash([]);
       c.beginPath(); rm.forEach(function (v, kk) { if (kk) c.lineTo(sx(kk), sy(v)); else c.moveTo(sx(kk), sy(v)); }); c.strokeStyle = C.z; c.lineWidth = 2.5; c.stroke();

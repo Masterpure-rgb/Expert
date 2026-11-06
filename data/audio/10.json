@@ -1,0 +1,20 @@
+{
+ "topic": 10,
+ "file": "audio/10.mp3",
+ "duration": 57.6,
+ "voice": "Ovoz: Gemini 3.8 Flash TTS (sunʼiy intellekt), matn mualliflar tomonidan tayyorlangan.",
+ "paragraphs": [
+  {
+   "text": "Assalomu alaykum! Bugungi asosiy ğoya: NURBS — bu har bir boşqaruv nuqtasiga vazn berilgan B-spline. Vazn nuqtaning egri çiziqni özi tomon tortiş kuçidir, va aynan şu kiçik qöşimça tufayli aylana, sfera va tor kabi şakllar mutlaq aniq tasvirlanadi.",
+   "start": 0.0
+  },
+  {
+   "text": "Telekanal logotipidagi halqani eslang. Uni oddiy köphadli egri çiziq bilan çizsangiz, aylanaga faqat yaqin şakl çiqadi. NURBS esa törtta çorak, töqqizta nuqta va töğri tanlangan vaznlar bilan ideal aylana beradi. Kamera logotipga qança yaqin kelsa ham, halqa çetlari siniq körinmaydi.",
+   "start": 19.96
+  },
+  {
+   "text": "Şuning uçun avtomobil va mahsulot reklamalaridagi silliq kuzovlar, muhandislik modellari va CAD formatlari NURBSʼga tayanadi, renderdan oldin esa ular kerakli aniqlikda uçburçaklarga bölinadi. Laboratoriyada sinab köring va QR-topşiriqni bajaring.",
+   "start": 41.04
+  }
+ ]
+}

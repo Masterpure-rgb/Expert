@@ -168,7 +168,7 @@
     L.slider({ label: "Markazlar masofasi d", min: 0, max: 5, step: 0.05, value: st.d, nd: 2 }, function (v) { st.d = v; cv.redraw(); });
     L.slider({ label: "Silliqlik k (smooth union)", min: 0, max: 2, step: 0.05, value: st.k, nd: 2 }, function (v) { st.k = v; cv.redraw(); });
     L.slider({ label: "Radius r (ikkalasi uçun)", min: 0.4, max: 1.4, step: 0.05, value: st.r, nd: 2 }, function (v) { st.r = v; cv.redraw(); });
-    L.note("Har bir şar — masofa funksiyasi (SDF): f<sub>i</sub>(p) = |p − c<sub>i</sub>| − r. Qattiq birlaşma: min(f<sub>1</sub>, f<sub>2</sub>). Silliq birlaşma (polinomial smin): h = max(k − |a − b|, 0)/k, smin(a, b) = min(a, b) − h²·k/4. Sirt — f = 0 izoçizigi (marching squares).", "main");
+    L.note("Har bir şar — masofa funksiyasi (SDF): f<sub>i</sub>(p) = |p − c<sub>i</sub>| − r. Qattiq birlaşma: min(f<sub>1</sub>, f<sub>2</sub>). Silliq birlaşma (polinomial smin): h = max(k − |a − b|, 0)/k, smin(a, b) = min(a, b) − h²·k/4. Sirt — f = 0 izoçiziği (marching squares).", "main");
     L.tasks([
       "k = 0 qilib d ni 2 dan kattalaştiring va kamaytiring: şarlar aynan qaçon tegadi? [d = 2r = 2]",
       "k = 0,8 va r = 1: ikki şar qaçondan boşlab qöşila boşlaydi? [d* = 2r + k/2 = 2,4]. «f (örta nuqtada)» ning işorasi qanday özgaradi?",

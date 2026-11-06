@@ -1,8 +1,8 @@
-/* 2-mavzu. 3D grafika vaqt çizigi */
+/* 2-mavzu. 3D grafika vaqt çiziği */
 (function () {
   var X = window.X3D, V = X.v, C = LAB.C, f = X.fmt;
 
-  /* ---------- 1-tab: vaqt çizigi ---------- */
+  /* ---------- 1-tab: vaqt çiziği ---------- */
   var CAT = {
     alg: { name: "Renderlaş algoritmlari", col: C.z },
     geo: { name: "Geometriya va maʼlumot", col: C.teal },
@@ -27,9 +27,9 @@
     { y: 2002, c: "tool", t: "Blender açiq kod bölidi", w: "Blender Foundation", d: "Blenderning manba kodi açiq litsenziya (GNU GPL) ostida çiqarildi." },
     { y: 2017, c: "geo", t: "glTF 2.0", w: "Khronos Group", d: "3D sahnalarni veb va ilovalarda samarali uzatiş uçun format. Köpinça «3D uçun JPEG» deb taʼriflanadi." },
     { y: 2018, c: "rt", t: "NVIDIA RTX", w: "NVIDIA", d: "Isteʼmolçi videokartalarda real vaqtda nur kuzatiş uçun apparat yordami (RT yadrolari)." },
-    { y: 2020, c: "rt", t: "NeRF", w: "Mildenhall va hammuallifları", d: "Neural Radiance Fields: bir neça fotosuratdan neyron tör yordamida yangi körinişlarni sintez qiladi." },
+    { y: 2020, c: "rt", t: "NeRF", w: "Mildenhall va hammualliflari", d: "Neural Radiance Fields: bir neça fotosuratdan neyron tör yordamida yangi körinişlarni sintez qiladi." },
     { y: 2022, c: "rt", t: "Unreal Engine 5", w: "Epic Games", d: "Nanite (virtual geometriya) va Lumen (dinamik global yoritiş) bilan real vaqt renderlaşi." },
-    { y: 2023, c: "rt", t: "3D Gaussian Splatting", w: "Kerbl va hammuallifları", d: "Sahna 3D Gaussʼlar töplami sifatida ifodalanadi va real vaqtda yuqori sifatli çiziladi." }
+    { y: 2023, c: "rt", t: "3D Gaussian Splatting", w: "Kerbl va hammualliflari", d: "Sahna 3D Gaussʼlar töplami sifatida ifodalanadi va real vaqtda yuqori sifatli çiziladi." }
   ];
   EV.forEach(function (e) { e.d = e.d; });
 
@@ -91,7 +91,7 @@
     L.tasks([
       "Vaqt çiziğida 1971 va 1975 yillarni tanlang: Gouraud va Phong soyalaşi orasidagi farq nimada? (Keyingi tabda taqqoslaysiz.)",
       "«Renderlaş algoritmlari» filtrini yoqing: nur kuzatiş usullari qaysi yillarda paydo bölgan? [1980, 1984, 1986]",
-      "«Real vaqt va neyron sahna» filtri: 2018–2023 oralığida neçta kartoçka bor va ular qanday yangi yönalişni körsatadi? [4 ta]"
+      "«Real vaqt va neyron sahna» filtri: 2018–2023 oraliğida neçta kartoçka bor va ular qanday yangi yönalişni körsatadi? [4 ta]"
     ], "a");
   }
 
@@ -194,9 +194,9 @@
   }
 
   LAB.start({
-    intro: "3D grafika 60 yil içida interaktiv çizmadan real vaqtli nur kuzatiş va neyron sahnalargaça yetib keldi. Quyida asosiy voqealar vaqt çizigida, soyalaş usullari esa bir xil sferada taqqoslanadi.",
+    intro: "3D grafika 60 yil içida interaktiv çizmadan real vaqtli nur kuzatiş va neyron sahnalargaça yetib keldi. Quyida asosiy voqealar vaqt çiziğida, soyalaş usullari esa bir xil sferada taqqoslanadi.",
     tabs: [
-      { name: "Vaqt çizigi", lead: "Nuqtani yoki kartoçkani tanlang: yil, muallif va mohiyati körsatiladi. Filtrlar bilan yönalişlarni ajrating.", build: tab1 },
+      { name: "Vaqt çiziği", lead: "Nuqtani yoki kartoçkani tanlang: yil, muallif va mohiyati körsatiladi. Filtrlar bilan yönalişlarni ajrating.", build: tab1 },
       { name: "Flat · Gouraud · Phong", lead: "Bir xil sfera uç usulda çizilgan. Tör ziçligini kamaytirsangiz, Gouraud yaltiroq nuqtani yöqotadi, Phong esa saqlaydi.", build: tab2 }
     ]
   });

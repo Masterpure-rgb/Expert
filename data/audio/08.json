@@ -1,0 +1,20 @@
+{
+ "topic": 8,
+ "file": "audio/08.mp3",
+ "duration": 52.36,
+ "voice": "Ovoz: Gemini 3.8 Flash TTS (sunʼiy intellekt), matn mualliflar tomonidan tayyorlangan.",
+ "paragraphs": [
+  {
+   "text": "Assalomu alaykum, aziz talabalar! Bugungi asosiy ğoya: spline — berilgan nuqtalarning barçasidan ötadigan, kiçik bölaklardan tuzilgan egri çiziq. Bitta murakkab formula örniga köplab oddiy bölaklar işlaydi va ular bir-biriga sezilmas darajada silliq ulanadi.",
+   "start": 0.0
+  },
+  {
+   "text": "Tasavvur qiling: sport körsatuvida virtual kamera stadion ustidan uçib ötadi. Operator faqat bir neçta kalit nuqtani belgilaydi, qolgan yuzlab kadrlardagi kamera holatini dastur spline orqali hisoblaydi. Agar ulanişlar silliq bölmasa, tomoşabin kadrdagi silkinişni darhol sezadi.",
+   "start": 18.64
+  },
+  {
+   "text": "Splineʼlar animatsiya, kamera yöllari, öyinlar va sirt quriş uçun asos. Ularni tuşungan mutaxassis harakatni tabiiy va işonarli qila oladi. Laboratoriyada sinab köring va QR-topşiriqni bajaring.",
+   "start": 38.04
+  }
+ ]
+}

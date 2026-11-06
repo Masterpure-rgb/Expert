@@ -1,0 +1,20 @@
+{
+ "topic": 15,
+ "file": "audio/15.mp3",
+ "duration": 54.24,
+ "voice": "Ovoz: Gemini 3.8 Flash TTS (sunʼiy intellekt), matn mualliflar tomonidan tayyorlangan.",
+ "paragraphs": [
+  {
+   "text": "Assalomu alaykum! Bugungi asosiy ğoya: tekstura — bu modelga kiydirilgan rasm, uni töğri kiydiriş esa alohida sanʼat. Har bir sirt nuqtasi rasmdagi bitta nuqta bilan boğlanadi, buning uçun model xuddi qoğoz qutidek tekislikka yoyiladi.",
+   "start": 0.0
+  },
+  {
+   "text": "Apelsin pöstini eslang: uni stolga tekis yoyib bölmaydi, albatta yirtiladi yoki çöziladi. Uç ölçovli model ham şunday — biz qayerdan qirqişni özimiz tanlaymiz va çoklarni kam körinadigan joylarga yaşiramiz. Virtual studiyadagi katakli pol kamera harakatida jimirlamasligi uçun esa teksturaning kiçraytirilgan nusxalari oldindan tayyorlab qöyiladi.",
+   "start": 17.12
+  },
+  {
+   "text": "Töğri yoyilgan va bir xil ziçlikdagi tekstura modelni haqiqiy qiladi, xato esa eng yaxşi modelni ham buzadi. Laboratoriyada sinab köring va QR-topşiriqni bajaring.",
+   "start": 42.16
+  }
+ ]
+}

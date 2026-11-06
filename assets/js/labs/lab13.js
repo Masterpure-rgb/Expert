@@ -128,7 +128,7 @@
   }
   function tab3(L) {
     var st = { page: "lathe", n: 24, prof: [[0, 0], [1.3, 0], [0.8, 1.2], [1.1, 2.4], [0.7, 3.4], [0, 3.4]], base: "star", h: 1.5, sc: 1 };
-    var P = L.plot({ x: [-3, 3], y: [-0.7, 4.2], aspect: 0.95, hint: "Profil nuqtalarini sudrang (x = 0 — aylanış öqi)" });
+    var P = L.plot({ x: [-3, 3], y: [-0.7, 4.2], aspect: 0.95, hint: "Profil nuqtalarini sudrang (x = 0 — aylaniş öqi)" });
     var S = L.scene({ dist: 8, target: [0, 0, 1.6], aspect: 0.95, pitch: 0.4, yaw: -0.9, gridOpts: { n: 12, step: 0.5 }, hint: "Sudrang — aylantiriş" });
     var mesh = S.add(new X.Mesh({ mesh: { v: [], f: [] }, color: "#C9D4F5", twoSided: true }));
     var R = L.readout([["V", "V — çöqqilar"], ["E", "E — qirralar"], ["F", "F — yoqlar"], ["chi", "V − E + F"]]);

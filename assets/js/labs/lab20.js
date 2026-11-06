@@ -23,7 +23,7 @@
         c.fillStyle = "#18202F"; c.fillText(f(q[1], 1) + " ms", Math.min(sx(q[1]) + 6, w - 60), y + rh / 2 + 4);
         if (sx(q[1]) + 66 > w) { c.fillStyle = "#fff"; c.fillText(f(q[1], 1) + " ms", Math.max(l + 6, sx(q[1]) - 62), y + rh / 2 + 4); }
       });
-      // byudjet çizigi
+      // byudjet çiziği
       c.beginPath(); c.moveTo(sx(T), 24); c.lineTo(sx(T), h - 22); c.strokeStyle = C.orange; c.lineWidth = 2.5; c.setLineDash([6, 4]); c.stroke(); c.setLineDash([]);
       c.fillStyle = C.orange; c.textAlign = "center"; c.fillText("T = " + f(T, 1) + " ms (" + f(st.hz, 0) + " Hz)", Math.min(Math.max(sx(T), 70), w - 70), 16);
       c.fillStyle = "#7A8396"; c.font = "11px Inter, system-ui, sans-serif"; c.textAlign = "left"; c.fillText("0", l, h - 8); c.textAlign = "right"; c.fillText(f(mx, 0) + " ms", w - r, h - 8); c.textAlign = "left";
@@ -51,7 +51,7 @@
     { n: "Daraxt", tris: 6000, mat: 2, max: 60 },
     { n: "Mebel (stul, stol)", tris: 1500, mat: 1, max: 100 },
     { n: "Mayda prop", tris: 500, mat: 1, max: 300 },
-    { n: "Bino / xona qobiğı", tris: 25000, mat: 4, max: 10 },
+    { n: "Bino / xona qobiği", tris: 25000, mat: 4, max: 10 },
     { n: "Relyef (terrain)", tris: 150000, mat: 2, max: 4 }
   ];
   var PLAT = {

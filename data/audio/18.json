@@ -1,0 +1,20 @@
+{
+ "topic": 18,
+ "file": "audio/18.mp3",
+ "duration": 50.92,
+ "voice": "Ovoz: Gemini 3.8 Flash TTS (sunʼiy intellekt), matn mualliflar tomonidan tayyorlangan.",
+ "paragraphs": [
+  {
+   "text": "Assalomu alaykum! Bugungi mavzuning asosiy ğoyasi: render — bu yoruğlikning sahnada qanday tarqalişini hisoblaş. Rasterlaş buni tez, ammo soddalaştirib bajaradi, path tracing esa minglab tasodifiy nurlar bilan aniq, lekin şovqinli natija beradi. Şovqinni ikki baravar kamaytiriş uçun nurlarni tört baravar köpaytiriş kerak.",
+   "start": 0.0
+  },
+  {
+   "text": "Sport körsatuvidagi virtual hisob tablosini eslang: u har sekundda ellik marta, real vaqtda çiziladi. Xuddi şu telekanalning reklama roligidagi şişa idişning har bir kadri esa render fermasida bir neça daqiqadan hisoblanadi, çunki u yerda har bir aks etiş va soya fizik jihatdan töğri bölişi kerak.",
+   "start": 21.64
+  },
+  {
+   "text": "Render sozlamalarini tuşunsangiz, sifat va vaqt orasidagi murosani ongli tanlaysiz. Laboratoriyada sinab köring va QR-topşiriqni bajaring.",
+   "start": 41.76
+  }
+ ]
+}
