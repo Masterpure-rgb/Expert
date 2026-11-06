@@ -1,0 +1,4 @@
+{"topic":7,"items":[
+{"q":"Kubik Bezier egri çizigi neçta boşqaruv nuqtasi bilan beriladi?","options":["2","3","4","5"],"answer":2,"explain":"n-darajali egri n+1 nuqta bilan beriladi: 3+1=4."},
+{"q":"Bezier egri çizigi qaysi nuqtalardan albatta ötadi?","options":["Barça boşqaruv nuqtalaridan","Faqat birinçi va oxirgi nuqtadan","Faqat örta nuqtalardan","Heç qaysi nuqtadan"],"answer":1,"explain":"Uç nuqtalarni interpolyatsiya qiladi, örtadagilar faqat tortadi."}
+]}

@@ -1,0 +1,40 @@
+{
+ "authors": [
+  {
+   "id": "nuraliyev",
+   "name": "F.M. Nuraliyev",
+   "full": "Nuraliyev Faxriddin Murodillayevich",
+   "role": "Texnika fanlari doktori (DSc)",
+   "img": "assets/img/authors/nuraliyev.jpg",
+   "full_img": "assets/img/authors/nuraliyev.jpg",
+   "bio": [
+    "Muhammad al-Xorazmiy nomidagi TATU «Televizion va media texnologiyalar» kafedrasi mudiri. 2011-yildan «Kompyuter grafikasi va dizayn» kafedrasiga rahbarlik qilgan.",
+    "«Kompyuter grafikasi va dizayn» öquv qöllanmasi hammuallifi (Toşkent: Fan va texnologiya, 2015)."
+   ]
+  },
+  {
+   "id": "nazirova",
+   "name": "E.Ş. Nazirova",
+   "full": "Nazirova Elmira Şodmonovna",
+   "role": "Texnika fanlari doktori (DSc), professor",
+   "img": "assets/img/authors/nazirova.jpg",
+   "full_img": "assets/img/authors/nazirova.jpg",
+   "bio": [
+    "Ilmiy işlari suyuqlik va gaz filtratsiyasini matematik modellaştirişga bağişlangan.",
+    "«Web ilovalarni yaratiş» (Aloqaçi, 2018) va multimedia maʼlumotlar bazalari böyiça öquv qöllanma (Aloqaçi, 2020) muallifi."
+   ]
+  },
+  {
+   "id": "ibodullayev",
+   "name": "S.N. Ibodullayev",
+   "full": "Ibodullayev Sardor Nasriddin öğli",
+   "role": "Katta öqituvçi",
+   "img": "assets/img/authors/ibodullayev_full.jpg",
+   "pos": "50% 28%",
+   "full_img": "assets/img/authors/ibodullayev_full.jpg",
+   "bio": [
+    "Muhammad al-Xorazmiy nomidagi TATU «Televizion va media texnologiyalar» kafedrasi katta öqituvçisi. Ilmiy yönalişi — taʼlimda virtual reallik va 3D vizuallaştiriş."
+   ]
+  }
+ ]
+}
