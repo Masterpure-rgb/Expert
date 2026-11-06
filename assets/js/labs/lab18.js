@@ -261,7 +261,7 @@
     for (y = 0; y < HH; y++) for (x = 0; x < HW; x++) {
       var q = (y * HW + x) * 3, L, col;
       if (y < 56) { L = 0.35 + 0.55 * (y / 56); col = [0.55, 0.75, 1.0]; if (Math.hypot(x - 120, y - 18) < 7) { L = 400; col = [1, 0.95, 0.8]; } else if (Math.hypot(x - 120, y - 18) < 13) { L += 12 * (1 - (Math.hypot(x - 120, y - 18) - 7) / 6); } }
-      else { L = 0.02 + 0.12 * Math.max(0, (x - 0) / HW); col = [0.8, 0.7, 0.55]; }
+      else { L = 0.005 + 0.06 * (x / HW); col = [0.8, 0.7, 0.55]; }
       if (y >= 60 && y < 82) { var k = Math.floor(x / 20); if (k >= 0 && k < 8 && (x % 20) >= 2 && (x % 20) < 18) { L = 0.18 * Math.pow(2, k - 3); col = [1, 1, 1]; } }
       a[q] = col[0] * L; a[q + 1] = col[1] * L; a[q + 2] = col[2] * L;
     }
@@ -272,7 +272,7 @@
     if (!HDR) HDR = buildHDR();
     var st = { ev: 0, mode: "clip" };
     var cv = L.canvas({ aspect: 0.98, hint: "" });
-    var R = L.readout([["k", "Koeffitsiyent 2^EV"], ["w", "Oq (≥ 253/255)"], ["b", "Qora (≤ 2/255)"], ["g", "18 % kulrang karta kodi"]]);
+    var R = L.readout([["k", "Koeffitsiyent 2^EV"], ["w", "Oq (≥ 253/255)"], ["b", "Qora (≤ 8/255)"], ["g", "18 % kulrang karta kodi"]]);
     var off = document.createElement("canvas"); off.width = HW; off.height = HH; var octx = off.getContext("2d"), img = octx.createImageData(HW, HH);
     cv.draw = function (c, w, h) {
       var k = Math.pow(2, st.ev), d = img.data, n = HW * HH, hist = new Array(32).fill(0), white = 0, black = 0, q;
@@ -282,7 +282,7 @@
         d[q * 4 + 3] = 255;
         var lum = 0.2126 * cc[0] + 0.7152 * cc[1] + 0.0722 * cc[2];
         hist[Math.min(31, Math.floor(lum / 8))]++;
-        if (lum >= 253) white++; if (lum <= 2) black++;
+        if (lum >= 253) white++; if (lum <= 8) black++;
       }
       octx.putImageData(img, 0, 0); c.imageSmoothingEnabled = true;
       var iw = w - 20, ih = iw * HH / HW; c.drawImage(off, 10, 8, iw, ih);
@@ -303,7 +303,7 @@
     L.slider({ label: "Ekspozitsiya kompensatsiyasi EV", min: -4, max: 4, step: 0.25, value: 0, nd: 2, fmt: function (v) { return (v > 0 ? "+" : "") + f(v, 2) + " EV"; } }, function (v) { st.ev = v; cv.redraw(); });
     L.seg("Ton xaritalaş (tone mapping)", [["clip", "Kesiş (clip): min(1; x)"], ["rh", "Reinhard: x / (1 + x)"]], "clip", function (v) { st.mode = v; cv.redraw(); });
     L.button("EV = 0", function () { document.querySelector(".lab-panel:not([hidden]) input[type=range]").value = 0; document.querySelector(".lab-panel:not([hidden]) input[type=range]").dispatchEvent(new Event("input")); });
-    L.note("Çiziqli (HDR) yoruğlik x → <b>x′ = x·2<sup>EV</sup></b>: +1 EV — yoruğlik 2 marta köp (1 stop). Söng ton xaritalaş x′ ni [0; 1] ga keltiradi (kesiş yoki Reinhard, har bir kanal uçun), keyin sRGB gamma kodlanadi. Sahna HDR: quyoş ≈ 400, 18 % kulrang karta = 0,18, qorongi joylar ≈ 0,02.");
+    L.note("Çiziqli (HDR) yoruğlik x → <b>x′ = x·2<sup>EV</sup></b>: +1 EV — yoruğlik 2 marta köp (1 stop). Söng ton xaritalaş x′ ni [0; 1] ga keltiradi (kesiş yoki Reinhard, har bir kanal uçun), keyin sRGB gamma kodlanadi. Sahna HDR: quyoş ≈ 400, 18 % kulrang karta = 0,18, qorongi joylar ≈ 0,005–0,07.");
     L.tasks([
       "«Kesiş» rejimida EV ni +4 ga oşiring: oq piksellar uluşi qanday özgaradi? Quyoş va osmon teksturasi (gistogrammadagi oxirgi ustun) nima bölmoqda? [maʼlumot yöqoladi — burnt highlights]",
       "EV = −4 da qora piksellar uluşini yozing, söng +4 ga ötib qiyoslang. Qaysi ekspozitsiyada pol detallari körinadi?",

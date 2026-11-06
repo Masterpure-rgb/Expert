@@ -209,7 +209,11 @@
             });
           }
           var sl;
-          L.seg("Obyekt", [["cube", "Kub"], ["cylinder", "Silindr"]], "cube", function (v) { st.shape = v; upd(); });
+          L.seg("Obyekt", [["cube", "Kub"], ["cylinder", "Silindr"]], "cube", function (v) {
+            st.shape = v;
+            if (v === "cube") { S.target = [0.5, 0.7, 0.3]; S.dist = 6; S.yaw = -0.9; S.pitch = 0.7; } else { S.target = [0, 0.3, 1]; S.dist = 11; S.yaw = -1.1; S.pitch = 0.35; }
+            upd();
+          });
           sl = L.slider({ label: "Yoyiş darajasi (0 — yiğilgan, 1 — tekis)", min: 0, max: 1, step: 0.01, value: 0, nd: 2 }, function (v) { st.t = v; upd(); });
           L.toggle("Choklarni körsatiş (qizil)", true, function (v) { st.seams = v; upd(); });
           L.toggle("Yoqlar raqamlari", true, function (v) { st.labs = v; upd(); });
@@ -262,7 +266,7 @@
           L.seg("Proyeksiya", [["planar", "Planar"], ["cylindrical", "Cylindrical"], ["spherical", "Spherical"], ["box", "Box"]], "spherical", function (v) { st.proj = v; upd(); });
           L.seg("Tekstura", [["checker", "Checker"], ["uv", "UV ranglari (u → qizil, v → yaşil)"]], "checker", function (v) { st.tex = v; upd(); });
           L.slider({ label: "Kataklar soni (har öqda)", min: 2, max: 16, step: 1, value: st.n, nd: 0 }, function (v) { st.n = v; upd(); });
-          L.note("Planar — bir yönalişda (Y öqi böylab) tekis proyeksiya; Cylindrical — u = burçak / 2π, v = balandlik; Spherical — u = uzunlama, v = kenglama; Box — har bir yoq öz öqi böylab proyeksiyalanadi. Çöziliş ölçovi: yoq markazida (u, v) akslantirişning Jakobian singulyar sonlari nisbati σ₁/σ₂ (1 — kvadrat kvadratligiça qoladi), yuza böyiça örtalangan. Rang yoqning markazidagi qiymatdan olinadi.", "main");
+          L.note("Planar — bir yönalişda (Y öqi böylab) tekis proyeksiya; Cylindrical — u = burçak / 2π, v = balandlik; Spherical — u = uzunlama, v = kenglama; Box — har bir yoq öz öqi böylab proyeksiyalanadi. Çöziliş ölçovi: yoq markazida (u, v) akslantirişning Jakobian singulyar sonlari nisbati σ₁/σ₂ (1 — kvadrat kvadratligiça qoladi), yuza böyiça örtalangan (çegara 50). Spherical va Cylindrical proyeksiyalarda u — 360° ga, v esa 180° (yoki balandlikka) mos keladi, şuning uçun kvadrat doira katakçalar ham bir oz çözilgan körinadi. Rang yoqning markazidagi qiymatdan olinadi.", "main");
           upd();
           L.tasks([
             "Sfera + Planar: sfera çetlariga qarang — kataklar nima uçun çiziqqa aylanadi? «Kuçli çözilgan yuza» foizini yozib oling.",

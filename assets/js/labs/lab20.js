@@ -38,7 +38,7 @@
     L.slider({ label: "GPU: bir körinişni çiziş", min: 1, max: 10, step: 0.1, value: 3.5, nd: 1, unit: "ms" }, function (v) { st.gpu = v; cv.redraw(); });
     L.note("<b>T = 1000 / f</b>: 60 Hz → 16,7 ms; 72 Hz → 13,9 ms; 90 Hz → 11,1 ms; 120 Hz → 8,3 ms. Stereoda kadr ikki körinişdan (har bir köz uçun) iborat. <i>Ikki pass</i>da sahna CPU tomonidan ikki marta yuboriladi; <i>single-pass instanced</i>da buyruqlar bir marta beriladi va GPU uni ikki körinişga takrorlaydi — CPU xarajati kamayadi, lekin piksel va çöqqi işi ikkala köz uçun baribir bajariladi. Bu — <b>öquv modeli</b> (CPU va GPU bir-biriga parallel işlaydi, kadr vaqti ≈ max(CPU; GPU) deb olinadi); haqiqiy sonlar qurilmaga boğliq.");
     L.tasks([
-      "Rejimni «Bir köriniş» da qoldiring va çastotani 60 dan 120 Hz ga oşiring: GPU vaqti özgarmaydi, lekin byudjet 16,7 dan 8,3 ms gaça kamayadi. Qaysi çastotada «GPU oşdi» yozuvi çiqadi?",
+      "Rejim «Stereo: single-pass instanced», çastotani 72 dan 144 Hz gaça oşiring: byudjet 13,9 dan 6,9 ms gaça kamayadi. Qaysi çastotadan boşlab «GPU oşdi» yozuvi çiqadi? [GPU 7 ms bölgani uçun ≈ 143 Hz dan]",
       "Çastotani 90 Hz ga qöyib, «Stereo: ikki pass» ni tanlang, söng «single-pass instanced» ga ötkazing: qaysi körsatkiç (CPU yoki GPU) özgaradi? [faqat CPU]",
       "90 Hz da bir köz uçun GPU byudjeti nimaga teng? [11,1 / 2 ≈ 5,6 ms] Çastotani 72 Hz ga tuşiring va qiyoslang. [6,9 ms]"
     ], "a");
