@@ -1,0 +1,75 @@
+{
+ "topic": 13,
+ "items": [
+  {
+   "q": "Blenderʼda Segments = 16, Rings = 8 bölgan UV sferada neçta çöqqi bor?",
+   "options": [
+    "128",
+    "112",
+    "114",
+    "130"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Ikosaedrdan boşlab (Subdivisions = 1) har bir qadamda yoqlar soni qanday özgaradi?",
+   "options": [
+    "4 marta oşadi",
+    "2 marta oşadi",
+    "3 marta oşadi",
+    "20 taga oşadi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Segmentlar soni 16 dan 32 ga oşirilsa, sagitta taxminan qanday özgaradi?",
+   "options": [
+    "2 marta kamayadi",
+    "özgarmaydi",
+    "8 marta kamayadi",
+    "4 marta kamayadi"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Qaysi Boolean usuli operandlar yopiq (manifold) bölişini talab qiladi va eng tez işlaydi?",
+   "options": [
+    "Exact",
+    "Manifold",
+    "Fast",
+    "Union"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Blenderʼda tör maʼlumotlarini asl obyekt bilan baham köradigan nusxa qaysi buyruq bilan yaratiladi?",
+   "options": [
+    "Shift + D",
+    "Ctrl + D",
+    "Alt + D",
+    "Shift + R"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (12-mavzu): Giperbolik (egar) nuqtada qaysi şart bajariladi?",
+   "options": [
+    "K>0",
+    "K=0 va H=0",
+    "K<0",
+    "κ₁=κ₂"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (12-mavzu): Uçburçakli törda Gauss egriligi qanday baholanadi?",
+   "options": [
+    "Kotangens Laplasianining uzunligi bilan",
+    "Burçak defektini çöqqi maydoniga böliş bilan",
+    "Normal uzunligi bilan",
+    "Çöqqidagi qirralar soni bilan"
+   ],
+   "answer": 1
+  }
+ ]
+}

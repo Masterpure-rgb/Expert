@@ -1,0 +1,55 @@
+{
+ "topic": 1,
+ "items": [
+  {
+   "q": "Blender va 3ds Max dasturlarida qaysi öq yuqoriga yönaltirilgan?",
+   "options": [
+    "X",
+    "Y",
+    "Z",
+    "W"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Bir jinsli koordinatalarda yönaliş vektori qanday yoziladi?",
+   "options": [
+    "(x; y; z; 1)",
+    "(x; y; z; 0)",
+    "(x; y; z; -1)",
+    "(1; x; y; z)"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Öng qöl tizimida a = (1; 0; 0) va b = (0; 1; 0) uçun a× b nimaga teng?",
+   "options": [
+    "(0; 0; 1)",
+    "(0; 0; -1)",
+    "(1; 1; 0)",
+    "0"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "M = TRS kompozitsiyasida nuqtaga birinçi bölib qaysi almaştiriş qöllanadi?",
+   "options": [
+    "köçiriş",
+    "aylantiriş",
+    "uçalasi bir vaqtda",
+    "masştablaş"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "3ds Max 2026 da tanlangan obyektni körinişga töliq siğdiriş (Zoom Extents Selected) tugmasi qaysi?",
+   "options": [
+    "Home",
+    "Numpad .",
+    "Z",
+    "F"
+   ],
+   "answer": 2
+  }
+ ]
+}

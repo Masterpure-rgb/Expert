@@ -1,0 +1,75 @@
+{
+ "topic": 3,
+ "items": [
+  {
+   "q": "Quyidagi tasvirlarning qaysi biri hajmiy tasvirga kiradi?",
+   "options": [
+    "Polygonal tör",
+    "NURBS lavha",
+    "Voksellar panjarasi",
+    "Subdivision qafas"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Kub Catmull–Clark usuli bilan bir marta bölinsa, yoqlar soni neçta böladi?",
+   "options": [
+    "24",
+    "12",
+    "26",
+    "48"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "SDF yordamida A va B jismlar kesişmasi qanday hisoblanadi?",
+   "options": [
+    "min(dA, dB)",
+    "dA + dB",
+    "max(dA, -dB)",
+    "max(dA, dB)"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "L-tizimda «[» belgisi nimani bildiradi?",
+   "options": [
+    "Çapga buriliş",
+    "Joriy holatni stekka saqlaş",
+    "Kesma çiziş",
+    "Iteratsiyani tugataş"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Qaysi tasvir aylanani aniq (xatosiz) ifodalay oladi?",
+   "options": [
+    "Uçburçaklar töri",
+    "Voksellar",
+    "NURBS egri çiziği",
+    "Nuqtalar buluti"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (2-mavzu): Blender qaysi sanada GNU GPL litsenziyasi ostida oçiq manbali dasturga aylangan?",
+   "options": [
+    "1994-yil yanvar",
+    "1998-yil iyun",
+    "2002-yil 13-oktabr",
+    "2011-yil dekabr"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (2-mavzu): DirectX Raytracing interfeysi va RTX videokartalari qaysi yili taqdim etilgan?",
+   "options": [
+    "1999",
+    "2007",
+    "2012",
+    "2018"
+   ],
+   "answer": 3
+  }
+ ]
+}

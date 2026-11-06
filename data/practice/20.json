@@ -1,0 +1,75 @@
+{
+ "topic": 20,
+ "items": [
+  {
+   "q": "Real boşlovçi töliq virtual dekoratsiya içida turgan virtual studiya Milgram uzluksizligining qaysi sohasiga kiradi?",
+   "options": [
+    "kengaytirilgan reallik (AR)",
+    "kengaytirilgan virtuallik (AV)",
+    "töliq virtual muhit",
+    "real muhit"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "VR uçun harakat–foton keçikişining tavsiya etiladigan çegarasi qaysi?",
+   "options": [
+    "50 ms gaça",
+    "100 ms gaça",
+    "20 ms dan kam",
+    "1 s dan kam"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Single-pass instanced (multiview) renderlaş asosan nimani tejaydi?",
+   "options": [
+    "teksturalar hajmini",
+    "lightmap UV larini",
+    "IPD sozlaşini",
+    "ikki köz uçun geometriyani bir marta yuborib, draw callʼlarni"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "iOS qurilmalarida AR Quick Look orqali bevosita oçiladigan format qaysi?",
+   "options": [
+    "USDZ",
+    "FBX",
+    "STL",
+    "OBJ"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Mustaqil VR-şlem uçun daraxt barglarini qanday modellaş maqsadga muvofiq?",
+   "options": [
+    "köp qatlamli alfa aralaştiriş",
+    "alfa kesiş (alpha clip) yoki geometriya bilan kesilgan şakl",
+    "har bir barg uçun real vaqt soyasi",
+    "8K ölçamli tekstura"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (19-mavzu): 2048×2048 ölçamli BC7 teksturaning mipmap bilan videoxotiradagi hajmi taxminan qança?",
+   "options": [
+    "2,7 MiB",
+    "5,3 MiB",
+    "16 MiB",
+    "21,3 MiB"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (19-mavzu): Qaysi usul draw callʼlar sonini bevosita kamaytiradi?",
+   "options": [
+    "teksturalar ölçamini oşiriş",
+    "normal xaritani pişiriş",
+    "bir xil materialli obyektlarni birlaştiriş va tekstura atlasi",
+    "mipmapni öçiriş"
+   ],
+   "answer": 2
+  }
+ ]
+}

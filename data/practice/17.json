@@ -1,0 +1,75 @@
+{
+ "topic": 17,
+ "items": [
+  {
+   "q": "Yoritilganlikning SI birligi qaysi?",
+   "options": [
+    "kandela (cd)",
+    "lyumen (lm)",
+    "lyuks (lx)",
+    "vatt (W)"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Nuqtaviy manbadan masofa 3 baravar oşirilsa, yoritilganlik qanday özgaradi?",
+   "options": [
+    "3 baravar kamayadi",
+    "9 baravar kamayadi",
+    "6 baravar kamayadi",
+    "özgarmaydi"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Televizion studiyalarning volfram (galogen) lampalari uçun standart rang harorati qança?",
+   "options": [
+    "1900 K",
+    "6500 K",
+    "5600 K",
+    "3200 K"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Qaysi özgariş soyani yumşoqroq qiladi?",
+   "options": [
+    "Manba ölçamini kattalaştiriş",
+    "Manbani uzoqlaştiriş",
+    "Point örniga Sun ni Angle = 0 bilan qöyiş",
+    "Manba quvvatini oşiriş"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Yoritiş nisbati 4:1 bölsa, yoritilgan va soyadagi tomonlar orasidagi farq neça stop?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (16-mavzu): Blinn–Phong modeli közgusimon hadda qaysi vektordan foydalanadi?",
+   "options": [
+    "yarim vektor H",
+    "singan nur",
+    "R· V köpaytmasi",
+    "urinma T"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Takrorlaş (16-mavzu): glTF 2.0 `metallicRoughnessTexture` da metallik qaysi kanalda saqlanadi?",
+   "options": [
+    "R",
+    "G",
+    "A",
+    "B"
+   ],
+   "answer": 3
+  }
+ ]
+}

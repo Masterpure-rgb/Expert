@@ -1,0 +1,75 @@
+{
+ "topic": 21,
+ "items": [
+  {
+   "q": "Qaysi format PBR materiallarni standart tarzda saqlaydi va real vaqtda tez yuklaş uçun möljallangan?",
+   "options": [
+    "OBJ",
+    "STL",
+    "glTF 2.0",
+    "PLY"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Blender sahnasidagi (1;-4;2) nuqta glTF faylda qanday koordinatalarga ega böladi?",
+   "options": [
+    "(1;2;4)",
+    "(1;-2;-4)",
+    "(-4;1;2)",
+    "(1;4;2)"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Unreal Engine qavariq kolliziya meshini qaysi prefiks orqali avtomatik taniydi?",
+   "options": [
+    "SM_",
+    "LOD_",
+    "T_",
+    "UCX_"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "1 million uçburçakli model ikkilik STL formatida taxminan qança joy egallaydi?",
+   "options": [
+    "5 MB",
+    "50 MB",
+    "500 MB",
+    "12 MB"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "3D bosib çiqariş uçun tayyorlanadigan modelga qöyiladigan asosiy talab qaysi?",
+   "options": [
+    "manifold, yopiq tör",
+    "faqat N-gonlardan iborat tör",
+    "içkariga qaragan normallar",
+    "nol qalinlikdagi devorlar"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Takrorlaş (20-mavzu): iOS qurilmalarida AR Quick Look orqali bevosita oçiladigan format qaysi?",
+   "options": [
+    "USDZ",
+    "FBX",
+    "STL",
+    "OBJ"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Takrorlaş (20-mavzu): Mustaqil VR-şlem uçun daraxt barglarini qanday modellaş maqsadga muvofiq?",
+   "options": [
+    "köp qatlamli alfa aralaştiriş",
+    "alfa kesiş (alpha clip) yoki geometriya bilan kesilgan şakl",
+    "har bir barg uçun real vaqt soyasi",
+    "8K ölçamli tekstura"
+   ],
+   "answer": 1
+  }
+ ]
+}

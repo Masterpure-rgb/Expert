@@ -1,0 +1,75 @@
+{
+ "topic": 19,
+ "items": [
+  {
+   "q": "90 Hz yangilaniş çastotasida kadr vaqti byudjeti nimaga teng?",
+   "options": [
+    "16,7 ms",
+    "13,9 ms",
+    "11,1 ms",
+    "8,3 ms"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Garland–Heckbert usulida çöqqi xatoligi qanday hisoblanadi?",
+   "options": [
+    "vᵀQv, bunda Q — tutaş tekisliklar kvadrikalari yiğindisi",
+    "qirralar uzunliklari yiğindisi",
+    "uçburçaklar yuzalari ayirmasi",
+    "qöşni normallar orasidagi burçak"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Decimate modifikatorining qaysi rejimi subdivisionni teskarisiga bajarib, tartibli törtburçakli törni saqlaydi?",
+   "options": [
+    "Collapse",
+    "Planar",
+    "Triangulate",
+    "Un-Subdivide"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "2048×2048 ölçamli BC7 teksturaning mipmap bilan videoxotiradagi hajmi taxminan qança?",
+   "options": [
+    "2,7 MiB",
+    "5,3 MiB",
+    "16 MiB",
+    "21,3 MiB"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Qaysi usul draw callʼlar sonini bevosita kamaytiradi?",
+   "options": [
+    "teksturalar ölçamini oşiriş",
+    "normal xaritani pişiriş",
+    "bir xil materialli obyektlarni birlaştiriş va tekstura atlasi",
+    "mipmapni öçiriş"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (18-mavzu): Blender 4.x da standart view transform qaysi?",
+   "options": [
+    "Standard",
+    "Filmic",
+    "Raw",
+    "AgX"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Takrorlaş (18-mavzu): Rangli teksturalar (Base Color) va normal xaritalar uçun töğri rang fazosi juftligi qaysi?",
+   "options": [
+    "Ikkalasi ham sRGB",
+    "sRGB va Non-Color",
+    "Ikkalasi ham Non-Color",
+    "Non-Color va sRGB"
+   ],
+   "answer": 1
+  }
+ ]
+}

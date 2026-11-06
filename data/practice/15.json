@@ -1,0 +1,75 @@
+{
+ "topic": 15,
+ "items": [
+  {
+   "q": "Silindrik proyeksiyada u koordinata qanday hisoblanadi?",
+   "options": [
+    "u = z/h",
+    "u = θ/π",
+    "u = φ/2π",
+    "u = (x+1)/2"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Qaysi yoyiş usuli lokal burçaklarni saqlaydi, lekin maydonni buzişi mumkin?",
+   "options": [
+    "LSCM (konform)",
+    "planar proyeksiya",
+    "Smart UV Project",
+    "box proyeksiyasi"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "UV koordinatasi (3,2; 1,5) bölgan nuqta qaysi UDIM plitkasida yotadi?",
+   "options": [
+    "1031",
+    "1013",
+    "1004",
+    "1014"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "2048² teksturadagi 8 px padding 3-mip darajasida neça pikselga teng?",
+   "options": [
+    "4 px",
+    "1 px",
+    "2 px",
+    "0,5 px"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Roughness xaritasi uçun Blenderʼdagi Color Space qiymati qanday bölişi kerak?",
+   "options": [
+    "sRGB",
+    "Filmic",
+    "AgX",
+    "Non-Color"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Takrorlaş (14-mavzu): Blenderʼda Armature modifikatorining qaysi parametri ikkilangan kvaternionli skinningni yoqadi?",
+   "options": [
+    "Multi Modifier",
+    "Bone Envelopes",
+    "Preserve Volume",
+    "Deform"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (14-mavzu): FACS tizimida samimiy tabassum qaysi harakat birliklari kombinatsiyasi bilan ifodalanadi?",
+   "options": [
+    "AU1 + AU2",
+    "AU6 + AU12",
+    "AU4 + AU15",
+    "AU26 + AU45"
+   ],
+   "answer": 1
+  }
+ ]
+}

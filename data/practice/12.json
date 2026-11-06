@@ -1,0 +1,75 @@
+{
+ "topic": 12,
+ "items": [
+  {
+   "q": "Ixtiyoriy parametrlangan egri çiziqning egriligi qaysi formula bilan hisoblanadi?",
+   "options": [
+    "|r′′|",
+    "|r′× r′′|/|r′|³",
+    "|r′|/|r′′|",
+    "r′· r′′"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Frenet–Serret formulalarida dB/ds nimaga teng?",
+   "options": [
+    "κN",
+    "-κT+τB",
+    "τT",
+    "-τN"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Radiusi 2 bölgan sferaning Gauss egriligi nimaga teng?",
+   "options": [
+    "0,25",
+    "0,5",
+    "2",
+    "4"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Giperbolik (egar) nuqtada qaysi şart bajariladi?",
+   "options": [
+    "K>0",
+    "K=0 va H=0",
+    "K<0",
+    "κ₁=κ₂"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Uçburçakli törda Gauss egriligi qanday baholanadi?",
+   "options": [
+    "Kotangens Laplasianining uzunligi bilan",
+    "Burçak defektini çöqqi maydoniga böliş bilan",
+    "Normal uzunligi bilan",
+    "Çöqqidagi qirralar soni bilan"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (11-mavzu): Zebra çiziqlari tutaşuvda uzilmasdan, lekin sinib ötsa, uzluksizlik darajasi qanday?",
+   "options": [
+    "G2",
+    "G3",
+    "G0",
+    "G1"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Takrorlaş (11-mavzu): Loft natijasida sirt buralib qolişining eng köp uçraydigan sababi nima?",
+   "options": [
+    "Kesimlarning yönaliş va tutaşiş nuqtalari mos emas",
+    "Kesimlar soni törttadan köp",
+    "Kesimlar darajasi 3 ga teng",
+    "Barça vaznlar 1 ga teng"
+   ],
+   "answer": 0
+  }
+ ]
+}

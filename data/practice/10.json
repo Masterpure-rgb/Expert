@@ -1,0 +1,75 @@
+{
+ "topic": 10,
+ "items": [
+  {
+   "q": "NURBS aylanani aniq tasvirlay olişining asosiy sababi nima?",
+   "options": [
+    "darajasining yuqoriligi",
+    "ratsional şakl, yaʼni vaznlar",
+    "boşqaruv nuqtalarining köpligi",
+    "tekis tugunlar vektori"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Aylana çoragini ratsional kvadratik Bezier egri çiziği bilan tasvirlaşda örta nuqtaning vazni nimaga teng?",
+   "options": [
+    "1",
+    "0,5",
+    "2",
+    "√2/2"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "NURBS egri çiziğining barça vaznlari teng bölsa, u qanday egri çiziqqa aylanadi?",
+   "options": [
+    "oddiy (köphadli) B-spline",
+    "aylana",
+    "töğri çiziq",
+    "Bezier egri çiziği"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Aylanma sirt usulida qurilgan aniq NURBS tor neçta boşqaruv nuqtasiga ega?",
+   "options": [
+    "9",
+    "18",
+    "81",
+    "45"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Qaysi format NURBS sirtlarini saqlamaydi va faqat uçburçakli törlarni qabul qiladi?",
+   "options": [
+    "IGES",
+    "glTF 2.0",
+    "STEP",
+    "3DM"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (9-mavzu): De Boor algoritmi haqidagi qaysi tasdiq töğri?",
+   "options": [
+    "U barça boşqaruv nuqtalaridan foydalanadi",
+    "U p+1 ta nuqta bilan işlaydi, böliş nisbatlari tugunlardan olinadi",
+    "U faqat Bezier egri çiziqlari uçun qöllaniladi",
+    "U çiziqli tenglamalar sistemasini yeçişni talab qiladi"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (9-mavzu): Blenderʼdagi Endpoint parametri nazariyadagi qaysi tuşunçaga mos keladi?",
+   "options": [
+    "tekis davriy tugunlar vektori",
+    "darajani özgartiriş",
+    "oçiq (qisilgan) tugunlar vektori",
+    "nuqtalar vaznlari"
+   ],
+   "answer": 2
+  }
+ ]
+}

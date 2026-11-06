@@ -1,0 +1,75 @@
+{
+ "topic": 4,
+ "items": [
+  {
+   "q": "Proyeksiya matritsasi P = K[R| t] ning ölçami qanday?",
+   "options": [
+    "3× 3",
+    "4× 4",
+    "3× 4",
+    "4× 3"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Fundamental matritsa neçta erkinlik darajasiga ega?",
+   "options": [
+    "7",
+    "5",
+    "8",
+    "9"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "SIFT deskriptorining ölçami neçaga teng?",
+   "options": [
+    "64",
+    "256 bit",
+    "32",
+    "128"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Bundle adjustment qaysi kattalikni minimallaştiradi?",
+   "options": [
+    "Uçburçaklar sonini",
+    "Qayta proyeksiyalaş xatolari kvadratlari yiğindisini",
+    "Tekstura ölçamini",
+    "Kameralar orasidagi masofani"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "GSD formulasi qaysi?",
+   "options": [
+    "f D/p",
+    "p f/D",
+    "D/(p f)",
+    "p D/f"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Takrorlaş (3-mavzu): L-tizimda «[» belgisi nimani bildiradi?",
+   "options": [
+    "Çapga buriliş",
+    "Joriy holatni stekka saqlaş",
+    "Kesma çiziş",
+    "Iteratsiyani tugataş"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (3-mavzu): Qaysi tasvir aylanani aniq (xatosiz) ifodalay oladi?",
+   "options": [
+    "Uçburçaklar töri",
+    "Voksellar",
+    "NURBS egri çiziği",
+    "Nuqtalar buluti"
+   ],
+   "answer": 2
+  }
+ ]
+}

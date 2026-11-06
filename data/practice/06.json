@@ -1,0 +1,75 @@
+{
+ "topic": 6,
+ "items": [
+  {
+   "q": "Kubga Catmull–Clark sxemasi ikki marta qöllanganda yoqlar soni neçta böladi?",
+   "options": [
+    "24",
+    "48",
+    "96",
+    "384"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Törtburçakli törda valentligi 5 bölgan çöqqi qanday ataladi?",
+   "options": [
+    "N-pol",
+    "E-pol",
+    "T-çöqqi",
+    "Çegaraviy çöqqi"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Loop sxemasida muntazam (n=6) çöqqi uçun β nimaga teng?",
+   "options": [
+    "1/16",
+    "3/16",
+    "3/8",
+    "1/8"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Tayanç halqa keskin qirraga yaqinlaşgan sari subdivisiondan keyingi qirra qanday böladi?",
+   "options": [
+    "Yumşoqroq",
+    "Özgarmaydi",
+    "Yöqoladi",
+    "Keskinroq"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Blenderda ustma-ust joylaşgan çöqqilarni qaysi buyruq birlaştiradi?",
+   "options": [
+    "Merge by Distance",
+    "Recalculate Outside",
+    "Select Non-Manifold",
+    "Triangulate"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Takrorlaş (5-mavzu): Shade Smooth buyruği nimani özgartiradi?",
+   "options": [
+    "Yoqlar sonini oşiradi",
+    "Siluetni silliqlaydi",
+    "Çöqqi normallarini interpolyatsiya qilib, yoruğlik hisobini özgartiradi",
+    "Törni triangulyatsiya qiladi"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (5-mavzu): Mirror va Subdivision Surface modifikatorlarining töğri tartibi qaysi?",
+   "options": [
+    "Avval Subdivision, keyin Mirror",
+    "Avval Mirror, keyin Subdivision",
+    "Tartib ahamiyatsiz",
+    "Faqat bittasini qöllaş mumkin"
+   ],
+   "answer": 1
+  }
+ ]
+}

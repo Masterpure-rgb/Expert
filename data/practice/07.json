@@ -1,4 +1,75 @@
-{"topic":7,"items":[
-{"q":"Kubik Bezier egri çizigi neçta boşqaruv nuqtasi bilan beriladi?","options":["2","3","4","5"],"answer":2,"explain":"n-darajali egri n+1 nuqta bilan beriladi: 3+1=4."},
-{"q":"Bezier egri çizigi qaysi nuqtalardan albatta ötadi?","options":["Barça boşqaruv nuqtalaridan","Faqat birinçi va oxirgi nuqtadan","Faqat örta nuqtalardan","Heç qaysi nuqtadan"],"answer":1,"explain":"Uç nuqtalarni interpolyatsiya qiladi, örtadagilar faqat tortadi."}
-]}
+{
+ "topic": 7,
+ "items": [
+  {
+   "q": "Kubik Bezier egri çiziğida neçta boşqaruv nuqtasi bor?",
+   "options": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Qavariq qobiq xossasini qaysi xossalar taʼminlaydi?",
+   "options": [
+    "simmetriya",
+    "rekursiya",
+    "hosila formulasi",
+    "manfiymaslik va birlikning bölinişi"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Kubik Bezier egri çiziği uçun B′(0) nimaga teng?",
+   "options": [
+    "3(P₁ − P₀)",
+    "P₁ − P₀",
+    "6(P₀ − 2P₁+P₂)",
+    "3(P₃ − P₂)"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "TrueType şrift konturlari qanday segmentlardan iborat?",
+   "options": [
+    "kubik Bezier",
+    "NURBS",
+    "kvadratik Bezier",
+    "Catmull–Rom"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "G¹ ulaniş uçun qaysi şart zarur?",
+   "options": [
+    "faqat Q₀=P₃",
+    "P₂, P₃=Q₀, Q₁ bir töğri çiziqda va P₃ ular orasida",
+    "barça sakkiz nuqta bir töğri çiziqda",
+    "Q₂=P₁"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (6-mavzu): Tayanç halqa keskin qirraga yaqinlaşgan sari subdivisiondan keyingi qirra qanday böladi?",
+   "options": [
+    "Yumşoqroq",
+    "Özgarmaydi",
+    "Yöqoladi",
+    "Keskinroq"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Takrorlaş (6-mavzu): Blenderda ustma-ust joylaşgan çöqqilarni qaysi buyruq birlaştiradi?",
+   "options": [
+    "Merge by Distance",
+    "Recalculate Outside",
+    "Select Non-Manifold",
+    "Triangulate"
+   ],
+   "answer": 0
+  }
+ ]
+}

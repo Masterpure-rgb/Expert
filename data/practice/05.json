@@ -1,0 +1,75 @@
+{
+ "topic": 5,
+ "items": [
+  {
+   "q": "Yopiq uçburçakli törda (g=0) V=1002 bölsa, yoqlar soni neçta?",
+   "options": [
+    "1000",
+    "2004",
+    "2000",
+    "3000"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Newell usuli asosan nima uçun qöllaniladi?",
+   "options": [
+    "Tekis bölmagan köpburçak normalini barqaror hisoblaş uçun",
+    "Çöqqilarni birlaştiriş uçun",
+    "UV yoyiş uçun",
+    "Uçburçaklar sonini kamaytiriş uçun"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Qaysi tuzilma bitta qirraga ikkitadan ortiq yoq ulaşga imkon beradi?",
+   "options": [
+    "Half-edge",
+    "Winged-edge",
+    "Face–vertex röyxati bilan qirralar jadvali",
+    "BMesh"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Shade Smooth buyruği nimani özgartiradi?",
+   "options": [
+    "Yoqlar sonini oşiradi",
+    "Siluetni silliqlaydi",
+    "Çöqqi normallarini interpolyatsiya qilib, yoruğlik hisobini özgartiradi",
+    "Törni triangulyatsiya qiladi"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Mirror va Subdivision Surface modifikatorlarining töğri tartibi qaysi?",
+   "options": [
+    "Avval Subdivision, keyin Mirror",
+    "Avval Mirror, keyin Subdivision",
+    "Tartib ahamiyatsiz",
+    "Faqat bittasini qöllaş mumkin"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (4-mavzu): Bundle adjustment qaysi kattalikni minimallaştiradi?",
+   "options": [
+    "Uçburçaklar sonini",
+    "Qayta proyeksiyalaş xatolari kvadratlari yiğindisini",
+    "Tekstura ölçamini",
+    "Kameralar orasidagi masofani"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (4-mavzu): GSD formulasi qaysi?",
+   "options": [
+    "f D/p",
+    "p f/D",
+    "D/(p f)",
+    "p D/f"
+   ],
+   "answer": 3
+  }
+ ]
+}

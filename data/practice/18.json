@@ -1,0 +1,75 @@
+{
+ "topic": 18,
+ "items": [
+  {
+   "q": "Z-bufer qaysi masalani hal qiladi?",
+   "options": [
+    "Teksturalarni siqiş",
+    "Körinadigan sirtni aniqlaş",
+    "Şovqinni yöqotiş",
+    "Soyalarni yumşatiş"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Whitted (1980) algoritmi qaysi effektni bera olmaydi?",
+   "options": [
+    "Közgu aks etişi",
+    "Şişadagi siniş",
+    "Yumşoq soya va xira aks etiş",
+    "Nuqtaviy manbadan qattiq soya"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Path tracing da şovqinni 3 marta kamaytiriş uçun namunalarni neça marta oşiriş kerak?",
+   "options": [
+    "9",
+    "3",
+    "6",
+    "27"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Blender 4.x da standart view transform qaysi?",
+   "options": [
+    "Standard",
+    "Filmic",
+    "Raw",
+    "AgX"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Rangli teksturalar (Base Color) va normal xaritalar uçun töğri rang fazosi juftligi qaysi?",
+   "options": [
+    "Ikkalasi ham sRGB",
+    "sRGB va Non-Color",
+    "Ikkalasi ham Non-Color",
+    "Non-Color va sRGB"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (17-mavzu): Qaysi özgariş soyani yumşoqroq qiladi?",
+   "options": [
+    "Manba ölçamini kattalaştiriş",
+    "Manbani uzoqlaştiriş",
+    "Point örniga Sun ni Angle = 0 bilan qöyiş",
+    "Manba quvvatini oşiriş"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Takrorlaş (17-mavzu): Yoritiş nisbati 4:1 bölsa, yoritilgan va soyadagi tomonlar orasidagi farq neça stop?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": 1
+  }
+ ]
+}

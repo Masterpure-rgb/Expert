@@ -1,0 +1,75 @@
+{
+ "topic": 11,
+ "items": [
+  {
+   "q": "Bikubik Bezier lavhasi neçta boşqaruv nuqtasi bilan aniqlanadi?",
+   "options": [
+    "9",
+    "12",
+    "16",
+    "20"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Coons lavhasi formulasida bilinear qism nima uçun ayiriladi?",
+   "options": [
+    "Normalni topiş uçun",
+    "Burçaklarning ikki marta hisoblanişini yöqotiş uçun",
+    "Darajani pasaytiriş uçun",
+    "Vaznlarni normallaş uçun"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "9 nuqtali aniq NURBS aylanada kvadrat burçaklaridagi nuqtalarning vazni nimaga teng?",
+   "options": [
+    "√(2)/2",
+    "1",
+    "2",
+    "0,5"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Zebra çiziqlari tutaşuvda uzilmasdan, lekin sinib ötsa, uzluksizlik darajasi qanday?",
+   "options": [
+    "G2",
+    "G3",
+    "G0",
+    "G1"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Loft natijasida sirt buralib qolişining eng köp uçraydigan sababi nima?",
+   "options": [
+    "Kesimlarning yönaliş va tutaşiş nuqtalari mos emas",
+    "Kesimlar soni törttadan köp",
+    "Kesimlar darajasi 3 ga teng",
+    "Barça vaznlar 1 ga teng"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Takrorlaş (10-mavzu): Aylanma sirt usulida qurilgan aniq NURBS tor neçta boşqaruv nuqtasiga ega?",
+   "options": [
+    "9",
+    "18",
+    "81",
+    "45"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (10-mavzu): Qaysi format NURBS sirtlarini saqlamaydi va faqat uçburçakli törlarni qabul qiladi?",
+   "options": [
+    "IGES",
+    "glTF 2.0",
+    "STEP",
+    "3DM"
+   ],
+   "answer": 1
+  }
+ ]
+}

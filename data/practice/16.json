@@ -1,0 +1,75 @@
+{
+ "topic": 16,
+ "items": [
+  {
+   "q": "Sindiriş körsatkiçi n = 1,5 bölgan şişa uçun F₀ nimaga teng?",
+   "options": [
+    "0,4",
+    "0,04",
+    "0,15",
+    "0,25"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Cook–Torrance modelidagi qaysi omil mikroyoqçalar normallarining taqsimotini bildiradi?",
+   "options": [
+    "G",
+    "F",
+    "D",
+    "k_d"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Metallic = 1 bölganda Base Color nimani belgilaydi?",
+   "options": [
+    "diffuz rangni",
+    "sirt osti soçiliş rangini",
+    "nur taratiş rangini",
+    "közgusimon qaytiş rangini (F₀)"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Blinn–Phong modeli közgusimon hadda qaysi vektordan foydalanadi?",
+   "options": [
+    "yarim vektor H",
+    "singan nur",
+    "R· V köpaytmasi",
+    "urinma T"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "glTF 2.0 `metallicRoughnessTexture` da metallik qaysi kanalda saqlanadi?",
+   "options": [
+    "R",
+    "G",
+    "A",
+    "B"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Takrorlaş (15-mavzu): 2048² teksturadagi 8 px padding 3-mip darajasida neça pikselga teng?",
+   "options": [
+    "4 px",
+    "1 px",
+    "2 px",
+    "0,5 px"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (15-mavzu): Roughness xaritasi uçun Blenderʼdagi Color Space qiymati qanday bölişi kerak?",
+   "options": [
+    "sRGB",
+    "Filmic",
+    "AgX",
+    "Non-Color"
+   ],
+   "answer": 3
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "topic": 2,
+ "items": [
+  {
+   "q": "«Sketchpad» tizimini kim yaratgan?",
+   "options": [
+    "Pierre Bézier",
+    "Ivan Sutherland",
+    "Edwin Catmull",
+    "James Kajiya"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Gouraud soyalaşida köpburçak içida nima interpolyatsiya qilinadi?",
+   "options": [
+    "normallar",
+    "tekstura koordinatalari",
+    "faqat çuqurlik",
+    "çöqqilarda hisoblangan yorqinlik"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Z-bufer va teksturalaş ğoyalari kimning 1974-yilgi dissertatsiyasida taklif etilgan?",
+   "options": [
+    "Edwin Catmull",
+    "Henri Gouraud",
+    "Turner Whitted",
+    "Jim Blinn"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Blender qaysi sanada GNU GPL litsenziyasi ostida oçiq manbali dasturga aylangan?",
+   "options": [
+    "1994-yil yanvar",
+    "1998-yil iyun",
+    "2002-yil 13-oktabr",
+    "2011-yil dekabr"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "DirectX Raytracing interfeysi va RTX videokartalari qaysi yili taqdim etilgan?",
+   "options": [
+    "1999",
+    "2007",
+    "2012",
+    "2018"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Takrorlaş (1-mavzu): M = TRS kompozitsiyasida nuqtaga birinçi bölib qaysi almaştiriş qöllanadi?",
+   "options": [
+    "köçiriş",
+    "aylantiriş",
+    "uçalasi bir vaqtda",
+    "masştablaş"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Takrorlaş (1-mavzu): 3ds Max 2026 da tanlangan obyektni körinişga töliq siğdiriş (Zoom Extents Selected) tugmasi qaysi?",
+   "options": [
+    "Home",
+    "Numpad .",
+    "Z",
+    "F"
+   ],
+   "answer": 2
+  }
+ ]
+}

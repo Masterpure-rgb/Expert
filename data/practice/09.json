@@ -1,0 +1,75 @@
+{
+ "topic": 9,
+ "items": [
+  {
+   "q": "Yettita boşqaruv nuqtasi bilan berilgan kubik B-spline egri çiziği uçun tugunlar vektori neçta sondan iborat bölişi kerak?",
+   "options": [
+    "7",
+    "10",
+    "11",
+    "12"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Nᵢ,ₚ(u) bazis funksiya qaysi oraliqdan taşqarida nolga teng?",
+   "options": [
+    "[uᵢ; uᵢ₊ₚ₊₁)",
+    "[uᵢ; uᵢ₊₁)",
+    "[u₀; uₘ]",
+    "[uᵢ₋ₚ; uᵢ)"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Kubik B-spline egri çiziğining ikki karrali ički tugunida qanday uzluksizlik taʼminlanadi?",
+   "options": [
+    "C³",
+    "C²",
+    "C⁰",
+    "C¹"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "De Boor algoritmi haqidagi qaysi tasdiq töğri?",
+   "options": [
+    "U barça boşqaruv nuqtalaridan foydalanadi",
+    "U p+1 ta nuqta bilan işlaydi, böliş nisbatlari tugunlardan olinadi",
+    "U faqat Bezier egri çiziqlari uçun qöllaniladi",
+    "U çiziqli tenglamalar sistemasini yeçişni talab qiladi"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Blenderʼdagi Endpoint parametri nazariyadagi qaysi tuşunçaga mos keladi?",
+   "options": [
+    "tekis davriy tugunlar vektori",
+    "darajani özgartiriş",
+    "oçiq (qisilgan) tugunlar vektori",
+    "nuqtalar vaznlari"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (8-mavzu): Catmull–Rom splini Cardinal splinining qaysi tarangligiga mos keladi?",
+   "options": [
+    "c=1",
+    "c=0",
+    "c=0,5",
+    "c=-1"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (8-mavzu): Kochanek–Bartels splinida kalit nuqtadagi kiriş va çiqiş urinmalarini farqli qiladigan parametr qaysi?",
+   "options": [
+    "taranglik T",
+    "siljiş B",
+    "uzluksizlik C",
+    "parametrlaş qadami"
+   ],
+   "answer": 2
+  }
+ ]
+}

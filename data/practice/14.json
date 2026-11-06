@@ -1,0 +1,75 @@
+{
+ "topic": 14,
+ "items": [
+  {
+   "q": "Kanonik qoidaga köra köz çiziği qayerda joylaşadi?",
+   "options": [
+    "Boş balandligining uçdan bir qismida",
+    "Boş töpasidan iyakkaça masofaning örtasida",
+    "Burun asosi darajasida",
+    "Soç çiziği darajasida"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Yuz topologiyasida qutblarni (3 yoki 5 qirrali çöqqilarni) qayerga joylaştiriş tavsiya etiladi?",
+   "options": [
+    "Oğiz burçagiga",
+    "Köz qovoği çetiga",
+    "Lab çiziğiga",
+    "Yonoq va çakka kabi kam deformatsiyalanadigan joyga"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "LBS da ikki suyak 180° ga buralganda w = 0,5 bölgan kesim radiusi qançaga teng böladi?",
+   "options": [
+    "0",
+    "0,5r",
+    "0,71r",
+    "r"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Blenderʼda Armature modifikatorining qaysi parametri ikkilangan kvaternionli skinningni yoqadi?",
+   "options": [
+    "Multi Modifier",
+    "Bone Envelopes",
+    "Preserve Volume",
+    "Deform"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "FACS tizimida samimiy tabassum qaysi harakat birliklari kombinatsiyasi bilan ifodalanadi?",
+   "options": [
+    "AU1 + AU2",
+    "AU6 + AU12",
+    "AU4 + AU15",
+    "AU26 + AU45"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (13-mavzu): Qaysi Boolean usuli operandlar yopiq (manifold) bölişini talab qiladi va eng tez işlaydi?",
+   "options": [
+    "Exact",
+    "Manifold",
+    "Fast",
+    "Union"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Takrorlaş (13-mavzu): Blenderʼda tör maʼlumotlarini asl obyekt bilan baham köradigan nusxa qaysi buyruq bilan yaratiladi?",
+   "options": [
+    "Shift + D",
+    "Ctrl + D",
+    "Alt + D",
+    "Shift + R"
+   ],
+   "answer": 2
+  }
+ ]
+}

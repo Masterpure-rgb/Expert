@@ -1,0 +1,75 @@
+{
+ "topic": 8,
+ "items": [
+  {
+   "q": "Matematik «spline» atamasini kim kiritgan?",
+   "options": [
+    "P. Bézier",
+    "P. de Casteljau",
+    "I. Schoenberg",
+    "E. Catmull"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Tabiiy kubik splineʼning çegaraviy şarti qaysi?",
+   "options": [
+    "S′′(x₀)=S′′(xₙ)=0",
+    "S′(x₀)=S′(xₙ)=0",
+    "S(x₀)=S(xₙ)",
+    "S′′′(x₀)=0"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Teng qadamli tabiiy spline sistemasida boş diagonal elementi nimaga teng?",
+   "options": [
+    "1",
+    "2",
+    "6",
+    "4"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "Catmull–Rom splini Cardinal splinining qaysi tarangligiga mos keladi?",
+   "options": [
+    "c=1",
+    "c=0",
+    "c=0,5",
+    "c=-1"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "Kochanek–Bartels splinida kalit nuqtadagi kiriş va çiqiş urinmalarini farqli qiladigan parametr qaysi?",
+   "options": [
+    "taranglik T",
+    "siljiş B",
+    "uzluksizlik C",
+    "parametrlaş qadami"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (7-mavzu): TrueType şrift konturlari qanday segmentlardan iborat?",
+   "options": [
+    "kubik Bezier",
+    "NURBS",
+    "kvadratik Bezier",
+    "Catmull–Rom"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "Takrorlaş (7-mavzu): G¹ ulaniş uçun qaysi şart zarur?",
+   "options": [
+    "faqat Q₀=P₃",
+    "P₂, P₃=Q₀, Q₁ bir töğri çiziqda va P₃ ular orasida",
+    "barça sakkiz nuqta bir töğri çiziqda",
+    "Q₂=P₁"
+   ],
+   "answer": 1
+  }
+ ]
+}
