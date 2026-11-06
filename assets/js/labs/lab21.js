@@ -81,7 +81,7 @@
 
   /* ================= 2: formatlar taqqosi ================= */
   var FM = [
-    { id: "fbx", n: "FBX", w: "Autodesk (yopiq, mulkiy format); ikkilik va ASCII; öyin dvijoklari va Autodesk dasturlari orasida keng qöllaniladi.", file: "ikk. / ASCII" },
+    { id: "fbx", n: "FBX", w: "Autodesk (yopiq, mulkiy format); ikkilik va ASCII; öyin dvigatellari va Autodesk dasturlari orasida keng qöllaniladi.", file: "ikk. / ASCII" },
     { id: "obj", n: "OBJ", w: "Wavefront; matnli format: v, vt, vn, f, usemtl, mtllib. Animatsiya, skelet va birlik yöq.", file: "matn" },
     { id: "gltf", n: "glTF 2.0", w: "Khronos Group; ISO/IEC 12113 (2022); «3D ning JPEGʼi». .gltf — JSON (+ .bin, tasvirlar), .glb — bitta ikkilik fayl.", file: "JSON / GLB" },
     { id: "usd", n: "USD", w: "Pixar; sahna tavsifi: qatlamlar (layers) va kompozitsiya (sublayer, reference, payload, variant). .usda — matn, .usdc — ikkilik, .usdz — siqilmagan zip paketi (Apple AR).", file: "matn / ikk." },
