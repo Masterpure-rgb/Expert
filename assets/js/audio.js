@@ -1,4 +1,4 @@
-/* QR-1: mavzuning qisqa audio tuşuntirişi (Gemini TTS) — matn bilan sinxron. */
+/* QR-1: mavzuning qisqa audio tuşuntirişi — matn bilan sinxron. */
 (function () {
   var EX = window.EX;
   function mmss(s) { s = Math.max(0, Math.round(s || 0)); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); }
@@ -36,7 +36,6 @@
       tr.appendChild(el); return el;
     });
     wrap.appendChild(tr);
-    if (data.voice) wrap.appendChild(EX.el("p", { class: "muted" }, data.voice));
     playBtn.addEventListener("click", function () { if (audio.paused) audio.play(); else audio.pause(); });
     audio.addEventListener("play", function () { playBtn.innerHTML = EX.icons.pause; playBtn.setAttribute("aria-label", "Pauza"); });
     audio.addEventListener("pause", function () { playBtn.innerHTML = EX.icons.play; playBtn.setAttribute("aria-label", "Tinglaş"); });
