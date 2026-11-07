@@ -34,7 +34,7 @@ reklamasiz, maʼlumotlarni istalgan vaqtda Excelʼga yuklab oliş mumkin. Ulaş 
 ## 5. Darsda
 1. **Onlayn dars → Darsni yaratiş** (guruh, mavzu, boşlaniş vaqti).
 2. Nazariya tuşuntirilgaç, **A. Tezkor test — boşlaş** ni bosing: ekranda 4 xonali kod paydo böladi.
-   **Projektor rejimi** kod va QR-kodni katta körsatadi.
+   **Proyektor rejimi** kod va QR-kodni katta körsatadi.
 3. Talabalar kitobdagi uçinçi QR-kodni (✅ Topşiriq) skanerlab, ID va kodni kiritadi; javoblar avtomatik baholanadi,
    QR orqali kirgan talaba davomatda «keldi» yoki kechikkan daqiqalari bilan «kech qoldi» deb belgilanadi.
 4. **Bosqiçni yopiş** dan söng taqsimotni körsatib, savolni muhokama qiling (Peer Instruction), keyin **B** va **C**

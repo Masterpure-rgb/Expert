@@ -228,7 +228,7 @@
     box.appendChild(el("div", { class: "row", style: "margin-top:12px;align-items:flex-end" },
       el("div", { class: "grow" }, el("div", { class: "muted live-label" }, "Sessiya kodi"), codeEl, stageInfo),
       el("div", { class: "row" },
-        el("button", { class: "btn", onclick: projector }, "Projektor rejimi"),
+        el("button", { class: "btn", onclick: projector }, "Proyektor rejimi"),
         el("button", { class: "btn", onclick: async function () { await call("a_stage_close", { darsId: d.id }); EX.toast("Bosqiç yopildi", "ok"); refresh(); } }, "Bosqiçni yopiş"),
         el("button", { class: "btn danger", onclick: async function () {
           if (!confirm("Darsni yakunlaysizmi?")) return;
