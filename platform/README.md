@@ -1,4 +1,4 @@
-# Jonli baholaş platformasini ulaş (Google Sheets + Apps Script)
+# Onlayn baholaş platformasini ulaş (Google Sheets + Apps Script)
 
 Platforma maʼlumotlari (talabalar, darslar, javoblar, davomat, savollar banki) **sizning Google hisobingizdagi**
 bitta Google Sheets jadvalida saqlanadi. Server — şu jadvalga biriktirilgan Apps Script veb-ilovasi. Bepul,
@@ -32,7 +32,7 @@ reklamasiz, maʼlumotlarni istalgan vaqtda Excelʼga yuklab oliş mumkin. Ulaş 
   «ID kartoçkalarni çop etiş» tugmasi bilan tarqating.
 
 ## 5. Darsda
-1. **Jonli dars → Darsni yaratiş** (guruh, mavzu, boşlaniş vaqti).
+1. **Onlayn dars → Darsni yaratiş** (guruh, mavzu, boşlaniş vaqti).
 2. Nazariya tuşuntirilgaç, **A. Tezkor test — boşlaş** ni bosing: ekranda 4 xonali kod paydo böladi.
    **Projektor rejimi** kod va QR-kodni katta körsatadi.
 3. Talabalar kitobdagi uçinçi QR-kodni (✅ Topşiriq) skanerlab, ID va kodni kiritadi; javoblar avtomatik baholanadi,

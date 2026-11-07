@@ -1,4 +1,4 @@
-/* Öqituvçi paneli: talabalar, jonli dars, davomat, jurnal, savollar banki, sozlamalar. */
+/* Öqituvçi paneli: talabalar, onlayn dars, davomat, jurnal, savollar banki, sozlamalar. */
 (function () {
   var EX = window.EX, el = EX.el;
   var S = { token: null, students: [], lessons: [], settings: {}, page: "home", live: null, poll: null };
@@ -78,7 +78,7 @@
     var first = ping.ok && !ping.sozlangan;
     var btn = el("button", { class: "btn primary block", type: "submit" }, first ? "Parolni örnatiş va kiriş" : "Kiriş");
     w.appendChild(el("section", { class: "hero" }, el("h1", null, "Öqituvçi paneli"),
-      el("p", null, "Talabalar, davomat, jonli topşiriqlar va ballar jurnali.")));
+      el("p", null, "Talabalar, davomat, onlayn topşiriqlar va ballar jurnali.")));
     w.appendChild(el("form", { class: "panel", onsubmit: async function (e) {
         e.preventDefault();
         var url = apiIn.value.trim();
@@ -103,7 +103,7 @@
 
   /* ================= qobiq ================= */
   var PAGES = [
-    ["home", "Boş sahifa"], ["live", "Jonli dars"], ["students", "Talabalar"], ["attendance", "Davomat"],
+    ["home", "Boş sahifa"], ["live", "Onlayn dars"], ["students", "Talabalar"], ["attendance", "Davomat"],
     ["gradebook", "Jurnal"], ["bank", "Savollar banki"], ["settings", "Sozlamalar"]
   ];
   function shell() {
@@ -156,9 +156,9 @@
     return el("div", { class: "tbl-wrap" }, t);
   }
 
-  /* ================= jonli dars ================= */
+  /* ================= onlayn dars ================= */
   async function pageLive() {
-    main.appendChild(el("h1", null, "Jonli dars"));
+    main.appendChild(el("h1", null, "Onlayn dars"));
     var ls = await call("a_lessons"); S.lessons = ls.darslar || [];
     var st = await call("a_students"); S.students = st.talabalar || [];
     var active = S.lessons.filter(function (d) { return d.holat === "faol"; });

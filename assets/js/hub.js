@@ -126,7 +126,7 @@
         el("li", null, el("span", { class: "sn", "aria-hidden": "true" }, "1"), el("b", null, "QR kodni skanerlang."), " Kitobdagi har bir mavzu boşida uçta kod bor: tinglaş, laboratoriya va topşiriq."),
         el("li", null, el("span", { class: "sn", "aria-hidden": "true" }, "2"), el("b", null, "Tinglang va sinab köring."), " Audio mavzuning asosiy ğoyasini bir-ikki daqiqada tuşuntiradi, laboratoriyada esa formulalarni özingiz özgartirib körasiz."),
         el("li", null, el("span", { class: "sn", "aria-hidden": "true" }, "3"), el("b", null, "Darsda topşiriqni bajaring."), " Öqituvçi bosqiçni oçganda öz ID raqamingiz va ekrandagi 4 xonali kodni kiriting. Ballar va davomat avtomatik yoziladi.")),
-      el("p", { class: "muted" }, "Öqituvçilar uçun: ", el("a", { href: EX.base + "admin/" }, "öqituvçi paneli"), " — talabalar röyxati, jonli bosqiçlar, davomat va jurnal.")));
+      el("p", { class: "muted" }, "Öqituvçilar uçun: ", el("a", { href: EX.base + "admin/" }, "öqituvçi paneli"), " — talabalar röyxati, onlayn bosqiçlar, davomat va jurnal.")));
 
     // ---- mualliflar: portret + ism titri ----
     var au = el("section", { class: "hub-authors-sec" }, el("h2", null, "Mualliflar"));

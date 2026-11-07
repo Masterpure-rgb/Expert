@@ -1,4 +1,4 @@
-/* QR-3: jonli topşiriq sahifasi (talaba uçun). */
+/* QR-3: onlayn topşiriq sahifasi (talaba uçun). */
 (function () {
   var EX = window.EX, el = EX.el;
   var topic = EX.topicFromPath();
@@ -13,7 +13,7 @@
     EX.topbar(topic);
     root = el("main", { class: "wrap" });
     document.body.appendChild(root);
-    root.appendChild(EX.hero(topic, "Jonli topşiriq"));
+    root.appendChild(EX.hero(topic, "Onlayn topşiriq"));
     root.appendChild(EX.trio(topic, "task"));
     showLogin();
   }

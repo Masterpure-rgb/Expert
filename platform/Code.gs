@@ -353,7 +353,7 @@ ACTIONS.a_students_delete = function (env, p) {
   return _ok({});
 };
 
-/* ---------- admin: darslar va jonli sessiya ---------- */
+/* ---------- admin: darslar va onlayn sessiya ---------- */
 ACTIONS.a_lessons = function (env, p) {
   if (!_requireAdmin(env, p)) return _err("Ruxsat yöq", "AUTH");
   return _ok({ darslar: env.store.all("darslar") });
