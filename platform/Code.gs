@@ -575,7 +575,19 @@ if (typeof module !== "undefined") {
  * Bu fayl engine.js bilan birlaştirilib Code.gs hosil qilinadi.
  * =================================================================== */
 
-function _ss_() { return SpreadsheetApp.getActiveSpreadsheet(); }
+var _SS_CACHE_ = null;
+function _ss_() {
+  // Skript jadvalga biriktirilgan bölsa — öşa jadval; aks holda bir marta yangi jadval yaratiladi va ID saqlanadi.
+  if (_SS_CACHE_) return _SS_CACHE_;
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  if (!ss) {
+    var props = PropertiesService.getScriptProperties(), id = props.getProperty("SS_ID");
+    if (id) ss = SpreadsheetApp.openById(id);
+    else { ss = SpreadsheetApp.create("Expert — 3D modellaştiriş bazasi"); props.setProperty("SS_ID", ss.getId()); }
+  }
+  _SS_CACHE_ = ss;
+  return ss;
+}
 
 function _sheet_(name) {
   var ss = _ss_();
@@ -701,5 +713,6 @@ function setup() {
   Object.keys(TABLES).forEach(function (t) { _sheet_(t); });
   var def = _ss_().getSheetByName("Sheet1") || _ss_().getSheetByName("Лист1") || _ss_().getSheetByName("List1");
   if (def && _ss_().getSheets().length > 1) _ss_().deleteSheet(def);
+  Logger.log("Tayyor. Jadval: " + _ss_().getUrl());
   return "Tayyor";
 }
