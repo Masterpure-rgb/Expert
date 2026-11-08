@@ -7,7 +7,7 @@
     var f = [[0, 3, 2, 1], [0, 1, 5, 4], [1, 2, 6, 5], [2, 3, 7, 6], [3, 0, 4, 7], [7, 4, 8], [5, 6, 9], [4, 5, 9, 8], [6, 7, 8, 9]];
     return { v: v, f: f, colors: ["#C9D4F5", "#FBE3C8", "#E9EDF5", "#E9EDF5", "#E9EDF5", "#E9EDF5", "#E9EDF5", "#F2B8A8", "#F2B8A8"] };
   }
-  // öq kelişuvlari: har bir öq yorliği Z-yuqori dunyoning qaysi yönalişiga mos keladi
+  // öq kelişuvlari: har bir öq yorliği Z-yuqori global tizimning qaysi yönalişiga mos keladi
   var CONV = {
     blender: { name: "Blender, 3ds Max", up: "Z-yuqori", hand: "öng qöl", dirs: [[1, 0, 0], [0, 1, 0], [0, 0, 1]], unit: 1, u: "m" },
     gltf: { name: "glTF, Maya, three.js", up: "Y-yuqori", hand: "öng qöl", dirs: [[1, 0, 0], [0, 0, 1], [0, -1, 0]], unit: 1, u: "m" },
@@ -88,7 +88,7 @@
           L.toggle("Ikkinçi tartibni xira körsatiş", true, function (v) { st.ghost = v; upd(); });
           L.seg("A çöqqi (lokal)", [[6, "(1; 0,5; 0,3)"], [0, "(−1; −0,5; −0,3)"], [1, "(1; −0,5; −0,3)"]], 6, function (v) { st.vi = Number(v); upd(); });
           var mat = L.matrix("Model matritsasi M (4×4)", "main");
-          var R = L.readout([["l", "A — lokal koordinatalar"], ["w", "A — dunyo koordinatalari"]]);
+          var R = L.readout([["l", "A — lokal koordinatalar"], ["w", "A — global koordinatalar"]]);
           var rad = Math.PI / 180;
           function build(order) {
             var T = M.T(st.t[0], st.t[1], st.t[2]);
@@ -112,7 +112,7 @@
           L.tasks([
             "Sx = 2 qilib, Rz ni özgartiring. Avval «T·R·S», söng «S·R·T» tartibini tanlang: obyekt şakli qanday özgaradi?",
             "Barça burçaklarni 0 ga, masştabni 1 ga qöying: matritsaning çap yuqori 3×3 qismi birlik matritsaga aylanadi.",
-            "Faqat Tx = 2 bölganda A çöqqining dunyo koordinatalari lokal koordinatalardan qança farq qiladi?"
+            "Faqat Tx = 2 bölganda A çöqqining global koordinatalari lokal koordinatalardan qança farq qiladi?"
           ], "b");
         }
       }
