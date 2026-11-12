@@ -5,7 +5,7 @@
   function gauss(az, el, a0, e0, sa, se) { return Math.exp(-((az - a0) * (az - a0) / (2 * sa * sa) + (el - e0) * (el - e0) / (2 * se * se))); }
 
   /* ---------- 1-tajriba: yuz proporsiyalari (stilizatsiya) ---------- */
-  // birlik: F — yuz balandligi (soç çiziğidan iyakkaça). Bosh balandligi H = 1,25 F (stilizatsiya).
+  // birlik: F — yuz balandligi (soç çiziğidan iyakkaça). Boş balandligi H = 1,25 F (stilizatsiya).
   var HH = 1.25, YE = HH / 2;
   function catmull(c, P, closed) {
     var n = P.length;
@@ -20,7 +20,7 @@
   var SIDE = [[-0.62, 0.78], [-0.45, 1.08], [-0.1, 1.24], [0.28, 1.14], [0.44, 0.98], [0.47, 0.8], [0.5, 0.67], [0.47, 0.6], [0.66, 0.38], [0.52, 0.33], [0.53, 0.27],
     [0.5, 0.22], [0.5, 0.17], [0.46, 0.04], [0.34, -0.01], [0.1, 0.02], [-0.18, 0.1], [-0.38, 0.3], [-0.56, 0.5]];
 
-  /* ---------- 2-tajriba: bosh modeli ---------- */
+  /* ---------- 2-tajriba: boş modeli ---------- */
   var RX = 0.8, RY = 0.95, RZ = 1.1;
   var EYE = 0.38, EYEEL = 0.16, MOUTH_EL = -0.5;
   // (azimut, balandlik) → mimika özgarişi → nuqta; old tomon −Y
@@ -38,7 +38,7 @@
   }
   function headPoint(az, el, ex, lift) {
     var w = warp(az, el, ex), a = w[0], e = w[1];
-    // shakl özgarişi (burun, köz kosasi, qoş, lablar, iyak) — warp qilinmagan koordinatalarda
+    // şakl özgarişi (burun, köz kosasi, qoş, lablar, iyak) — warp qilinmagan koordinatalarda
     var m = 0.14 * gauss(a, e, 0, -0.1, 0.12, 0.22) - 0.06 * (gauss(a, e, EYE, EYEEL, 0.16, 0.12) + gauss(a, e, -EYE, EYEEL, 0.16, 0.12)) +
       0.04 * gauss(a, e, 0, 0.33, 0.5, 0.1) - 0.03 * gauss(a, e, 0, MOUTH_EL, 0.2, 0.05) + 0.03 * gauss(a, e, 0, MOUTH_EL + 0.06, 0.18, 0.07) + 0.05 * gauss(a, e, 0, -0.95, 0.2, 0.12);
     var dx = Math.sin(a) * Math.cos(e), dy = -Math.cos(a) * Math.cos(e), dz = Math.sin(e), sn = clamp(-dz / 0.9, 0, 1), xs = 1 - 0.22 * sn * sn, r = 1 + m + (lift || 0);
@@ -94,7 +94,7 @@
             function X_(x) { return ox + x * sc; } function Y_(y) { return y0 - y * sc; }
             var W = st.W, e = st.e, i;
             c.lineJoin = "round";
-            // bosh shakli
+            // boş şakli
             c.beginPath();
             if (front) {
               var Pts = [], hw = W / 2, y;

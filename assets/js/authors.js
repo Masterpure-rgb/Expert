@@ -24,7 +24,7 @@
             EX.el("p", { class: "role" }, a.role || "")),
           (a.bio || []).map(function (p) { return EX.el("p", null, p); }))));
     });
-    wrap.appendChild(EX.el("p", null, EX.el("a", { href: EX.base }, "← Bosh sahifa")));
+    wrap.appendChild(EX.el("p", null, EX.el("a", { href: EX.base }, "← Boş sahifa")));
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", main); else main();
 })();

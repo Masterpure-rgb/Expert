@@ -1,4 +1,4 @@
-/* Bosh sahifa: kitob, 21 mavzu × 3 resurs, foydalaniş tartibi, mualliflar.
+/* Boş sahifa: kitob, 21 mavzu × 3 resurs, foydalaniş tartibi, mualliflar.
    Hero — 3D muharrir viewporti: perspektiv tör, subdivision kub (faol obyekt konturi), XYZ gizmo,
    kitob nomi esa televizion titr («lower third») sifatida. */
 (function () {

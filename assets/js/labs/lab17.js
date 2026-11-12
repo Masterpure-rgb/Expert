@@ -17,7 +17,7 @@
   function hex(rgb) { return "#" + rgb.map(function (v) { var h = Math.round(v).toString(16); return h.length < 2 ? "0" + h : h; }).join("").toUpperCase(); }
   function dirOf(az, el) { return [Math.cos(el * RAD) * Math.sin(az * RAD), Math.sin(el * RAD), Math.cos(el * RAD) * Math.cos(az * RAD)]; }
 
-  // bosh — balandlik maydoni z = h(x, y), kamera +z dan qaraydi
+  // boş — balandlik maydoni z = h(x, y), kamera +z dan qaraydi
   function hf(x, y) {
     var a = 0.72, b = 0.95, q = 1 - x * x / (a * a) - y * y / (b * b);
     if (q <= 0) return null;
@@ -232,7 +232,7 @@
             // nurlar
             var topU = A * k - st.s / 2 * (k - 1), topL = A * k + st.s / 2 * (k - 1);
             function ray(yl, yr, col, dash) { c.beginPath(); c.moveTo(PX(0), PY(yl)); c.lineTo(PX(st.r), PY(yr)); c.strokeStyle = col; c.lineWidth = 1.4; c.setLineDash(dash || []); c.stroke(); c.setLineDash([]); }
-            // yarim soya sohasi (yuqori va pastki chet)
+            // yarim soya sohasi (yuqori va pastki çet)
             c.beginPath(); c.moveTo(PX(st.o), PY(A)); c.lineTo(PX(st.r), PY(topU)); c.lineTo(PX(st.r), PY(topL)); c.closePath(); c.fillStyle = "rgba(232,89,12,.16)"; c.fill();
             c.beginPath(); c.moveTo(PX(st.o), PY(-A)); c.lineTo(PX(st.r), PY(-topU)); c.lineTo(PX(st.r), PY(-topL)); c.closePath(); c.fill();
             ray(st.s / 2, topU, C.ink2, [5, 3]); ray(-st.s / 2, topL, C.orange);

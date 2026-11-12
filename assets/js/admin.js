@@ -126,7 +126,7 @@
     ({ home: pageHome, live: pageLive, students: pageStudents, attendance: pageAttendance, gradebook: pageGradebook, bank: pageBank, settings: pageSettings })[p]();
   }
 
-  /* ================= bosh sahifa ================= */
+  /* ================= boş sahifa ================= */
   async function pageHome() {
     main.appendChild(el("h1", null, "Boş sahifa"));
     if (EX.isDemo()) main.appendChild(el("p", { class: "note warn" }, "Demo rejim: maʼlumotlar şu brauzerda saqlanadi. Haqiqiy dars uçun Sozlamalar böliminda server manzilini kiriting."));
@@ -489,7 +489,7 @@
     }
     function exp() {
       var cols = exp.cols || [];
-      csvDownload("jurnal_" + gSel.value + ".csv", [["F.I.Ş.", "ID", "Guruh"].concat(cols.map(function (c) { return "M" + c; })).concat(["Jami ball", "Keldi", "Kech qoldi", "Kelmadi", "Kechikiş (daq.)"])]
+      csvDownload("jurnal_" + gSel.value + ".csv", [["F.I.Ş.", "ID", "Guruh"].concat(cols.map(function (c) { return "M" + c; })).concat(["Jami ball", "Keldi", "Keç qoldi", "Kelmadi", "Keçikiş (daq.)"])]
         .concat(last.map(function (s) { return [s.fio, s.id, s.guruh].concat(cols.map(function (c) { return String(s.mavzular[c] || 0).replace(".", ","); })).concat([String(s.jami).replace(".", ","), s.keldi, s.kech, s.kelmadi, s.kechDaqiqa]); })));
     }
     if (gSel.value) load();

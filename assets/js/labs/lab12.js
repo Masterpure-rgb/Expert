@@ -31,7 +31,7 @@
       fn: function (p, u, v) { var th = 2 * PI * u, w = 2 * PI * v; return [(p.R + p.r * Math.cos(w)) * Math.cos(th), (p.R + p.r * Math.cos(w)) * Math.sin(th), p.r * Math.sin(w)]; },
       K: function (p, u, v) { var w = 2 * PI * v; return Math.cos(w) / (p.r * (p.R + p.r * Math.cos(w))); } }
   };
-  // sonli Gauss egriligi: K = (LN − M²)/(EG − F²), chekli ayirmalar bilan
+  // sonli Gauss egriligi: K = (LN − M²)/(EG − F²), çekli ayirmalar bilan
   function numK(g, u, v) {
     var h = 1e-3;
     function at(du, dv) { return g(u + du, v + dv); }

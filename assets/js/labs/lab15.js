@@ -85,7 +85,7 @@
     return { isl: isl, cover: tot, sc: sc };
   }
 
-  // chok va qirralar uçun maxsus element
+  // çok va qirralar uçun maxsus element
   function Seams() { this.visible = true; this.segs = []; this.t = 0; this.showSeams = true; this.onlyFront = null; }
   Seams.prototype.collect = function (S, out) {
     var self = this, B = S._B;
@@ -132,7 +132,7 @@
       var ar = 0; for (q = 1; q < pts.length - 1; q++) ar += V.len(V.cross(V.sub(pts[q], pts[0]), V.sub(pts[q + 1], pts[0]))) / 2;
       cen.push(c); nor.push(nn); area.push(ar);
     });
-    // yuzalar yönalişini tashqariga qaratamiz
+    // yuzalar yönalişini taşqariga qaratamiz
     fcs = fcs.map(function (F, idx) {
       var pts = F.map(function (k2) { return v[k2]; }), nn = X.mesh.normal(pts);
       return V.dot(nn, cen[idx]) < 0 ? F.slice().reverse() : F;

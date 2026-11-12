@@ -5,7 +5,7 @@
   EX.base = me ? me.replace(/assets\/js\/core\.js.*$/, "") : "/";
   EX.cfg = window.EXPERT_CONFIG || { api: "" };
 
-  // URL orqali API manzilini vaqtinça berish (?api=...) — sinov uçun
+  // URL orqali API manzilini vaqtinça beriş (?api=...) — sinov uçun
   try {
     var u = new URL(location.href);
     var qa = u.searchParams.get("api");

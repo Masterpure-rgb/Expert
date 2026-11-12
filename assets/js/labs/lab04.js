@@ -16,7 +16,7 @@
   function Rig() { this.visible = true; this.cams = []; this.fov = 60; this.len = 0.5; }
   Rig.prototype.collect = function (S, out) {
     var self = this, th = Math.tan(self.fov * RAD / 2), tv = th * 0.75, l = self.len;
-    // har bir halqani tutashtiruvçi çiziq
+    // har bir halqani tutaştiruvçi çiziq
     var rings = {};
     self.cams.forEach(function (c) { (rings[c.ring] = rings[c.ring] || []).push(c); });
     Object.keys(rings).forEach(function (k) {
@@ -91,7 +91,7 @@
         build: function (L) {
           var st = { n: 24, R: 4, D: 3.5, fov: 60 };
           var S = L.scene({ dist: 7.6, yaw: -0.8, pitch: 0.45, target: [0, 0, 1.3], gridOpts: { n: 14, step: 0.75 }, axesOpts: { len: 0.8 }, aspect: 0.85 });
-          // obyekt: tumba va bosh (haykal)
+          // obyekt: tumba va boş (haykal)
           var base = X.mesh.transform(X.mesh.cylinder(18, 0.45, 1.0), [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0.5], [0, 0, 0, 1]]);
           var head = X.mesh.transform(X.mesh.uvSphere(18, 9, 0.36), [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1.35], [0, 0, 0, 1]]);
           S.add(new X.Mesh({ mesh: base, color: "#E9D7BD" }));

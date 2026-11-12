@@ -135,7 +135,7 @@
       draw();
       box.appendChild(el("div", { class: "order" }, ol));
     }
-    // ishonç darajasi (metakognitsiya)
+    // işonç darajasi (metakognitsiya)
     var conf = el("div", { class: "seg", style: "margin-top:10px" });
     [["past", "Taxmin"], ["orta", "Ikkilanyapman"], ["yuqori", "Işonçim komil"]].forEach(function (c) {
       var b = el("button", { type: "button" }, c[1]);

@@ -3,7 +3,7 @@
   var X = window.X3D, C = LAB.C, f = X.fmt, EX = window.EX, V = X.v;
   var PI = Math.PI;
 
-  /* ---------- izoparametrik çiziqlar (sirtga yopişgan, kiçik chuqurlik siljişi bilan) ---------- */
+  /* ---------- izoparametrik çiziqlar (sirtga yopişgan, kiçik çuqurlik siljişi bilan) ---------- */
   function Iso(fn, n) { this.fn = fn; this.n = n; this.visible = true; }
   Iso.prototype.collect = function (S, out) {
     var fn = this.fn, n = this.n, M = 40;
@@ -62,7 +62,7 @@
 
   function fmtP(p) { return "(" + f(p[0], 2) + "; " + f(p[1], 2) + "; " + f(p[2], 2) + ")"; }
 
-  /* ---------- umumiy mexanizm: bitta sahna, bir nechta sirt turi ---------- */
+  /* ---------- umumiy mexanizm: bitta sahna, bir neçta sirt turi ---------- */
   function engine(L, kinds, first, camBase) {
     var S = L.scene({ dist: camBase.dist, yaw: -0.8, pitch: 0.5, target: camBase.target, aspect: 0.85, gridOpts: { n: 8, step: 0.5 }, axesOpts: { len: 1.6 } });
     var KM = {}; kinds.forEach(function (K) { KM[K.id] = K; });

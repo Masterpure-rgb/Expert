@@ -4,7 +4,7 @@
   var DEF = [[0.3, 0.8], [1.0, 3.4], [2.2, 4.2], [3.2, 1.0], [4.2, 0.6], [5.2, 3.8], [6.2, 3.4], [6.8, 1.0]];
   var BCOL = [C.z, C.x, C.y, C.violet, C.teal, C.gold, C.green, C.ink2];
 
-  function pt(P, p, U, u) {   // C(u) = Σ N(i,p)(u)·P(i)  (qiymat oraliği ichida Σ N = 1)
+  function pt(P, p, U, u) {   // C(u) = Σ N(i,p)(u)·P(i)  (qiymat oraliği içida Σ N = 1)
     var x = 0, y = 0;
     for (var i = 0; i < P.length; i++) { var b = X.basis(i, p, u, U); x += b * P[i][0]; y += b * P[i][1]; }
     return [x, y];

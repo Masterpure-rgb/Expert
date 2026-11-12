@@ -1,5 +1,5 @@
 /* ===================================================================
- * Google Apps Script adapteri: baza — ushbu Google Sheets jadvali.
+ * Google Apps Script adapteri: baza — uşbu Google Sheets jadvali.
  * Bu fayl engine.js bilan birlaştirilib Code.gs hosil qilinadi.
  * =================================================================== */
 
