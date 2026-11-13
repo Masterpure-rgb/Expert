@@ -1,0 +1,414 @@
+1
+00:00:02,500 --> 00:00:05,150
+Keçqurun yangiliklarni köryapsiz.
+
+2
+00:00:05,500 --> 00:00:11,750
+Boşlovçi ortida ulkan ekranlar, aylanayotgan
+diagrammalar, tungi şahar manzarasi.
+
+3
+00:00:12,500 --> 00:00:14,250
+Lekin sizga bir sirni aytaymi?
+
+4
+00:00:14,500 --> 00:00:18,350
+Bu studiyaning deyarli
+hammasi aslida mavjud emas.
+
+5
+00:00:18,800 --> 00:00:22,150
+Boşlovçi oddiy yaşil fon oldida turibdi.
+
+6
+00:00:22,400 --> 00:00:25,150
+Qolgan hamma narsani kompyuter çizyapti:
+
+7
+00:00:25,400 --> 00:00:27,750
+har soniyada yigirma beş marta,
+
+8
+00:00:28,200 --> 00:00:31,750
+kamera qayerdan qarasa, aynan öşa nuqtadan.
+
+9
+00:00:32,400 --> 00:00:35,750
+Bugun şu sehrning birinçi sirini oçamiz.
+
+10
+00:00:38,160 --> 00:00:41,010
+Uç ölçovli modellaştiriş texnologiyalari.
+
+11
+00:00:41,360 --> 00:00:42,510
+Birinçi dars.
+
+12
+00:00:42,960 --> 00:00:44,710
+Ekran ortidagi dunyo.
+
+13
+00:00:47,160 --> 00:00:50,810
+Har qanday modellaştiriş
+ikki tuşunçaga tayanadi:
+
+14
+00:00:51,060 --> 00:00:52,810
+obyekt va model.
+
+15
+00:00:53,360 --> 00:00:57,310
+Obyekt — real mavjud yoki
+xayolda töqilgan narsa:
+
+16
+00:00:57,360 --> 00:01:03,010
+bino, avtomobil, multfilm qahramoni
+yoki Toşkent teleminorasi.
+
+17
+00:01:03,260 --> 00:01:06,610
+Model esa obyektning soddalaştirilgan nusxasi.
+
+18
+00:01:06,960 --> 00:01:11,710
+U vazifa uçun muhim narsani saqlaydi,
+qolganini esa taşlab yuboradi.
+
+19
+00:01:11,960 --> 00:01:15,710
+Xaritani eslang: xarita hududning özi emas,
+
+20
+00:01:15,660 --> 00:01:18,810
+lekin yöl topiş uçun aynan u kerak.
+
+21
+00:01:19,860 --> 00:01:22,310
+Uç ölçovli model ham xuddi şunday:
+
+22
+00:01:22,560 --> 00:01:26,210
+obyektning maqsadga moslangan raqamli nusxasi.
+
+23
+00:01:28,120 --> 00:01:32,870
+Yangiliklar zastavkasida bir neça
+soniya aylanib turadigan teleminora uçun
+
+24
+00:01:32,520 --> 00:01:35,170
+bir neça ming köpburçak yetarli.
+
+25
+00:01:35,720 --> 00:01:40,870
+Muhandis uçun esa xuddi şu inşootning
+millimetr aniqligidagi modeli kerak.
+
+26
+00:01:41,320 --> 00:01:44,270
+Demak, eng yaxşi model degan narsa yöq.
+
+27
+00:01:44,320 --> 00:01:46,770
+Vazifaga eng mos model bor.
+
+28
+00:01:48,520 --> 00:01:53,270
+Har bir uç ölçovli model
+bir neça qatlamdan iborat.
+
+29
+00:01:53,920 --> 00:02:00,470
+Avvalo geometriya: fazodagi nuqtalar,
+yaʼni çöqqilar va ularning koordinatalari.
+
+30
+00:02:01,020 --> 00:02:02,370
+Keyin topologiya:
+
+31
+00:02:02,720 --> 00:02:07,870
+qaysi çöqqilar qirra hosil qiladi,
+qaysi qirralar yoq hosil qiladi.
+
+32
+00:02:08,220 --> 00:02:12,370
+Söng taşqi köriniş:
+materiallar va teksturalar.
+
+33
+00:02:12,620 --> 00:02:14,570
+Va nihoyat transformatsiya:
+
+34
+00:02:14,720 --> 00:02:19,470
+model qayerda turibdi, qayoqqa
+qarab turibdi va qançalik katta.
+
+35
+00:02:21,420 --> 00:02:26,870
+Ikki ölçovli grafikada har bir nuqta
+ikki son bilan belgilanadi: x va y.
+
+36
+00:02:27,720 --> 00:02:30,370
+Fotosurat yoki logotip şunday işlaydi.
+
+37
+00:02:30,820 --> 00:02:35,470
+Uç ölçovli grafikada uçinçi son
+qöşiladi: z, yaʼni çuqurlik.
+
+38
+00:02:36,020 --> 00:02:38,870
+Endi biz sahnaga istalgan
+tomondan qaray olamiz.
+
+39
+00:02:39,120 --> 00:02:41,170
+Ammo ekran baribir tekis.
+
+40
+00:02:41,420 --> 00:02:47,770
+Şuning uçun kompyuter uç ölçovli sahnani
+kamera orqali tekislikka proyeksiyalaydi.
+
+41
+00:02:49,620 --> 00:02:51,470
+Proyeksiyaning ikki turi bor.
+
+42
+00:02:51,920 --> 00:02:56,070
+Perspektiv proyeksiyada uzoqdagi
+narsalar kiçikroq körinadi,
+
+43
+00:02:56,220 --> 00:02:58,670
+xuddi közingiz va kamera körgandek.
+
+44
+00:02:59,220 --> 00:03:00,370
+Qoidasi juda oddiy:
+
+45
+00:03:00,720 --> 00:03:05,970
+tasvirdagi ölçam fokus masofasiga
+köpaytiriladi va çuqurlikka bölinadi.
+
+46
+00:03:06,420 --> 00:03:10,170
+Masalan, ikkita bir xil,
+ikki metrlik ustunni olaylik.
+
+47
+00:03:10,520 --> 00:03:13,870
+Biri beş metr, ikkinçisi ön metr uzoqlikda.
+
+48
+00:03:14,420 --> 00:03:18,570
+Ikkinçisi ekranda roppa-rosa
+ikki baravar kiçik çiqadi.
+
+49
+00:03:19,320 --> 00:03:24,570
+Ortografik proyeksiyada esa çuqurlik
+hisobga olinmaydi va ölçamlar saqlanadi.
+
+50
+00:03:25,220 --> 00:03:31,770
+Şuning uçun texnik çizmalar, yuqoridan,
+oldidan va yondan körinişlar ortografik böladi.
+
+51
+00:03:33,620 --> 00:03:37,670
+Endi uç ölçovli dunyoning
+manzil tizimi bilan tanişamiz.
+
+52
+00:03:38,220 --> 00:03:43,670
+Bitta boşlanğiç nuqta va undan çiquvçi,
+bir-biriga perpendikulyar uçta öq:
+
+53
+00:03:43,920 --> 00:03:46,370
+X, Y va Z.
+
+54
+00:03:46,920 --> 00:03:49,870
+Deyarli barça dasturlarda
+öqlarning rangi bir xil:
+
+55
+00:03:50,120 --> 00:03:54,370
+X qizil, Y yaşil, Z kök.
+
+56
+00:03:54,920 --> 00:03:56,070
+Eslab qoliş oson:
+
+57
+00:03:56,420 --> 00:04:01,670
+RGB ranglar tartibi XYZ
+öqlar tartibiga mos keladi.
+
+58
+00:04:01,920 --> 00:04:06,870
+Endi fazodagi istalgan nuqtaning
+aniq manzili bor: uçta son.
+
+59
+00:04:08,820 --> 00:04:11,770
+Lekin uçta öqni ikki xil joylaştiriş mumkin,
+
+60
+00:04:12,220 --> 00:04:15,970
+va ularni heç qanday buriş bilan
+bir-biriga aylantirib bölmaydi.
+
+61
+00:04:16,620 --> 00:04:17,770
+Öng qölingizni kötaring.
+
+62
+00:04:18,720 --> 00:04:23,970
+Boş barmoq X tomonga, körsatkiç
+barmoq Y tomonga qarasa,
+
+63
+00:04:24,220 --> 00:04:26,970
+örta barmoq Z yönalişini körsatadi.
+
+64
+00:04:27,420 --> 00:04:29,070
+Bu öng qöl tizimi.
+
+65
+00:04:29,420 --> 00:04:34,570
+Xuddi şu qoidani çap qöl bilan
+bajarsangiz, çap qöl tizimi hosil böladi.
+
+66
+00:04:34,820 --> 00:04:37,670
+Ular bir-birining oynadagi aksidir.
+
+67
+00:04:39,500 --> 00:04:42,950
+Ikkinçi kelişuv: qaysi öq yuqoriga qaraydi?
+
+68
+00:04:43,500 --> 00:04:46,750
+Arxitektura va muhandislikdan
+kelgan dasturlarda
+
+69
+00:04:46,800 --> 00:04:51,050
+yer tekisligi X va Y, balandlik esa Z.
+
+70
+00:04:51,000 --> 00:04:52,950
+Bu Z-up deyiladi.
+
+71
+00:04:53,500 --> 00:04:57,550
+Ekran anʼanasidan kelgan
+dasturlarda esa yuqoriga Y qaraydi.
+
+72
+00:04:58,000 --> 00:05:02,250
+Blender va 3ds Max: Z yuqorida, öng qöl.
+
+73
+00:05:02,700 --> 00:05:07,450
+Maya va glTF formati: Y yuqorida, öng qöl.
+
+74
+00:05:07,800 --> 00:05:11,050
+Unity: Y yuqorida, lekin çap qöl.
+
+75
+00:05:11,800 --> 00:05:15,350
+Unreal Engine: Z yuqorida va çap qöl.
+
+76
+00:05:17,200 --> 00:05:20,350
+Endi eng köp uçraydigan xatoni köraylik.
+
+77
+00:05:20,100 --> 00:05:25,250
+Siz Blenderda çiroyli stul yasadingiz
+va uni boşqa dasturga olib ötdingiz.
+
+78
+00:05:25,200 --> 00:05:27,750
+Va stul orqasi bilan yotib qoldi.
+
+79
+00:05:28,000 --> 00:05:33,550
+Sabab deyarli har doim bitta:
+yuqori öq kelişuvlari mos emas.
+
+80
+00:05:33,700 --> 00:05:38,650
+Yeçim: modelni X öqi atrofida
+minus 90 gradusga buriş.
+
+81
+00:05:39,400 --> 00:05:43,050
+Model 100 baravar katta
+yoki kiçik bölib qolsa-çi?
+
+82
+00:05:43,200 --> 00:05:46,750
+Demak, santimetr va metr aralaşib ketgan.
+
+83
+00:05:47,100 --> 00:05:49,750
+Avval eksport sozlamalarini tekşiring.
+
+84
+00:05:51,620 --> 00:05:53,070
+Xulosa qilaylik.
+
+85
+00:05:53,120 --> 00:05:57,470
+Model — obyektning vazifaga
+moslangan raqamli nusxasi:
+
+86
+00:05:57,920 --> 00:06:02,870
+geometriya, topologiya, taşqi
+köriniş va transformatsiya.
+
+87
+00:06:03,420 --> 00:06:07,670
+Kompyuter sahnani kamera orqali
+tekislikka proyeksiyalaydi.
+
+88
+00:06:08,320 --> 00:06:11,770
+Har bir nuqtaning manzili
+uçta öq bilan beriladi,
+
+89
+00:06:12,320 --> 00:06:15,270
+öqlar kelişuvini esa albatta biliş kerak.
+
+90
+00:06:16,720 --> 00:06:23,570
+Va keyingi qismda kompyuter obyektni qanday
+suradi, buradi va kattalaştiradi, şuni köramiz:
+
+91
+00:06:23,820 --> 00:06:25,770
+vektorlar va matritsalar tili.
+
+92
+00:06:26,620 --> 00:06:32,070
+Va unutmang: bugun ekranda körgan öşa
+studiyani bir kun kelib siz yaratasiz.
+
+93
+00:06:32,420 --> 00:06:34,770
+Hammasi şu uçta öqdan boşlanadi.
