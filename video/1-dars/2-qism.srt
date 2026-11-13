@@ -1,0 +1,400 @@
+1
+00:00:02,200 --> 00:00:05,300
+Ötgan qismda virtual studiyani kördik.
+
+2
+00:00:05,900 --> 00:00:08,700
+Endi kamera harakatlana boşlaydi.
+
+3
+00:00:09,500 --> 00:00:14,300
+Har soniyada 25 marta sahnadagi millionlab
+nuqtaning har biri yangi joyga ötkaziladi:
+
+4
+00:00:14,000 --> 00:00:18,800
+suriladi, buriladi, kattalaştiriladi.
+
+5
+00:00:19,600 --> 00:00:21,300
+Kompyuter buni qanday uddalaydi?
+
+6
+00:00:22,000 --> 00:00:25,800
+Javob ikki sözdan iborat: vektor va matritsa.
+
+7
+00:00:26,200 --> 00:00:29,000
+Bu uç ölçovli dunyoning harakat tili.
+
+8
+00:00:31,367 --> 00:00:34,367
+Uç ölçovli modellaştiriş texnologiyalari.
+
+9
+00:00:35,267 --> 00:00:37,467
+Birinçi dars, ikkinçi qism.
+
+10
+00:00:38,067 --> 00:00:41,867
+Harakat tili: vektorlar va matritsalar.
+
+11
+00:00:44,567 --> 00:00:48,967
+Avval bir savol: nuqtaning
+koordinatasi nimaga nisbatan ölçanadi?
+
+12
+00:00:49,567 --> 00:00:54,167
+Butun sahna uçun bitta umumiy
+tizim bor, u global fazo deyiladi.
+
+13
+00:00:54,567 --> 00:00:59,567
+Har bir obyektning esa öz lokal fazosi
+bor: u obyekt bilan birga yuradi.
+
+14
+00:01:00,067 --> 00:01:03,767
+Obyektlarni bir-biriga boğlasak,
+iyerarxiya hosil böladi.
+
+15
+00:01:04,167 --> 00:01:08,867
+Boğlangan obyekt child, u boğlangan
+obyekt esa parent deyiladi.
+
+16
+00:01:09,167 --> 00:01:14,467
+Parent surilsa yoki burilsa, child
+ham u bilan birga harakatlanadi.
+
+17
+00:01:15,167 --> 00:01:18,367
+Kamera turgan fazo esa
+köriniş fazosi deyiladi.
+
+18
+00:01:20,333 --> 00:01:21,033
+Misol.
+
+19
+00:01:21,233 --> 00:01:29,633
+Parent obyekt global fazoda (2; 1; 0) nuqtada
+turibdi va Z öqi atrofida 30° ga burilgan.
+
+20
+00:01:30,133 --> 00:01:36,633
+Child esa parent fazosida (1; 0; 0,8) nuqtada.
+
+21
+00:01:37,033 --> 00:01:41,933
+Burilgandan söng parentning
+lokal X öqi ham 30° ga oğadi.
+
+22
+00:01:42,533 --> 00:01:47,483
+Şuning uçun child parent nuqtasidan
+şu oğgan öq böylab 1 birlik,
+
+23
+00:01:47,183 --> 00:01:52,133
+yuqoriga esa 0,8 birlik uzoqlikda turadi.
+
+24
+00:01:52,433 --> 00:01:59,333
+Natija: taxminan (2,866; 1,5; 0,8).
+
+25
+00:02:02,867 --> 00:02:04,867
+Endi ikki asosiy tuşunça.
+
+26
+00:02:05,367 --> 00:02:11,467
+Nuqta fazodagi örinni bildiradi, vektor
+esa yönaliş va uzunlikka ega köçişni.
+
+27
+00:02:12,067 --> 00:02:16,267
+Ikki nuqtaning ayirmasi vektor beradi: B − A.
+
+28
+00:02:16,867 --> 00:02:20,067
+Nuqtaga vektor qöşilsa,
+yangi nuqta hosil böladi.
+
+29
+00:02:20,367 --> 00:02:25,267
+Lekin ikki nuqtani qöşiş maʼnosiz:
+Toşkentni Samarqandga qöşib bölmaydi.
+
+30
+00:02:25,867 --> 00:02:29,167
+Vektorning uzunligi Pifagor
+teoremasi bilan topiladi.
+
+31
+00:02:29,467 --> 00:02:35,167
+Vektorni uzunligiga bölsak, uzunligi
+1 bölgan birlik vektor hosil böladi.
+
+32
+00:02:35,667 --> 00:02:37,667
+Bu amal normallaş deyiladi.
+
+33
+00:02:39,633 --> 00:02:43,433
+Skalyar köpaytma ikki
+vektordan bitta son yasaydi:
+
+34
+00:02:43,133 --> 00:02:46,933
+mos komponentlar köpaytmalarining yiğindisi.
+
+35
+00:02:47,533 --> 00:02:51,033
+Bu son vektorlar orasidagi
+burçakni aytib beradi.
+
+36
+00:02:51,733 --> 00:02:54,733
+Nolga teng bölsa, vektorlar perpendikulyar.
+
+37
+00:02:54,833 --> 00:02:59,533
+Musbat bölsa, burçak
+ötkir, manfiy bölsa, ötmas.
+
+38
+00:02:59,833 --> 00:03:03,583
+Grafikada u yoruğlikni hisoblaydi:
+
+39
+00:03:03,283 --> 00:03:07,033
+sirt yoruğlikka qançalik töğri
+qarasa, şunçalik yoruğ böladi.
+
+40
+00:03:07,433 --> 00:03:09,033
+Bu Lambert qonuni.
+
+41
+00:03:10,967 --> 00:03:11,567
+Misol.
+
+42
+00:03:11,867 --> 00:03:17,567
+Sirt normali tepaga qaragan, yoruğlik
+esa (3; 0; 4) yönalişidan tuşyapti.
+
+43
+00:03:18,367 --> 00:03:22,217
+Avval yoruğlik vektorining uzunligini topamiz:
+
+44
+00:03:21,917 --> 00:03:25,767
+9 bilan 16 ning yiğindisidan ildiz, yaʼni 5.
+
+45
+00:03:26,167 --> 00:03:32,467
+Normallasak, (0,6; 0; 0,8) çiqadi.
+
+46
+00:03:32,867 --> 00:03:36,267
+Skalyar köpaytma 0,8 ga teng.
+
+47
+00:03:36,767 --> 00:03:43,767
+Demak, sirt 80 % yoritilgan,
+burçak esa taxminan 37°.
+
+48
+00:03:45,800 --> 00:03:51,100
+Vektor köpaytma esa ikki vektorga
+perpendikulyar bölgan uçinçi vektorni beradi.
+
+49
+00:03:51,600 --> 00:03:56,950
+Uning uzunligi ikki vektorga qurilgan
+parallelogramm yuzasiga teng,
+
+50
+00:03:56,650 --> 00:04:02,000
+yönalişi esa öng qöl qoidasi
+bilan aniqlanadi: X × Y = Z.
+
+51
+00:04:02,700 --> 00:04:06,200
+Grafikada u har bir
+uçburçakning normalini topadi.
+
+52
+00:04:06,500 --> 00:04:12,600
+Lekin ehtiyot böling: köpaytuvçilar örni
+almaşsa, natija teskari tomonga qaraydi.
+
+53
+00:04:13,200 --> 00:04:18,100
+Şuning uçun çöqqilar tartibi normal
+qaysi tomonga qaraşini belgilaydi.
+
+54
+00:04:20,033 --> 00:04:22,433
+Endi harakatning öziga ötamiz.
+
+55
+00:04:23,033 --> 00:04:28,033
+Buriş va masştablaşni 3×3 ölçamli
+matritsa bilan yoziş mumkin.
+
+56
+00:04:28,433 --> 00:04:31,233
+Lekin suriş bunday matritsaga siğmaydi.
+
+57
+00:04:31,633 --> 00:04:35,133
+Yeçim oddiy va çiroyli: törtinçi koordinata.
+
+58
+00:04:35,733 --> 00:04:42,833
+Nuqta (x; y; z; 1) körinişida
+yoziladi, vektor esa oxiri 0 bilan.
+
+59
+00:04:43,433 --> 00:04:50,433
+Endi suriş, buriş va masştablaşning
+hammasi bitta 4×4 matritsa böladi.
+
+60
+00:04:50,833 --> 00:04:54,383
+Vektorning törtinçi soni 0 bölgani
+uçun suriş unga taʼsir qilmaydi:
+
+61
+00:04:54,083 --> 00:04:57,633
+yönaliş joyidan köçmaydi.
+
+62
+00:04:59,600 --> 00:05:04,700
+Bir neça harakat ketma-ket bajarilsa,
+ularning matritsalari köpaytiriladi.
+
+63
+00:05:05,400 --> 00:05:13,600
+Blender, 3ds Max va öyin dvigatellarida
+obyekt matritsasi T·R·S tartibida tuziladi.
+
+64
+00:05:13,900 --> 00:05:19,900
+Uni öngdan çapga öqiymiz: avval
+masştab, keyin buriş, oxirida suriş.
+
+65
+00:05:20,100 --> 00:05:21,400
+Tartib juda muhim.
+
+66
+00:05:21,800 --> 00:05:27,700
+Misol: (1; 2; 0) nuqtani
+2 baravar kattalaştiramiz,
+
+67
+00:05:27,400 --> 00:05:33,300
+Z atrofida 90° ga buramiz
+va (3; 1; 5) ga suramiz.
+
+68
+00:05:32,500 --> 00:05:36,800
+T·R·S tartibida natija (−1; 3; 5).
+
+69
+00:05:40,200 --> 00:05:41,300
+Teskari tartibda esa (−6; 8; 10).
+
+70
+00:05:44,600 --> 00:05:49,500
+Çunki bu holda masştab suriş masofasini
+ham 2 baravar oşirib yuboradi.
+
+71
+00:05:51,313 --> 00:05:59,313
+Iyerarxiyada esa child obyektning global matritsasi
+parent matritsasini lokal matritsaga köpaytirib topiladi.
+
+72
+00:05:59,423 --> 00:06:04,163
+Biz yeçgan birinçi misol aynan
+şu formulaning xususiy holi edi.
+
+73
+00:06:04,683 --> 00:06:09,032
+Blenderda bu yakuniy matritsa
+matrix_world deb ataladi.
+
+74
+00:06:10,867 --> 00:06:13,367
+Bu sonlarni amalda qayerda körasiz?
+
+75
+00:06:13,667 --> 00:06:18,667
+Blenderda N tugmasini bosing:
+Item panelidagi Location,
+
+76
+00:06:18,367 --> 00:06:23,367
+Rotation va Scale aynan T, R va S dir.
+
+77
+00:06:23,867 --> 00:06:28,967
+Transformatsiyani geometriyaga singdiriş
+uçun Ctrl + A, Apply buyruği bor.
+
+78
+00:06:28,467 --> 00:06:34,267
+3ds Max da esa aniq qiymatlarni
+F12 oynasida kiritasiz.
+
+79
+00:06:36,233 --> 00:06:37,233
+Xulosa qilaylik.
+
+80
+00:06:37,733 --> 00:06:41,833
+Nuqta örinni, vektor esa
+yönaliş va uzunlikni bildiradi.
+
+81
+00:06:42,133 --> 00:06:46,433
+Skalyar köpaytma burçak va yoruğlikni
+beradi, vektor köpaytma esa normalni.
+
+82
+00:06:47,533 --> 00:06:50,983
+Törtinçi koordinata tufayli har qanday
+harakat bitta 4×4 matritsa böladi,
+
+83
+00:06:50,683 --> 00:06:54,133
+tartibi esa T·R·S.
+
+84
+00:06:57,833 --> 00:07:02,533
+Keyingi qismda uç ölçovli loyiha ğoyadan
+tayyor kadrgaça qanday yöl bosişini,
+
+85
+00:07:02,233 --> 00:07:06,933
+dasturlar va iş muhitini köramiz.
+
+86
+00:07:07,433 --> 00:07:11,383
+Va esda tuting: ekranda
+biror narsa harakatlansa,
+
+87
+00:07:11,083 --> 00:07:15,033
+uning ortida aynan şu kiçik jadval işlayapti.
+
+88
+00:07:15,533 --> 00:07:17,733
+Endi siz uni öqiy olasiz.
