@@ -1,0 +1,449 @@
+1
+00:00:02,200 --> 00:00:05,300
+Keçki yangiliklar efirga
+çiqişiga hali bir soat bor.
+
+2
+00:00:05,600 --> 00:00:12,650
+Lekin ekrandagi şu kadr ortida
+haftalab iş turibdi: ğoya, eskizlar,
+
+3
+00:00:12,350 --> 00:00:19,400
+modellar, materiallar, yoruğlik va har
+soniyada 25 marta takrorlanadigan render.
+
+4
+00:00:19,900 --> 00:00:26,300
+Bugun şu yölni boşidan oxirigaça bosib ötamiz
+va özimiz işlaydigan dasturlar bilan tanişamiz.
+
+5
+00:00:28,567 --> 00:00:31,667
+Uç ölçovli modellaştiriş texnologiyalari.
+
+6
+00:00:31,767 --> 00:00:33,767
+Birinçi dars, uçinçi qism.
+
+7
+00:00:34,167 --> 00:00:38,867
+Loyiha yöli: jarayon, dasturlar va iş muhiti.
+
+8
+00:00:41,400 --> 00:00:45,400
+Professional uç ölçovli
+loyiha uç bosqiçda bajariladi.
+
+9
+00:00:46,100 --> 00:00:50,650
+Tayyorgarlik bosqiçida
+ğoya va ssenariy yoziladi,
+
+10
+00:00:50,350 --> 00:00:54,900
+referenslar va konsept-art töplanadi,
+texnik topşiriq kelişiladi.
+
+11
+00:00:55,800 --> 00:01:01,300
+Işlab çiqariş bosqiçida modellar
+yaratiladi, teksturalanadi,
+
+12
+00:01:01,000 --> 00:01:06,500
+materiallar sozlanadi, personajlar riglanib
+animatsiya qilinadi va sahna yoritiladi.
+
+13
+00:01:07,100 --> 00:01:11,450
+Yakuniy bosqiçda kadrlar
+renderlanadi, kompozitlanadi,
+
+14
+00:01:11,150 --> 00:01:15,500
+rangi tuzatiladi va kerakli
+formatda çiqariladi.
+
+15
+00:01:17,533 --> 00:01:19,933
+Lekin bu jarayon töğri çiziq emas.
+
+16
+00:01:20,233 --> 00:01:24,133
+Rejissyor izoh beradi va jamoa
+oldingi bosqiçga qaytadi.
+
+17
+00:01:24,533 --> 00:01:28,983
+Şuning uçun fayllarni
+nomlaş qoidasi, versiyalar,
+
+18
+00:01:28,683 --> 00:01:33,133
+ölçov birliklari va öqlar kelişuvi
+loyiha boşidayoq belgilab qöyiladi.
+
+19
+00:01:35,100 --> 00:01:36,600
+Render ikki xil böladi.
+
+20
+00:01:36,900 --> 00:01:40,500
+Kino va reklamada oflayn render işlatiladi:
+
+21
+00:01:40,200 --> 00:01:43,800
+bitta kadrga daqiqalar,
+hatto soatlar ketişi mumkin.
+
+22
+00:01:44,400 --> 00:01:50,500
+Öyinlarda, virtual studiyada va jonli efir
+grafikasida esa real vaqtli render kerak.
+
+23
+00:01:51,200 --> 00:01:58,800
+Soniyasiga 25 kadrda bitta kadrga atigi 40
+millisekund qoladi, 50 kadrda esa 20 millisekund.
+
+24
+00:01:59,000 --> 00:02:05,000
+Aynan şu vaqt modelning murakkabligini
+va tekstura ölçamini çeklaydi.
+
+25
+00:02:07,033 --> 00:02:10,333
+Uç ölçovli modellaştiriş
+qayerlarda işlatiladi?
+
+26
+00:02:10,833 --> 00:02:16,633
+Biz uçun eng muhimi televideniye:
+virtual dekoratsiyalar,
+
+27
+00:02:16,333 --> 00:02:22,133
+sport va yangiliklardagi kengaytirilgan
+reallik, saylov xaritalari, kanal identikasi.
+
+28
+00:02:23,733 --> 00:02:29,733
+Kino va animatsiyada yuqori
+realizm, öyinlarda kadr byudjeti,
+
+29
+00:02:29,433 --> 00:02:35,433
+arxitekturada real masştab, sanoat
+dizaynida ölçam aniqligi muhim.
+
+30
+00:02:35,733 --> 00:02:40,833
+Tibbiyotda tomografiya qatlamlaridan
+organ modellari quriladi,
+
+31
+00:02:40,533 --> 00:02:45,633
+madaniy merosda esa fotogrammetriya yordamida
+yodgorliklarning raqamli nusxasi yaratiladi.
+
+32
+00:02:47,267 --> 00:02:49,567
+Virtual studiya qanday işlaydi?
+
+33
+00:02:50,367 --> 00:02:57,067
+Kamera kuzatuv tizimi har bir kadrda kameraning
+holati, burçagi va zoom qiymatini uzatadi.
+
+34
+00:02:57,667 --> 00:03:02,367
+Render dvigateli uç ölçovli
+dekoratsiyani xuddi şu nuqtadan çizadi.
+
+35
+00:03:02,767 --> 00:03:06,267
+Keyer esa yaşil fondagi
+boşlovçini unga qöşadi.
+
+36
+00:03:05,567 --> 00:03:12,967
+Vizrt, Zero Density va Brainstorm kabi
+tizimlar aynan şu tamoyilda işlaydi.
+
+37
+00:03:14,833 --> 00:03:19,133
+Dastur vazifa, byudjet va
+platformaga qarab tanlanadi.
+
+38
+00:03:19,633 --> 00:03:23,233
+Blender bepul va oçiq kodli universal paket.
+
+39
+00:03:23,633 --> 00:03:28,183
+3ds Max va Maya Autodesk kompaniyasiniki:
+biri arxitektura va öyinlarda,
+
+40
+00:03:27,883 --> 00:03:32,433
+ikkinçisi personaj
+animatsiyasi va kinoda kuçli.
+
+41
+00:03:32,733 --> 00:03:35,233
+Cinema 4D efir grafikasida maşhur.
+
+42
+00:03:35,333 --> 00:03:38,933
+Unreal Engine va Unity esa
+real vaqt dvigatellari.
+
+43
+00:03:39,233 --> 00:03:43,733
+Bu kursda Blender va 3ds Max bilan işlaymiz.
+
+44
+00:03:44,333 --> 00:03:48,133
+Ikkalasida Python orqali
+işni avtomatlaştiriş mumkin.
+
+45
+00:03:49,967 --> 00:03:51,167
+Endi kompyuter.
+
+46
+00:03:51,867 --> 00:03:56,267
+Uç ölçovli işda törtta
+narsa muhim: protsessor,
+
+47
+00:03:55,967 --> 00:04:00,367
+videokarta, operativ
+xotira va tezkor SSD disk.
+
+48
+00:04:01,267 --> 00:04:08,167
+Blender uçun kamida 4 yadroli protsessor,
+8 GB xotira va 2 GB li videokarta kerak.
+
+49
+00:04:08,567 --> 00:04:14,467
+Tavsiya esa 8 yadro, 32
+GB va 8 GB li videokarta.
+
+50
+00:04:14,667 --> 00:04:20,967
+Televizion grafika bilan işlasangiz, monitor
+Rec. 709 standartiga sozlangan bölişi kerak.
+
+51
+00:04:22,833 --> 00:04:23,433
+Misol.
+
+52
+00:04:22,833 --> 00:04:29,833
+4096 × 4096 ölçamli tekstura
+videoxotirada qança joy egallaydi?
+
+53
+00:04:30,533 --> 00:04:33,533
+Piksellar soni 16 milliondan sal köproq.
+
+54
+00:04:33,833 --> 00:04:37,233
+Har bir pikselda 4 ta
+kanal, har biriga 1 bayt.
+
+55
+00:04:37,733 --> 00:04:40,033
+Natija: taxminan 67 MB.
+
+56
+00:04:40,533 --> 00:04:46,533
+Mipmap darajalari bu hajmni yana uçdan
+biriga oşiradi: taxminan 89,5 MB.
+
+57
+00:04:46,733 --> 00:04:51,833
+Şuning uçun videokarta xotirasi
+teksturalar soniga bevosita taʼsir qiladi.
+
+58
+00:04:54,100 --> 00:04:55,800
+Endi dasturlarning özi.
+
+59
+00:04:56,300 --> 00:04:59,400
+Blender 4 versiyasida yuqorida
+Topbar va iş fazolari yorliqlari bor:
+
+60
+00:04:59,100 --> 00:05:02,200
+Layout, Modeling, Shading.
+
+61
+00:05:05,400 --> 00:05:08,000
+Markazda uç ölçovli köriniş oynasi.
+
+62
+00:05:08,400 --> 00:05:12,450
+Uning içida T tugmasi asboblar panelini,
+
+63
+00:05:12,150 --> 00:05:16,200
+N tugmasi yon panelni oçadi, burçakda
+esa navigatsiya gizmosi turadi.
+
+64
+00:05:16,800 --> 00:05:20,700
+Öngda Outliner va Properties, pastda Timeline.
+
+65
+00:05:21,100 --> 00:05:25,500
+Yangi sahnada kub, kamera
+va yoruğlik tayyor turadi.
+
+66
+00:05:27,500 --> 00:05:29,900
+3ds Max oynasi ham öxşaş.
+
+67
+00:05:30,000 --> 00:05:33,500
+Yuqorida menyu, asboblar paneli va Ribbon.
+
+68
+00:05:33,900 --> 00:05:37,950
+Çapda Scene Explorer, markazda törtta köriniş:
+
+69
+00:05:37,650 --> 00:05:41,700
+yuqoridan, oldidan, çapdan va perspektiv.
+
+70
+00:05:42,300 --> 00:05:46,750
+Öngda Create, Modify va Hierarchy
+yorliqlari bilan Command Panel,
+
+71
+00:05:46,450 --> 00:05:50,900
+pastda vaqt slayderi va navigatsiya tugmalari.
+
+72
+00:05:53,033 --> 00:05:56,233
+Körinişni boşqariş uçun eng kerakli tugmalar.
+
+73
+00:05:56,733 --> 00:06:01,933
+Blenderda siçqonça ğildiragini
+bosib sursangiz, köriniş aylanadi,
+
+74
+00:06:01,633 --> 00:06:06,833
+Shift bilan esa suriladi, ğildirakni
+aylantirsangiz yaqinlaşadi.
+
+75
+00:06:07,533 --> 00:06:11,133
+3ds Max da aylantiriş uçun Alt va ğildirak.
+
+76
+00:06:11,433 --> 00:06:17,533
+Obyektni köçiriş, aylantiriş
+va masştablaş Blenderda G,
+
+77
+00:06:17,233 --> 00:06:23,333
+R, S, 3ds Max da esa W, E va
+R tugmalari bilan bajariladi.
+
+78
+00:06:23,933 --> 00:06:27,633
+Noutbukda işlasangiz,
+
+79
+00:06:27,333 --> 00:06:31,033
+Blender sozlamalarida uç tugmali siçqonça va
+raqamli klaviatura emulyatsiyasini yoqing.
+
+80
+00:06:32,767 --> 00:06:34,467
+Endi navbat sizga.
+
+81
+00:06:34,767 --> 00:06:41,517
+Birinçi vazifa: Blender va 3ds Max da şu
+tugmalarni maşq qiling, obyektga joylaşuv,
+
+82
+00:06:41,217 --> 00:06:47,967
+buriliş va masştab qiymatlarini kiritib,
+ikkinçi qismdagi T, R, S misolini tekşiring.
+
+83
+00:06:48,367 --> 00:06:51,367
+Ikkinçi vazifa: mustaqil mini-loyiha.
+
+84
+00:06:51,767 --> 00:06:55,367
+Primitivlardan yangiliklar
+studiyasi stolini yiğing:
+
+85
+00:06:55,067 --> 00:06:58,667
+stol, ikkita monitor va logotip ustuni.
+
+86
+00:06:59,067 --> 00:07:02,567
+Monitorlarni stolga child qilib boğlang.
+
+87
+00:07:03,067 --> 00:07:07,398
+Söng stolni 30° ga burib,
+
+88
+00:07:07,098 --> 00:07:11,428
+bitta monitorning lokal va global koordinatalarini
+burişdan oldin va keyin yozib oling.
+
+89
+00:07:13,567 --> 00:07:15,567
+Şu bilan birinçi dars tugadi.
+
+90
+00:07:16,167 --> 00:07:21,417
+Biz modelning nima ekanini,
+kompyuter fazoni qanday ölçaşini,
+
+91
+00:07:21,117 --> 00:07:26,367
+harakatni qanday hisoblaşini va
+loyiha qanday yöl bosişini kördik.
+
+92
+00:07:27,367 --> 00:07:31,967
+Keyingi darsda uç ölçovli
+grafikaning tarixiga sayohat qilamiz:
+
+93
+00:07:31,667 --> 00:07:36,267
+birinçi vektor displeydan
+bugungi neyron tasvirlaşgaça.
+
+94
+00:07:36,667 --> 00:07:40,717
+Bilasizmi,
+
+95
+00:07:40,417 --> 00:07:44,467
+2025-yilda «Oskar» olgan «Flow» multfilmi aynan
+siz örganayotgan bepul Blenderda yaratilgan.
+
+96
+00:07:44,967 --> 00:07:47,867
+Demak, keyingi şunday asar
+sizniki bölişi ham mumkin.
+
+97
+00:07:48,267 --> 00:07:48,967
+Körişgunça!
