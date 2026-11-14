@@ -1,0 +1,360 @@
+1
+00:00:02,300 --> 00:00:09,600
+1980-yillarda sifatli uç ölçovli tasvir
+faqat qimmat işçi stansiyalarda çizilardi.
+
+2
+00:00:10,200 --> 00:00:16,700
+Bugun şunday tasvirni oddiy videokarta
+soniyasiga 60 marta, nur kuzatiş bilan çizadi.
+
+3
+00:00:17,400 --> 00:00:22,200
+Endi esa bir neça önlab fotosuratdan
+butun sahna tiklanmoqda.
+
+4
+00:00:22,600 --> 00:00:28,200
+Bu qismda şu sakraşni köramiz: grafik
+protsessorlardan neyron usullargaça.
+
+5
+00:00:30,567 --> 00:00:33,767
+Uç ölçovli modellaştiriş texnologiyalari.
+
+6
+00:00:33,967 --> 00:00:35,967
+Ikkinçi dars, uçinçi qism.
+
+7
+00:00:36,667 --> 00:00:40,467
+GPUʼdan neyron uç ölçovli grafikagaça.
+
+8
+00:00:43,000 --> 00:00:49,300
+90-yillar örtasida öyinlar uçun arzon
+uç ölçovli tezlatkiçlar paydo böldi.
+
+9
+00:00:49,371 --> 00:00:56,496
+1999-yilda NVIDIA GeForce 256
+kartasini birinçi GPU deb taqdim etdi:
+
+10
+00:00:56,536 --> 00:01:04,000
+u çöqqilarni almaştiriş va yoritişni
+apparat darajasida bajardi.
+
+11
+00:01:04,300 --> 00:01:08,224
+Grafik protsessor minglab
+parallel bloklar yordamida
+
+12
+00:01:08,264 --> 00:01:12,300
+çöqqi va piksellarni bir vaqtda qayta işlaydi.
+
+13
+00:01:14,233 --> 00:01:17,533
+Keyingi qadam — dasturlanuvçi shaderlar böldi.
+
+14
+00:01:17,833 --> 00:01:23,333
+Shader — GPUʼda har bir çöqqi yoki
+piksel uçun bajariladigan kiçik dastur.
+
+15
+00:01:23,416 --> 00:01:27,833
+2001-yilda dasturçilar öz
+shaderlarini yoza boşladi.
+
+16
+00:01:28,133 --> 00:01:33,433
+Endi Phong modeli qatʼiy formula emas,
+istalgança özgartiriladigan kod edi.
+
+17
+00:01:33,516 --> 00:01:41,933
+2007-yilda CUDA platformasi GPUʼni fizik
+simulyatsiya va neyron tarmoqlar uçun ham oçdi.
+
+18
+00:01:43,900 --> 00:01:48,602
+Real vaqt grafikasi öyin
+dvigatellari bilan birga ösdi:
+
+19
+00:01:48,642 --> 00:01:53,600
+1998-yilda Unreal Engine,
+2005-yilda Unity paydo böldi.
+
+20
+00:01:53,840 --> 00:01:57,321
+ZBrush esa raqamli
+haykaltaroşlikni ommalaştirdi:
+
+21
+00:01:57,361 --> 00:02:02,630
+millionlab köpburçakli model loydan
+haykal yasaganday şakllantiriladi.
+
+22
+00:02:02,670 --> 00:02:08,700
+2011-yilda WebGL uç ölçovli
+grafikani brauzerga olib kirdi.
+
+23
+00:02:10,800 --> 00:02:12,700
+Endi — Blender tarixi.
+
+24
+00:02:13,100 --> 00:02:21,400
+U 1994-yildan Gollandiyada Ton Roosendaal
+rahbarligida içki vosita sifatida yaratilgan.
+
+25
+00:02:21,460 --> 00:02:26,900
+2002-yilda kompaniya yopildi, lekin
+Roosendaal Blender jamğarmasini tuzdi.
+
+26
+00:02:27,400 --> 00:02:31,153
+Butun dunyo foydalanuvçilari
+7 haftada 100 000 yevro
+
+27
+00:02:31,193 --> 00:02:35,000
+yiğdi va Blender oçiq
+manbali dasturga aylandi.
+
+28
+00:02:37,133 --> 00:02:41,563
+Jamğarma dasturni oçiq filmlar
+bilan sinovdan ötkaza boşladi.
+
+29
+00:02:41,603 --> 00:02:49,933
+2011-yilda nur kuzatuvçi Cycles, 2019-yilda
+real vaqtli EEVEE dvigateli qöşildi.
+
+30
+00:02:50,333 --> 00:02:54,733
+Oçiq standartlar ham sanoatni
+birlaştirdi: OpenEXR,
+
+31
+00:02:54,773 --> 00:03:00,183
+USD va «uç ölçovli grafikaning
+JPEGʼi» deb ataluvçi glTF.
+
+32
+00:03:03,253 --> 00:03:08,300
+2010-yillarda renderning asosiy
+tamoyili «çiroyli körinsin» emas,
+
+33
+00:03:08,340 --> 00:03:12,133
+balki «fizik jihatdan töğri bölsin» böldi.
+
+34
+00:03:12,733 --> 00:03:17,433
+Fizik asoslangan render (PBR)
+energiyaning saqlaniş qonuniga böysunadi.
+
+35
+00:03:17,508 --> 00:03:21,721
+2012-yilda Disney studiyasidan
+Brent Burley rassomlar
+
+36
+00:03:21,761 --> 00:03:25,833
+uçun tuşunarli material modelini taqdim etdi.
+
+37
+00:03:26,133 --> 00:03:32,948
+Bugun asosiy rang, metalliklik va
+ğadir-budurlik parametrlari Blender,
+
+38
+00:03:32,988 --> 00:03:37,633
+Unreal, Unity va glTFʼda bir xil maʼnoga ega.
+
+39
+00:03:39,967 --> 00:03:44,767
+Kinoda yöl kuzatiş köp yillik
+aldovlar örnini egalladi.
+
+40
+00:03:44,827 --> 00:03:54,033
+2018-yilda esa nur kuzatiş real vaqtga kirdi:
+maxsus bloklarga ega RTX videokartalari çiqdi.
+
+41
+00:03:54,073 --> 00:04:01,767
+2022-yilda Unreal Engine 5 Nanite geometriyasi
+va Lumen yoritiş tizimi bilan çiqdi.
+
+42
+00:04:03,870 --> 00:04:08,000
+Televideniye uçun eng muhim
+özgariş 2019-yilda böldi.
+
+43
+00:04:08,500 --> 00:04:13,248
+«The Mandalorian» serialini suratga
+oliş uçun ulkan LED ekranlardan studiya
+
+44
+00:04:13,288 --> 00:04:18,500
+qurildi va ekranlarda manzara kamera
+harakatiga mos real vaqtda özgarib turdi.
+
+45
+00:04:19,000 --> 00:04:25,600
+Bu virtual işlab çiqariş tez orada yangiliklar,
+sport va ob-havo körsatuvlariga ham kirib keldi.
+
+46
+00:04:27,658 --> 00:04:33,398
+2020-yilda NeRF usuli taklif etildi:
+sahna neyron tarmoq bilan ifodalanadi,
+
+47
+00:04:33,438 --> 00:04:39,133
+tarmoq nuqta va qaraş yönalişini
+olib, rang va ziçlikni qaytaradi.
+
+48
+00:04:39,175 --> 00:04:42,230
+2023-yilda Gaussian Splatting paydo böldi:
+
+49
+00:04:42,270 --> 00:04:48,833
+sahna millionlab kiçik Gauss doğlari bilan
+ifodalanadi va ular real vaqtda çiziladi.
+
+50
+00:04:49,233 --> 00:04:54,533
+Matn yoki rasmdan model yaratuvçi
+generativ usullar ham paydo böldi.
+
+51
+00:04:56,367 --> 00:04:58,667
+Lekin bir xatoga yöl qöymang.
+
+52
+00:04:59,267 --> 00:05:01,867
+Bunday natija — tayyor işçi model emas.
+
+53
+00:05:02,367 --> 00:05:07,490
+Unda köpinça toza topologiya, UV
+yoyilma va alohida materiallar bölmaydi,
+
+54
+00:05:07,530 --> 00:05:11,567
+şuning uçun retopologiya
+va qayta teksturalaş kerak.
+
+55
+00:05:13,333 --> 00:05:18,217
+Butun tarixni olti bosqiçga
+ajratiş mumkin: ilk tizimlar,
+
+56
+00:05:18,257 --> 00:05:24,733
+Yuta maktabi, realistik render, GPU
+davri, fizik render va neyron usullar.
+
+57
+00:05:25,033 --> 00:05:30,199
+Har bir bosqiç oldingisini bekor
+qilmaydi: Z-bufer har bir GPUʼda işlaydi,
+
+58
+00:05:30,239 --> 00:05:34,033
+Phong ğoyasi esa bugungi
+materiallarda yaşamoqda.
+
+59
+00:05:35,967 --> 00:05:41,567
+Özbekistonda televizion
+eşittiriş 1956-yilda boşlangan.
+
+60
+00:05:42,167 --> 00:05:47,517
+Balandligi 375 metr bölgan
+Toşkent teleminorasi
+
+61
+00:05:47,557 --> 00:05:53,467
+1978–1985-yillarda qurildi,
+bugun esa efir raqamli.
+
+62
+00:05:53,667 --> 00:05:56,824
+Milliy telekanallarda virtual dekoratsiyalar,
+
+63
+00:05:56,864 --> 00:06:02,067
+uç ölçovli infografika va real
+vaqtli grafika keng qöllanilmoqda.
+
+64
+00:06:02,667 --> 00:06:09,567
+«Özbekfilm»da esa birinçi özbek multfilmi
+ustidagi iş 1965-yilda boşlangan.
+
+65
+00:06:11,500 --> 00:06:13,300
+Endi — amaliy topşiriq.
+
+66
+00:06:13,900 --> 00:06:18,302
+Blenderda sferaga Shade Flat va
+Shade Smooth buyruqlarini qöllab,
+
+67
+00:06:18,342 --> 00:06:21,200
+tekis va silliq soyalaşni taqqoslang.
+
+68
+00:06:22,000 --> 00:06:24,900
+3ds Maxʼda Teapot primitivini yarating.
+
+69
+00:06:26,000 --> 00:06:28,667
+Mustaqil iş: bitta kaşfiyotni tanlab,
+
+70
+00:06:28,707 --> 00:06:34,700
+«Ğoyadan bugungi dasturgaça» mavzusida
+8–10 slayddan iborat taqdimot tayyorlang.
+
+71
+00:06:36,367 --> 00:06:37,467
+Xulosa qilaylik.
+
+72
+00:06:37,967 --> 00:06:42,964
+Uç ölçovli grafika 60 yilda olti
+bosqiçni bosib ötdi va har bir
+
+73
+00:06:43,004 --> 00:06:48,267
+bosqiç oldingi ğoyalarni saqlab,
+ularni tezroq va arzonroq qildi.
+
+74
+00:06:48,767 --> 00:06:54,967
+Blender kabi oçiq dasturlar bu texnologiyalarni
+hamma uçun, jumladan siz uçun ham oçiq qildi.
+
+75
+00:06:55,367 --> 00:07:00,067
+Keyingi darsda uç ölçovli modellaştiriş
+usullarining tasnifini örganamiz.
+
+76
+00:07:00,367 --> 00:07:01,267
+Körişgunça!
