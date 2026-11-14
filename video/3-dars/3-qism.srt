@@ -1,0 +1,372 @@
+1
+00:00:02,300 --> 00:00:09,600
+Şifokor kompyuter tomografiyasida sirtni emas,
+hajmni köradi: har bir kubçada ziçlik bor.
+
+2
+00:00:10,000 --> 00:00:15,000
+Haykaltaroş topologiya haqida
+öylamay, loyni itaradi va tortadi.
+
+3
+00:00:15,500 --> 00:00:19,800
+Skaner esa butun binoni
+millionlab nuqtalarga aylantiradi.
+
+4
+00:00:20,300 --> 00:00:24,000
+Bularning hammasi ham uç
+ölçovli modellaştiriş.
+
+5
+00:00:24,400 --> 00:00:28,672
+Bugun hajmiy tasvirlar,
+haykaltaroşlik va real dunyodan
+
+6
+00:00:28,712 --> 00:00:33,400
+olingan modellarni köramiz
+va usul tanlaşni örganamiz.
+
+7
+00:00:35,500 --> 00:00:38,600
+Uç ölçovli modellaştiriş texnologiyalari.
+
+8
+00:00:39,200 --> 00:00:41,100
+Uçinçi dars, uçinçi qism.
+
+9
+00:00:41,600 --> 00:00:45,000
+Hajm, haykal va real dunyo.
+
+10
+00:00:47,533 --> 00:00:52,938
+CSG, yaʼni konstruktiv qattiq jism
+geometriyasida murakkab jism oddiy
+
+11
+00:00:52,978 --> 00:00:59,433
+primitivlardan mantiqiy amallar bilan
+quriladi: birlaşma, kesişma va ayirma.
+
+12
+00:00:59,933 --> 00:01:05,433
+Model daraxt körinişida saqlanadi: barglari
+— primitivlar, içki tugunlari — amallar.
+
+13
+00:01:06,033 --> 00:01:08,589
+Teşikli plastina — kub minus silindr,
+
+14
+00:01:08,629 --> 00:01:13,233
+bolt kallagi esa olti burçakli
+prizma va sferaning kesişmasi.
+
+15
+00:01:15,167 --> 00:01:20,167
+Bu usulning kafolati — natija
+har doim yopiq, hajmga ega jism.
+
+16
+00:01:20,967 --> 00:01:25,149
+Lekin erkin şakllar qiyin,
+polygonal törlarda esa Boolean
+
+17
+00:01:25,189 --> 00:01:29,567
+amallari ingiçka uçburçaklar
+va n-gonlar hosil qiladi.
+
+18
+00:01:30,067 --> 00:01:36,367
+Blenderda buning uçun Boolean modifikatori,
+3ds Maxda Boolean va ProBoolean obyektlari bor.
+
+19
+00:01:38,267 --> 00:01:44,500
+Voksellar fazoni bir xil kubçalarga
+böladi va har birida qiymat saqlaydi:
+
+20
+00:01:44,540 --> 00:01:47,767
+band yoki böş, ziçlik yoki rang.
+
+21
+00:01:48,267 --> 00:01:51,467
+Bu rastr tasvirning uç ölçovli analogi.
+
+22
+00:01:52,267 --> 00:01:54,767
+Radiusi 1 bölgan sferani olaylik.
+
+23
+00:01:54,867 --> 00:02:02,767
+8³ panjarada band voksellar
+280 ta, xato taxminan 4,4 %.
+
+24
+00:02:02,867 --> 00:02:10,967
+16³ panjarada esa 2176
+ta voksel va xato 1,5 %.
+
+25
+00:02:12,967 --> 00:02:22,467
+Aniqlik oşadi, lekin xotira kub qonuni böyiça
+ösadi: 512³ panjara 134 million vokseldan iborat.
+
+26
+00:02:22,867 --> 00:02:29,767
+Şuning uçun faqat sirt atrofini saqlaydigan
+siyrak tuzilmalar, masalan OpenVDB işlatiladi.
+
+27
+00:02:30,267 --> 00:02:36,867
+Voksellar tibbiyotda, tutun va olov
+simulyatsiyasida va uç ölçovli bosmada qöllaniladi.
+
+28
+00:02:38,767 --> 00:02:42,367
+Implisit sirtda şakl tenglama bilan beriladi.
+
+29
+00:02:42,767 --> 00:02:47,831
+Agar funksiya nuqtadan sirtgaça
+bölgan işorali masofani bersa —
+
+30
+00:02:47,871 --> 00:02:54,667
+içkarida manfiy, taşqarida musbat — u
+işorali masofa maydoni, yaʼni SDF deyiladi.
+
+31
+00:02:54,967 --> 00:03:00,990
+Unda Boolean amallar juda sodda:
+birlaşma — minimum, kesişma — maksimum,
+
+32
+00:03:01,030 --> 00:03:07,967
+ayirma esa birinçi masofa va ikkinçisining
+teskari işorali qiymatidan kattasi.
+
+33
+00:03:10,267 --> 00:03:21,567
+Misol: A — radiusi 1 bölgan sfera, B — markazi 1
+da, radiusi 0,8 bölgan sfera, nuqta esa 0,5 da.
+
+34
+00:03:22,667 --> 00:03:28,267
+A gaça masofa −0,5, B gaça −0,3.
+
+35
+00:03:28,767 --> 00:03:32,367
+Birlaşma va kesişma manfiy — nuqta içkarida.
+
+36
+00:03:32,967 --> 00:03:39,867
+Ayirma esa +0,3 — nuqta taşqarida,
+çunki u B kesib olgan qismda yotibdi.
+
+37
+00:03:41,833 --> 00:03:48,540
+Metaball — implisit sirtning klassik
+körinişi: har bir şar maydon hosil qiladi,
+
+38
+00:03:48,580 --> 00:03:55,133
+maydonlar yiğindisi çegaraviy qiymatga
+teng nuqtalar sirtni taşkil etadi.
+
+39
+00:03:55,733 --> 00:04:07,133
+Çegara 2 bölganda, markazlar orasi 2,6
+bölsa, örtadagi maydon 1,18 — şarlar alohida.
+
+40
+00:04:07,533 --> 00:04:16,433
+1,7 da esa maydon 2,77 va şarlar
+silliq böyin bilan qöşiladi.
+
+41
+00:04:16,833 --> 00:04:21,633
+Bunday sirt marching cubes algoritmi
+bilan uçburçaklarga aylantiriladi.
+
+42
+00:04:23,500 --> 00:04:30,700
+Raqamli haykaltaroşlikda virtual möyqalam juda
+ziç törni itaradi, tortadi va silliqlaydi.
+
+43
+00:04:31,300 --> 00:04:37,500
+Topologiya haqida qayğurmay, ajinlar, teri
+teşikçalari va mato burmalari ustida işlaş mumkin.
+
+44
+00:04:38,100 --> 00:04:44,000
+Asosiy texnologiyalar — böliş darajalari,
+dinamik topologiya va qayta törlaş.
+
+45
+00:04:44,500 --> 00:04:47,600
+Bunday modellar millionlab poligondan iborat.
+
+46
+00:04:49,260 --> 00:04:53,350
+Lekin bu tör animatsiya va
+real vaqt uçun yaroqsiz.
+
+47
+00:04:53,390 --> 00:04:58,773
+Şuning uçun retopologiya — ziç model
+ustida yengil, töğri tör quriş —
+
+48
+00:04:58,813 --> 00:05:03,680
+va beyking — detallarni normal
+xaritaga köçiriş — bajariladi.
+
+49
+00:05:03,830 --> 00:05:10,800
+Asosiy dasturlar: ZBrush, Blenderning
+Sculpt rejimi, Mudbox va 3DCoat.
+
+50
+00:05:12,647 --> 00:05:16,537
+Real obyektdan olingan eng
+sodda model — nuqtalar buluti.
+
+51
+00:05:17,277 --> 00:05:23,306
+LiDAR nurning qaytiş vaqti bilan masofani
+ölçab, binolar va landşaftni skanerlaydi.
+
+52
+00:05:23,507 --> 00:05:27,161
+Strukturalangan yoruğlik
+skaneri obyektga naqş tuşirib,
+
+53
+00:05:27,201 --> 00:05:30,367
+uning buzilişini kamera bilan tahlil qiladi.
+
+54
+00:05:30,717 --> 00:05:35,491
+Fotogrammetriya esa oddiy fotosuratlardan
+kamera holatlarini hisoblab,
+
+55
+00:05:35,531 --> 00:05:38,307
+nuqtalar, tör va teksturani quradi.
+
+56
+00:05:38,537 --> 00:05:42,567
+Natija realistik, lekin xom:
+tozalaş va retopologiya kerak,
+
+57
+00:05:42,607 --> 00:05:46,367
+şaffof va yaltiroq sirtlar
+esa yomon skanerlanadi.
+
+58
+00:05:48,270 --> 00:05:50,850
+Usul tanlaşda beşta savol beriladi.
+
+59
+00:05:51,150 --> 00:05:52,900
+Model qayerda işlatiladi?
+
+60
+00:05:53,230 --> 00:05:55,450
+Aniq ölçamlar kerakmi?
+
+61
+00:05:56,140 --> 00:05:59,290
+Obyekt organikmi yoki texnikmi?
+
+62
+00:05:59,440 --> 00:06:01,380
+Real namuna bormi?
+
+63
+00:06:01,880 --> 00:06:04,490
+Variantlar va hajm qança?
+
+64
+00:06:04,940 --> 00:06:11,506
+Masalan, real vaqt uçun — optimallaştirilgan
+polygonal model, işlab çiqariş uçun —
+
+65
+00:06:11,546 --> 00:06:17,100
+NURBS va parametrik CAD, örmon va
+şahar uçun esa protsedurali usul.
+
+66
+00:06:18,957 --> 00:06:23,912
+Televizion grafikada odatiy
+kombinatsiya şunday: logotip va matn —
+
+67
+00:06:23,952 --> 00:06:29,726
+spline asosida ekstruziya, dekoratsiyalar
+— polygonal va subdivision modellar,
+
+68
+00:06:29,766 --> 00:06:33,826
+fon va muhit — protsedurali
+usullar va fotogrammetriya,
+
+69
+00:06:33,866 --> 00:06:39,086
+virtual studiya sahnasi esa real
+vaqtga moslangan polygonal model.
+
+70
+00:06:40,947 --> 00:06:42,027
+Amaliy topşiriq.
+
+71
+00:06:42,067 --> 00:06:49,047
+Blenderda kubga Ctrl va 2 bilan subdivision
+qöşing va yoqlar sonini formula bilan tekşiring.
+
+72
+00:06:49,387 --> 00:06:55,867
+Add → Metaball menyusidan ikki metaşar
+qöşib, ular orasidagi masofani özgartiring.
+
+73
+00:06:56,187 --> 00:07:01,557
+Boolean modifikatori bilan kubdan
+silindrni ayirib, teşikli plastina yasang.
+
+74
+00:07:03,487 --> 00:07:04,497
+Xulosa qilaylik.
+
+75
+00:07:04,927 --> 00:07:10,206
+Hajmiy tasvirlar — mantiqiy amallar
+va içki tuziliş uçun, haykaltaroşlik —
+
+76
+00:07:10,246 --> 00:07:16,957
+organik detallar uçun, skanerlaş va neyron
+usullar — real dunyoni tez raqamlaştiriş uçun.
+
+77
+00:07:17,547 --> 00:07:21,937
+Professional işda bu tillar birlaştiriladi
+va bir-biriga aylantiriladi.
+
+78
+00:07:22,517 --> 00:07:25,747
+Keyingi darsda fotogrammetriyani
+batafsil örganamiz.
+
+79
+00:07:26,047 --> 00:07:26,857
+Körişgunça!
