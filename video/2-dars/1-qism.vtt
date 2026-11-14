@@ -1,0 +1,436 @@
+WEBVTT
+
+1
+00:00:02.406 --> 00:00:09.700
+1995-yilda «Toy Story» multfilmining har bir
+kadri yuzlab kompyuterlarda soatlab hisoblangan.
+
+2
+00:00:10.600 --> 00:00:14.683
+Oradan 30 yil ötib, «Flow»
+multfilmi bepul Blenderda yaratildi,
+
+3
+00:00:14.723 --> 00:00:17.600
+real vaqtda renderlandi va «Oskar» oldi.
+
+4
+00:00:18.200 --> 00:00:20.000
+Bu sakraş tasodif emas.
+
+5
+00:00:20.200 --> 00:00:23.300
+Uning ortida 60 yildan ortiq izçil mehnat bor.
+
+6
+00:00:23.600 --> 00:00:29.600
+Bugun şu yölning boşiga qaytamiz:
+birinçi çiziqqa va birinçi soyaga.
+
+7
+00:00:31.867 --> 00:00:35.167
+Uç ölçovli modellaştiriş texnologiyalari.
+
+8
+00:00:35.767 --> 00:00:38.267
+Ikkinçi dars, birinçi qism.
+
+9
+00:00:38.867 --> 00:00:41.967
+Ilk çiziqlar va birinçi soyalar.
+
+10
+00:00:44.633 --> 00:00:48.833
+Kompyuter grafikasi harbiy va
+muhandislik loyihalaridan boşlangan.
+
+11
+00:00:49.133 --> 00:00:52.803
+1950-yillarda Massaçusets
+texnologiya institutining
+
+12
+00:00:52.843 --> 00:00:57.013
+Whirlwind kompyuteri va havo
+hujumidan mudofaa tizimi SAGE,
+
+13
+00:00:57.053 --> 00:01:02.133
+ekranga nuqta va çiziq çizuvçi
+vektor displeylardan foydalangan.
+
+14
+00:01:02.633 --> 00:01:06.233
+Operator ekrandagi nişonni
+yoruğlik quroli bilan tanlagan.
+
+15
+00:01:06.293 --> 00:01:15.033
+1960-yilda esa Boeing dizayneri William Fetter
+«kompyuter grafikasi» atamasini muomalaga kiritdi.
+
+16
+00:01:16.967 --> 00:01:19.767
+Ikkinçi beşik avtomobilsozlik böldi.
+
+17
+00:01:20.167 --> 00:01:23.667
+Kuzovning silliq sirtini
+matematik ifodalaş kerak edi.
+
+18
+00:01:23.757 --> 00:01:31.441
+1959-yilda Citroën kompaniyasida Paul de
+Casteljau egri çiziq quriş algoritmini topdi,
+
+19
+00:01:31.481 --> 00:01:35.467
+lekin uning işi uzoq yillar sir saqlandi.
+
+20
+00:01:35.967 --> 00:01:42.267
+Renault kompaniyasida Pierre Bézier xuddi şu
+egri çiziqlarni mustaqil işlab çiqib, naşr etdi.
+
+21
+00:01:42.867 --> 00:01:46.167
+Şuning uçun ular Bézier
+egri çiziqlari deb ataladi.
+
+22
+00:01:46.967 --> 00:01:53.567
+Şu yillarda General Motors va IBM avtomobil
+loyihalaş uçun DAC-1 tizimini yaratdi.
+
+23
+00:01:55.633 --> 00:01:57.333
+Algoritm juda sodda.
+
+24
+00:01:57.833 --> 00:01:59.633
+Törtta tayanç nuqta olamiz.
+
+25
+00:01:59.933 --> 00:02:04.533
+Har bir qöşni juftlik orasida bir
+xil nisbatda yangi nuqta belgilaymiz.
+
+26
+00:02:05.333 --> 00:02:10.133
+Hosil bölgan nuqtalar bilan yana şunday
+qilamiz, oxirida bitta nuqta qoladi.
+
+27
+00:02:10.633 --> 00:02:16.333
+Nisbatni 0 dan 1 gaça özgartirsak,
+şu nuqta silliq egri çiziq çizadi.
+
+28
+00:02:16.533 --> 00:02:22.233
+60 yil oldingi bu algoritm bugun
+ham Blenderda egri çiziq çizadi.
+
+29
+00:02:24.394 --> 00:02:27.727
+1963-yil.
+
+30
+00:02:27.767 --> 00:02:31.105
+Massaçusets texnologiya
+instituti aspiranti Ivan
+
+31
+00:02:31.145 --> 00:02:35.167
+Sutherland «Sketchpad»
+dissertatsiyasini himoya qildi.
+
+32
+00:02:36.067 --> 00:02:42.073
+Foydalanuvçi yoruğlik qalami bilan bevosita
+ekranda çizar, çiziqlarga «parallel»,
+
+33
+00:02:42.113 --> 00:02:44.919
+«teng uzunlikda» kabi çeklovlar qöyar,
+
+34
+00:02:44.959 --> 00:02:50.167
+bir marta çizilgan şaklni namuna
+sifatida köp marta takrorlar edi.
+
+35
+00:02:50.467 --> 00:02:55.538
+Interaktiv interfeys, çeklovli
+modellaştiriş va namuna bilan nusxa
+
+36
+00:02:55.578 --> 00:03:00.767
+ğoyasi bugungi barça uç ölçovli
+dasturlarning asosida yotadi.
+
+37
+00:03:01.367 --> 00:03:04.267
+Sutherland keyinroq Tyuring mukofotini oldi.
+
+38
+00:03:06.200 --> 00:03:10.200
+1960-yillar oxirida sirtlar
+nazariyasi ham şakllandi.
+
+39
+00:03:10.900 --> 00:03:17.094
+Steven Coons törtta çegaraviy egri çiziq
+orqali sirt lavhasini quriş usulini taʼrifladi.
+
+40
+00:03:17.134 --> 00:03:24.258
+1968-yilda Sutherland boşga kiyiladigan
+birinçi displeylardan birini yaratdi,
+
+41
+00:03:24.298 --> 00:03:27.500
+u «Damokl qiliçi» deb nom oldi.
+
+42
+00:03:27.800 --> 00:03:34.400
+Şu yili u David Evans bilan birga
+Evans & Sutherland kompaniyasini tuzdi.
+
+43
+00:03:36.267 --> 00:03:39.167
+Endi ikki xil ekranni farqlaylik.
+
+44
+00:03:39.667 --> 00:03:45.267
+Vektor displey elektron nurini töğri
+çiziqlar böylab yurgizib tasvir çizadi.
+
+45
+00:03:45.967 --> 00:03:51.471
+Rastr displey esa tasvirni piksellar
+panjarasi sifatida satrma-satr çiqaradi
+
+46
+00:03:51.511 --> 00:03:57.067
+va har bir pikselning rangini kadr
+buferi degan maxsus xotirada saqlaydi.
+
+47
+00:03:57.467 --> 00:04:03.718
+Kadr buferlari arzonlaşgaç, rastr ekran
+ğolib böldi va yangi savol tuğildi:
+
+48
+00:04:03.758 --> 00:04:06.967
+har bir pikselga qanday rang beramiz?
+
+49
+00:04:08.933 --> 00:04:11.933
+Bu savolga javobni Yuta universiteti berdi.
+
+50
+00:04:12.333 --> 00:04:17.233
+David Evans u yerda informatika bölimini
+tuzdi, keyin Sutherland ham qöşildi.
+
+51
+00:04:17.833 --> 00:04:21.198
+Bu yerning bitiruvçilari röyxati afsonaviy:
+
+52
+00:04:21.238 --> 00:04:26.496
+Pixar asosçilaridan biri Edwin
+Catmull, Adobe asosçisi John Warnock,
+
+53
+00:04:26.536 --> 00:04:31.263
+Silicon Graphics asosçisi Jim
+Clark, şuningdek Henri Gouraud,
+
+54
+00:04:31.303 --> 00:04:34.863
+Bui Tuong Phong, Martin Newell va Jim Blinn.
+
+55
+00:04:34.903 --> 00:04:40.533
+1974-yilda esa birinçi SIGGRAPH
+konferensiyasi ötkazildi.
+
+56
+00:04:42.667 --> 00:04:47.507
+Soyalaş deb sirtning har bir
+nuqtasi uçun yoruğlik manbai,
+
+57
+00:04:47.547 --> 00:04:52.567
+sirt normali va material asosida
+rang hisoblaşga aytiladi.
+
+58
+00:04:53.367 --> 00:04:55.967
+Eng sodda usul — tekis soyalaş.
+
+59
+00:04:56.467 --> 00:05:00.867
+Har bir köpburçak uçun bitta
+normal va bitta rang olinadi.
+
+60
+00:05:01.267 --> 00:05:04.167
+Şuning uçun sfera qirrali bölib körinadi.
+
+61
+00:05:06.273 --> 00:05:10.980
+1971-yilda Henri Gouraud yorqinlikni
+faqat çöqqilarda hisoblab,
+
+62
+00:05:11.020 --> 00:05:16.067
+köpburçak içida çiziqli
+interpolyatsiya qilişni taklif etdi.
+
+63
+00:05:16.867 --> 00:05:20.267
+Gouraud soyalaşi arzon
+va silliq natija beradi.
+
+64
+00:05:20.467 --> 00:05:24.494
+Lekin köpburçak örtasiga
+tuşgan yaltiroq doğni yöqotadi
+
+65
+00:05:24.534 --> 00:05:28.367
+yoki uni qirralar böylab
+yulduzsimon yoyib yuboradi.
+
+66
+00:05:30.533 --> 00:05:33.933
+Bui Tuong Phong ikki ğoyani taklif etdi.
+
+67
+00:05:34.433 --> 00:05:38.137
+Birinçisi — Phong soyalaşi:
+çöqqilarda rang emas,
+
+68
+00:05:38.177 --> 00:05:43.633
+normal interpolyatsiya qilinadi va
+yoritiş har bir pikselda hisoblanadi.
+
+69
+00:05:44.133 --> 00:05:46.433
+Ikkinçisi — Phong yoritiş modeli.
+
+70
+00:05:46.833 --> 00:05:52.933
+Unda yoruğlik uç qismdan iborat:
+fon, diffuz va közgu qismi.
+
+71
+00:05:53.433 --> 00:05:57.433
+Közgu qismida burçak kosinusi
+n darajaga kötariladi.
+
+72
+00:05:57.733 --> 00:06:03.133
+n qança katta bölsa, yaltiroq
+doğ şunça kiçik va ötkir böladi.
+
+73
+00:06:05.167 --> 00:06:05.867
+Misol.
+
+74
+00:06:06.467 --> 00:06:19.667
+Fon koeffitsiyenti 0,1, diffuz koeffitsiyent
+0,7, N va L ning skalyar köpaytmasi 0,8.
+
+75
+00:06:20.467 --> 00:06:25.367
+Fon va diffuz qism birga 0,66 beradi.
+
+76
+00:06:26.067 --> 00:06:34.767
+Közgu koeffitsiyenti 0,5, R va V
+ning skalyar köpaytmasi ham 0,8.
+
+77
+00:06:34.967 --> 00:06:42.767
+n = 20 bölsa, közgu qismi juda
+kiçik va natija taxminan 0,67.
+
+78
+00:06:43.767 --> 00:06:48.667
+n = 5 bölsa, natija 0,82.
+
+79
+00:06:49.467 --> 00:06:55.167
+Yaltiroq sirtda doğ bu burçakdan deyarli
+körinmaydi, xira sirtda esa sezilarli.
+
+80
+00:06:57.338 --> 00:07:02.240
+1977-yilda Jim Blinn aks
+etgan nur örniga yoruğlik va
+
+81
+00:07:02.280 --> 00:07:08.600
+kuzatuvçi yönalişlari örtasidagi
+yarim yöl vektorini işlatdi.
+
+82
+00:07:09.100 --> 00:07:12.514
+Blinn–Phong modeli hisoblaş uçun qulay bölib,
+
+83
+00:07:12.554 --> 00:07:17.100
+OpenGL va Direct3D ning standart
+yoritiş modeliga aylandi.
+
+84
+00:07:17.300 --> 00:07:19.908
+Bir narsani esda tuting: Gouraud ham,
+
+85
+00:07:19.948 --> 00:07:24.900
+Phong ham sirt şaklini özgartirmaydi,
+faqat rangni silliqlaydi.
+
+86
+00:07:25.400 --> 00:07:29.100
+Past poligonli sferaning konturi
+baribir sinuq bölib qoladi.
+
+87
+00:07:30.933 --> 00:07:32.033
+Xulosa qilaylik.
+
+88
+00:07:32.833 --> 00:07:37.633
+Vektor displey va CAD tizimlari
+çiziq çizişni örgatdi.
+
+89
+00:07:38.033 --> 00:07:42.333
+Bézier va Coons silliq egri
+çiziq va sirtlarni berdi.
+
+90
+00:07:42.733 --> 00:07:49.733
+Yuta maktabi esa piksellarga yoruğlik olib
+kirdi: tekis, Gouraud va Phong soyalaşi.
+
+91
+00:07:50.533 --> 00:07:57.333
+Keyingi qismda bitta dissertatsiyadan çiqqan
+ikki ğoyani köramiz: Z-bufer va teksturalaş.
+
+92
+00:07:57.533 --> 00:08:01.933
+Söng nur kuzatiş, kino va
+Pixar haqida gaplaşamiz.
+
+93
+00:08:02.033 --> 00:08:02.933
+Körişgunça!
