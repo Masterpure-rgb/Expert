@@ -1,0 +1,300 @@
+1
+00:00:02,200 --> 00:00:06,500
+Ikki dizaynerga bir xil topşiriq
+berildi: avtomobil kapoti.
+
+2
+00:00:07,100 --> 00:00:12,200
+Birinçisi uni minglab uçburçaklardan yasadi
+— yaqinlaşganda qirralar körinib qoladi.
+
+3
+00:00:12,700 --> 00:00:18,900
+Ikkinçisi bir neça önta nazorat nuqtasi
+bilan berdi — istalgan masştabda sirt silliq.
+
+4
+00:00:19,400 --> 00:00:21,300
+Farq — matematik tilda.
+
+5
+00:00:21,900 --> 00:00:26,300
+Bugun egri çiziqlar, parametrlar
+va algoritmlar tilini örganamiz.
+
+6
+00:00:28,400 --> 00:00:31,400
+Uç ölçovli modellaştiriş texnologiyalari.
+
+7
+00:00:31,700 --> 00:00:33,600
+Uçinçi dars, ikkinçi qism.
+
+8
+00:00:34,100 --> 00:00:36,600
+Egri çiziqlardan algoritmgaça.
+
+9
+00:00:39,267 --> 00:00:42,467
+Spline modellaştiriş egri
+çiziqlardan boşlanadi.
+
+10
+00:00:43,067 --> 00:00:45,998
+Modelyer nazorat nuqtalari bilan profil,
+
+11
+00:00:46,038 --> 00:00:50,604
+kontur yoki traektoriya çizadi,
+söng uni sirtga aylantiradi:
+
+12
+00:00:50,644 --> 00:00:53,724
+siqib çiqariş, öq atrofida aylantiriş,
+
+13
+00:00:53,764 --> 00:00:58,967
+traektoriya böylab suriş va bir
+neça kesim orqali sirt tortiş.
+
+14
+00:01:01,133 --> 00:01:08,233
+Şu yöl bilan şişa idişlar, vazalar, mebel
+detallari va hajmli yozuvlar tez yaratiladi.
+
+15
+00:01:08,933 --> 00:01:15,219
+Teleefir grafikasida kanal logotipini Bezier
+konturidan hajmli obyektga aylantiriş —
+
+16
+00:01:15,259 --> 00:01:18,833
+aynan spline usulining odatiy qöllanilişi.
+
+17
+00:01:20,900 --> 00:01:26,300
+Patch, yaʼni sirt bölagi usulida
+sirt törtburçak bölaklardan yiğiladi.
+
+18
+00:01:27,000 --> 00:01:33,400
+Bikubik Bezier bölagi 4 × 4, yaʼni
+16 ta nazorat nuqtasi bilan beriladi.
+
+19
+00:01:33,800 --> 00:01:37,500
+Yuta çoynagi aynan 32 ta
+şunday bölakdan iborat.
+
+20
+00:01:39,267 --> 00:01:47,767
+Spline usullarining eng umumiy va aniq körinişi
+— NURBS, yaʼni notekis ratsional B-spline.
+
+21
+00:01:48,567 --> 00:01:55,467
+Egri çiziq nazorat nuqtalari, ularning vaznlari,
+daraja va tugunlar vektori orqali beriladi.
+
+22
+00:01:55,967 --> 00:02:00,905
+Formulada har bir nuqta bazis
+funksiya va vaznga köpaytiriladi,
+
+23
+00:02:00,945 --> 00:02:04,667
+yiğindi esa vaznlar yiğindisiga bölinadi.
+
+24
+00:02:06,633 --> 00:02:14,333
+Aynan şu ratsional şakl tufayli NURBS aylana,
+ellips, sfera va silindrni aniq ifodalaydi.
+
+25
+00:02:14,733 --> 00:02:19,233
+Poligonlar va oddiy Bezier egrilari
+buni faqat taqribiy bajaradi.
+
+26
+00:02:19,633 --> 00:02:24,133
+Vazn oşirilsa, egri çiziq öşa
+nazorat nuqtasiga yaqinlaşadi.
+
+27
+00:02:26,033 --> 00:02:32,320
+NURBSʼning afzalliklari: matematik aniqlik,
+istalgan aniqlikda uçburçaklarga ajratiş,
+
+28
+00:02:32,360 --> 00:02:37,333
+ixçam saqlaş va sirtlar orasidagi
+uzluksizlikni nazorat qiliş.
+
+29
+00:02:38,133 --> 00:02:41,610
+Çeklovi: har bir sirt törtburçak
+parametrik sohaga ega,
+
+30
+00:02:41,650 --> 00:02:45,370
+şuning uçun qöl barmoqlari
+kabi murakkab şakllar bir neça
+
+31
+00:02:45,410 --> 00:02:49,833
+bölakdan yiğiladi va tutaşuv
+joylari alohida işlov talab qiladi.
+
+32
+00:02:51,800 --> 00:02:57,100
+Asosiy dasturlar — Rhino,
+Alias, CATIA va SolidWorks.
+
+33
+00:02:57,600 --> 00:03:04,600
+Qöllaniş sohalari: avtomobil va samolyot
+kuzovlari, sanoat dizayni, zargarlik va kemasozlik.
+
+34
+00:03:06,633 --> 00:03:09,881
+Parametrik modellaştirişda model elementlar
+
+35
+00:03:09,921 --> 00:03:14,533
+ketma-ketligi va ular orasidagi
+çeklovlar orqali quriladi.
+
+36
+00:03:15,133 --> 00:03:22,233
+Eskizda kontur çiziladi va unga «uzunlik — 80
+mm», «parallel», «teng» kabi çeklovlar qöyiladi.
+
+37
+00:03:22,833 --> 00:03:29,733
+Kontur 20 mm ga siqib çiqariladi, söng
+diametri 10 mm teşik va faska qöşiladi.
+
+38
+00:03:29,933 --> 00:03:32,733
+Dastur bu amallar tarixini saqlaydi.
+
+39
+00:03:34,700 --> 00:03:41,400
+Agar keyin uzunlik 100 mm ga özgartirilsa, barça
+keyingi amallar avtomatik qayta hisoblanadi.
+
+40
+00:03:42,200 --> 00:03:46,582
+Bunday tizimlar — SolidWorks,
+Inventor, Fusion, CATIA —
+
+41
+00:03:46,622 --> 00:03:54,400
+jismni NURBS sirtlar va ularning çegaralari
+bilan aniq ifodalovçi B-rep yadrosiga tayanadi.
+
+42
+00:03:55,000 --> 00:04:01,400
+Kuçli tomoni — muhandislik aniqligi, zaif
+tomoni — erkin badiiy şakllar uçun noqulaylik.
+
+43
+00:04:03,333 --> 00:04:10,433
+Protsedurali modellaştirişda geometriya çizilmaydi,
+balki uni yaratuvçi algoritm tavsiflanadi.
+
+44
+00:04:11,033 --> 00:04:16,247
+Tugunlar tizimida, masalan Blenderning
+Geometry Nodes yoki Houdinida,
+
+45
+00:04:16,287 --> 00:04:18,989
+har bir tugun bitta amalni bajaradi,
+
+46
+00:04:19,029 --> 00:04:21,806
+ularning zanjiri esa natijani beradi:
+
+47
+00:04:21,846 --> 00:04:29,533
+köçadagi barça binolar qavatlar soni va tasodifiy
+son parametrlari bilan generatsiya qilinadi.
+
+48
+00:04:31,567 --> 00:04:36,567
+Ösimliklar uçun L-tizimlar işlatiladi:
+satrlarni qayta yoziş qoidalari.
+
+49
+00:04:36,867 --> 00:04:44,367
+Aksioma — X, qoidalar esa X ni şoxlanuvçi
+ketma-ketlikka, F ni esa FF ga almaştiradi.
+
+50
+00:04:44,667 --> 00:04:52,267
+Bu yerda F — oldinga çiziq, «+» va «−» — 25°
+ga buriliş, kvadrat qavslar — şox çiqariş.
+
+51
+00:04:52,567 --> 00:04:56,167
+Har bir iteratsiyada F lar
+soni ikki baravar ortadi.
+
+52
+00:04:58,367 --> 00:05:01,567
+Tabiiy relyef şovqin
+funksiyalari bilan yaratiladi.
+
+53
+00:05:02,067 --> 00:05:06,249
+Turli masştabdagi şovqinlar,
+yaʼni oktavalar qöşiladi:
+
+54
+00:05:06,289 --> 00:05:13,067
+har bir keyingisining çastotasi ikki baravar
+katta, amplitudasi esa ikki baravar kiçik.
+
+55
+00:05:15,100 --> 00:05:20,737
+Protsedurali usul katta hajmdagi
+kontentni — şahar, örmon, landşaftni —
+
+56
+00:05:20,777 --> 00:05:26,600
+tez yaratadi, çeksiz variant beradi
+va faylda faqat algoritm saqlanadi.
+
+57
+00:05:27,300 --> 00:05:32,400
+Lekin algoritmik fikrlaş talab qilinadi
+va aniq badiiy nazorat qiyinlaşadi.
+
+58
+00:05:33,100 --> 00:05:38,300
+U öyinlarda, kino effektlarida va
+efir grafikasida keng qöllaniladi.
+
+59
+00:05:40,067 --> 00:05:41,227
+Xulosa qilaylik.
+
+60
+00:05:41,267 --> 00:05:47,002
+Spline va patch tez profil va aylanma
+şakllar beradi, NURBS — analitik aniqlik,
+
+61
+00:05:47,042 --> 00:05:53,767
+parametrik CAD — ölçamlar böyiça boşqaruv,
+protsedurali usul esa çeksiz variantlar.
+
+62
+00:05:54,267 --> 00:05:59,867
+Keyingi qismda hajmiy tasvirlar, haykaltaroşlik
+va real dunyodan olingan modellarni köramiz.
+
+63
+00:06:00,167 --> 00:06:00,867
+Körişgunça!
