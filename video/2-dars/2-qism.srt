@@ -1,0 +1,371 @@
+1
+00:00:02,431 --> 00:00:04,500
+1993-yil.
+
+2
+00:00:04,900 --> 00:00:09,900
+Kinoteatr ekraniga dinozavr çiqdi va
+tomoşabinlar uni tirik deb öyladi.
+
+3
+00:00:10,400 --> 00:00:17,900
+Aslida u formulalardan yasalgan edi: çuqurlik,
+tekstura, nur va yoruğlik tenglamasi.
+
+4
+00:00:18,500 --> 00:00:22,300
+Bu formulalar 15 yil içida
+birin-ketin paydo böldi.
+
+5
+00:00:22,800 --> 00:00:27,100
+Bugun piksellardan kinogaça
+bölgan şu yölni bosib ötamiz.
+
+6
+00:00:29,167 --> 00:00:32,267
+Uç ölçovli modellaştiriş texnologiyalari.
+
+7
+00:00:32,667 --> 00:00:34,667
+Ikkinçi dars, ikkinçi qism.
+
+8
+00:00:35,267 --> 00:00:37,267
+Piksellardan kinoga.
+
+9
+00:00:40,098 --> 00:00:46,967
+1974-yilda Edwin Catmull dissertatsiyasida
+ikki fundamental ğoyani taklif etdi.
+
+10
+00:00:47,367 --> 00:00:49,367
+Birinçisi — Z-bufer.
+
+11
+00:00:49,767 --> 00:00:54,267
+U har bir piksel uçun kameragaça
+eng kiçik masofani saqlaydi.
+
+12
+00:00:54,567 --> 00:00:57,767
+Yangi nuqta faqat undan
+yaqinroq bölsa çiziladi.
+
+13
+00:00:58,167 --> 00:01:01,219
+Şuning uçun köpburçaklarning
+tartibi muhim emas,
+
+14
+00:01:01,259 --> 00:01:05,067
+hatto bir-birini kesib ötgan
+yoqlar ham töğri körinadi.
+
+15
+00:01:05,767 --> 00:01:10,567
+Xuddi şu yili Wolfgang Straßer ham
+bu ğoyani mustaqil taklif etgan.
+
+16
+00:01:12,633 --> 00:01:14,833
+Ikkinçi ğoya — teksturalaş.
+
+17
+00:01:15,333 --> 00:01:19,033
+Sirtga tasvir xuddi yorliq kabi yopiştiriladi.
+
+18
+00:01:19,633 --> 00:01:23,016
+Har bir çöqqiga tasvirdagi koordinata,
+
+19
+00:01:23,056 --> 00:01:28,763
+yaʼni u va v beriladi, piksellar
+esa rangni şu tasvirdan oladi.
+
+20
+00:01:28,803 --> 00:01:33,107
+1983-yilda Lance Williams
+mipmap usulini taklif etdi:
+
+21
+00:01:33,147 --> 00:01:41,233
+uzoqdagi sirtlar teksturaning oldindan kiçraytirilgan
+nusxasidan foydalanadi va miltillamaydi.
+
+22
+00:01:43,264 --> 00:01:50,833
+1975-yilda Martin Newell oşxona çoynagini
+Bézier lavhalari bilan modellaştirdi.
+
+23
+00:01:51,333 --> 00:01:53,865
+Yuta çoynagi test obyektiga aylanib,
+
+24
+00:01:53,905 --> 00:01:58,933
+hanuz uç ölçovli dasturlarda
+standart primitiv sifatida uçraydi.
+
+25
+00:02:01,031 --> 00:02:04,600
+1978-yil ayniqsa samarali böldi.
+
+26
+00:02:05,000 --> 00:02:07,790
+Jim Blinn bump mapping usulini taklif etdi:
+
+27
+00:02:07,830 --> 00:02:11,738
+sirt normali tekstura yordamida
+özgartiriladi va geometriya
+
+28
+00:02:11,778 --> 00:02:15,500
+özgarmasa ham notekislik
+illyuziyasi paydo böladi.
+
+29
+00:02:16,300 --> 00:02:22,454
+Şu yili Catmull va Clark, şuningdek Doo va
+Sabin subdivision sirtlarini taklif etdi:
+
+30
+00:02:22,494 --> 00:02:26,900
+dağal tör qayta-qayta bölinib,
+silliq sirtga aylanadi.
+
+31
+00:02:29,133 --> 00:02:32,541
+Benoit Mandelbrot kiritgan
+fraktal tuşunçasi tabiiy
+
+32
+00:02:32,581 --> 00:02:36,133
+relyef va bulutlarni modellaştirişga yöl oçdi.
+
+33
+00:02:36,633 --> 00:02:40,602
+Fraktal toğ oddiy qoidadan
+ösadi: uçburçak bölinadi,
+
+34
+00:02:40,642 --> 00:02:45,223
+örtasi tasodifiy kötariladi va
+bu qayta-qayta takrorlanadi.
+
+35
+00:02:45,263 --> 00:02:53,533
+1980-yilda Loren Carpenter fraktal toğlar
+tasvirlangan «Vol Libre» filmini namoyiş etdi.
+
+36
+00:02:55,533 --> 00:03:00,933
+Şu yili Turner Whitted rekursiv
+nur kuzatiş usulini taqdim etdi.
+
+37
+00:03:01,533 --> 00:03:04,933
+Kameradan har bir piksel
+orqali nur yuboriladi.
+
+38
+00:03:05,333 --> 00:03:12,333
+Nur sirtga tekkanda soyani tekşiriş, aks
+etiş va siniş uçun yangi nurlar hosil böladi.
+
+39
+00:03:12,733 --> 00:03:18,633
+Natijada şişa va metallning haqqoniy
+aks ettirişlari birinçi marta olindi.
+
+40
+00:03:20,664 --> 00:03:26,981
+1982-yilda Robert Cook va Kenneth Torrance
+sirtni mikroskopik yoqçalar töplami
+
+41
+00:03:27,021 --> 00:03:34,233
+sifatida kördi va metall bilan plastikni
+farqlay oladigan közgu modelini taklif etdi.
+
+42
+00:03:34,333 --> 00:03:40,793
+Ikki yildan söng nurlar vaqt, linza va
+yoruğlik manbai yuzasi böyiça taqsimlandi:
+
+43
+00:03:40,833 --> 00:03:46,333
+harakat xiraligi, maydon çuqurligi
+va yumşoq soyalar paydo böldi.
+
+44
+00:03:47,033 --> 00:03:50,993
+Şu yili Kornel universitetida
+sirtlar orasidagi yoruğlik
+
+45
+00:03:51,033 --> 00:03:55,333
+almaşinuvini hisoblovçi
+radiosity usuli işlab çiqildi.
+
+46
+00:03:57,367 --> 00:04:05,567
+Bu izlanişlar 1986-yilda James Kajiya taklif
+etgan rendering tenglamasida umumlaştirildi.
+
+47
+00:04:06,467 --> 00:04:09,849
+Nuqtadan çiqayotgan
+yoruğlik uning öz nurlanişi
+
+48
+00:04:09,889 --> 00:04:13,404
+va yarim sfera böyiça
+barça yönalişlardan kelib,
+
+49
+00:04:13,444 --> 00:04:17,367
+material orqali aks etgan
+yoruğlik yiğindisiga teng.
+
+50
+00:04:17,767 --> 00:04:25,267
+Kajiya bu integralni tasodifiy nurlar bilan
+baholaydigan yöl kuzatiş usulini ham taklif etdi.
+
+51
+00:04:25,767 --> 00:04:29,767
+Bugungi Cycles va Arnold
+aynan şu ğoyaga tayanadi.
+
+52
+00:04:31,767 --> 00:04:35,167
+Ilmiy ğoyalar tez orada sanoatga kirib bordi.
+
+53
+00:04:35,216 --> 00:04:39,356
+1982-yilda Autodesk AutoCAD dasturini çiqardi,
+
+54
+00:04:39,396 --> 00:04:45,564
+«Tron» filmida esa kompyuter
+grafikasi keng sahnalarda işlatildi.
+
+55
+00:04:45,604 --> 00:04:50,008
+1986-yilda Lucasfilm
+kompaniyasining kompyuter bölimini
+
+56
+00:04:50,048 --> 00:04:55,267
+Steve Jobs sotib oldi va u
+mustaqil Pixar studiyasiga aylandi.
+
+57
+00:04:55,667 --> 00:04:59,567
+Ikki yildan söng RenderMan
+interfeysi eʼlon qilindi.
+
+58
+00:05:01,433 --> 00:05:09,802
+Pixar'ning «Tin Toy» qisqa filmi 1989-yilda
+«Oskar» olgan birinçi kompyuter animatsiyasi böldi.
+
+59
+00:05:09,842 --> 00:05:15,224
+1993-yilda «Yura davri parki»
+raqamli personajlar real aktyorlar
+
+60
+00:05:15,264 --> 00:05:20,702
+bilan bir kadrda işonarli
+körinişi mumkinligini isbotladi.
+
+61
+00:05:20,742 --> 00:05:28,933
+1995-yilda esa «Toy Story» töliq kompyuterda
+yaratilgan birinçi badiiy multfilm böldi.
+
+62
+00:05:30,933 --> 00:05:33,078
+Dasturiy vositalar ham şakllandi.
+
+63
+00:05:33,118 --> 00:05:40,588
+1990-yilda DOS uçun 3D Studio,
+1996-yilda Windows uçun 3D Studio MAX,
+
+64
+00:05:40,628 --> 00:05:48,314
+yaʼni bugungi 3ds Max çiqdi, ikki
+yildan söng esa Maya paydo böldi.
+
+65
+00:05:48,354 --> 00:05:54,430
+1992-yilda Silicon Graphics OpenGL
+standartini eʼlon qildi va uç
+
+66
+00:05:54,470 --> 00:06:01,733
+ölçovli grafikani turli apparatlarda
+bir xil dasturlaş imkoni tuğildi.
+
+67
+00:06:03,800 --> 00:06:05,675
+Televideniye ham çetda qolmadi.
+
+68
+00:06:05,715 --> 00:06:14,700
+1990-yilda Amiga kompyuteri uçun Video Toaster
+qurilmasi bilan birga LightWave 3D dasturi çiqdi.
+
+69
+00:06:15,100 --> 00:06:21,192
+Bu arzon tizim telestudiyalarga professional
+uç ölçovli grafikani olib kirdi:
+
+70
+00:06:21,232 --> 00:06:28,200
+kanal identikasi, sport zastavkalari va hatto
+«Babylon 5» serialining kosmik sahnalari.
+
+71
+00:06:28,700 --> 00:06:33,300
+1990-yillar örtalaridan esa ilk
+virtual studiyalar paydo böldi.
+
+72
+00:06:35,300 --> 00:06:36,400
+Xulosa qilaylik.
+
+73
+00:06:36,500 --> 00:06:40,700
+Z-bufer va teksturalaş har bir
+pikselni töğri va boy qildi.
+
+74
+00:06:41,000 --> 00:06:45,400
+Nur kuzatiş va rendering tenglamasi
+yoruğlikni fizikaga yaqinlaştirdi.
+
+75
+00:06:45,800 --> 00:06:50,700
+Pixar, RenderMan va «Toy Story»
+esa bu ğoyalarni kinoga olib çiqdi.
+
+76
+00:06:51,400 --> 00:06:54,728
+Keyingi qismda grafik
+protsessorlar, Blender tarixi,
+
+77
+00:06:54,768 --> 00:06:58,500
+fizik asoslangan render va
+neyron usullarni köramiz.
+
+78
+00:06:58,900 --> 00:06:59,700
+Körişgunça!
