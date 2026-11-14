@@ -1,0 +1,341 @@
+WEBVTT
+
+1
+00:00:02.300 --> 00:00:07.455
+Bitta çoynakni kompyuterda butunlay
+turli usullarda saqlaş mumkin:
+
+2
+00:00:07.495 --> 00:00:11.581
+minglab uçburçaklar, bir
+neça silliq NURBS bölagi,
+
+3
+00:00:11.621 --> 00:00:16.623
+kub va silindrlardan yiğilgan
+jism, kiçik kubçalar — voksellar,
+
+4
+00:00:16.663 --> 00:00:21.700
+skanerdan olingan nuqtalar buluti
+yoki neyron tarmoq vaznlari.
+
+5
+00:00:22.400 --> 00:00:27.600
+Ekranda ular bir xil körinadi, içkarida
+esa har biri boşqa matematik til.
+
+6
+00:00:27.900 --> 00:00:30.700
+Bugun şu tillar xaritasini tuzamiz.
+
+7
+00:00:33.000 --> 00:00:36.000
+Uç ölçovli modellaştiriş texnologiyalari.
+
+8
+00:00:36.700 --> 00:00:39.200
+Uçinçi dars, birinçi qism.
+
+9
+00:00:39.800 --> 00:00:42.200
+Bitta obyekt — köp til.
+
+10
+00:00:44.667 --> 00:00:48.967
+Har bir usul — geometriyani
+saqlaşning öziga xos tili.
+
+11
+00:00:49.367 --> 00:00:55.371
+Bu til modelning aniqligini,
+tahrirlaş qulayligini, xotira hajmini,
+
+12
+00:00:55.411 --> 00:01:00.867
+render tezligini va qaysi
+sohada qöllanişini belgilaydi.
+
+13
+00:01:02.633 --> 00:01:07.333
+Birinçi va eng muhim mezon —
+geometriya qanday ifodalanişi.
+
+14
+00:01:07.833 --> 00:01:13.402
+Çegaraviy, yaʼni sirt tasvirlarida
+obyekt faqat taşqi sirti bilan beriladi,
+
+15
+00:01:13.442 --> 00:01:19.133
+içi saqlanmaydi: polygonal törlar,
+subdivision, spline va NURBS sirtlar.
+
+16
+00:01:19.433 --> 00:01:23.261
+Hajmiy tasvirlarda esa obyekt
+egallagan fazo beriladi:
+
+17
+00:01:23.301 --> 00:01:29.833
+istalgan nuqta uçun u içkaridami yoki
+taşqaridami, degan savolga javob oliş mumkin.
+
+18
+00:01:30.033 --> 00:01:36.033
+Bular — CSG, voksellar, implicit
+sirtlar va masofa maydonlari (SDF).
+
+19
+00:01:37.967 --> 00:01:43.180
+Ikkinçi mezon — modelni
+yaratiş usuli: qölda tahrirlaş,
+
+20
+00:01:43.220 --> 00:01:52.067
+parametrlar va çeklovlar orqali boşqariş, algoritm
+asosida generatsiya yoki sunʼiy intellekt.
+
+21
+00:01:52.567 --> 00:01:54.887
+Uçinçisi — maʼlumot manbai:
+
+22
+00:01:54.927 --> 00:02:01.167
+model inson tomonidan yaratilganmi
+yoki real obyektdan ölçab olinganmi.
+
+23
+00:02:01.767 --> 00:02:08.867
+Törtinçisi — aniqlik turi: analitik
+aniq yoki taqribiy, diskret tasvir.
+
+24
+00:02:10.800 --> 00:02:14.300
+Amaliyotda usullar kamdan-kam
+sof holda işlatiladi.
+
+25
+00:02:14.700 --> 00:02:17.831
+Personaj avval haykaltaroşlik
+usulida yaratiladi,
+
+26
+00:02:17.871 --> 00:02:22.800
+söng retopologiya qilinadi va subdivision
+sirt sifatida render qilinadi.
+
+27
+00:02:23.300 --> 00:02:29.200
+Sanoat buyumi esa parametrik CADʼda loyihalanib,
+render uçun polygonal törga ötkaziladi.
+
+28
+00:02:29.500 --> 00:02:34.800
+Şuning uçun tasnif — qatʼiy çegaralar
+emas, balki asosiy tillar xaritasi.
+
+29
+00:02:36.933 --> 00:02:40.233
+Eng keng tarqalgan til —
+polygonal modellaştiriş.
+
+30
+00:02:40.633 --> 00:02:45.959
+Tör uç turdagi elementdan iborat:
+uçlar — fazodagi nuqtalar, qirralar —
+
+31
+00:02:45.999 --> 00:02:53.333
+ikki uçni tutaştiruvçi kesmalar va yoqlar —
+qirralar bilan çegaralangan tekis köpburçaklar.
+
+32
+00:02:53.733 --> 00:03:00.333
+Yoqlar odatda uçburçak yoki törtburçak böladi,
+beş va undan köp tomonlisi n-gon deyiladi.
+
+33
+00:03:00.633 --> 00:03:07.233
+Faylda uçlar koordinatalari va har bir yoqni
+taşkil etuvçi uç raqamlari röyxati saqlanadi.
+
+34
+00:03:09.167 --> 00:03:16.739
+Yopiq, teşiksiz tör uçun
+Eyler formulasi bajariladi:
+
+35
+00:03:16.779 --> 00:03:24.967
+V − E + F = 2 − 2g, bu yerda
+g — sirtdagi teşiklar soni.
+
+36
+00:03:25.567 --> 00:03:30.267
+Kubda: 8 − 12 + 6 = 2.
+
+37
+00:03:30.567 --> 00:03:35.367
+Bublik şaklidagi torda esa natija
+0, çunki unda bitta teşik bor.
+
+38
+00:03:37.267 --> 00:03:40.167
+Polygonal usulning kuçi
+— universallik va tezlik.
+
+39
+00:03:40.567 --> 00:03:45.730
+Videokartalar aynan uçburçaklarni
+çizişga moslaşgan, şuning uçun öyinlar,
+
+40
+00:03:45.770 --> 00:03:50.567
+VR va virtual studiyalar deyarli
+töliq polygonal modellarga tayanadi.
+
+41
+00:03:50.767 --> 00:03:57.939
+Zaif tomoni — egri sirt faqat taqribiy ifodalanadi
+va detallar oşgan sari hajm keskin ösadi:
+
+42
+00:03:57.979 --> 00:04:05.567
+faqat uçlar koordinatalari hisobga olinsa ham,
+1 million uçli model taxminan 12 MB egallaydi.
+
+43
+00:04:07.633 --> 00:04:12.369
+Şuning uçun har bir sohaning
+öz poligon budjeti bor:
+
+44
+00:04:12.409 --> 00:04:16.277
+mobil öyin personaji — 5–20 ming uçburçak,
+
+45
+00:04:16.317 --> 00:04:24.433
+kompyuter öyini personaji — 30–100 ming, kino
+uçun detalli model esa millionlab poligon.
+
+46
+00:04:26.467 --> 00:04:29.867
+Silliq şakllar uçun
+subdivision sirtlar işlatiladi.
+
+47
+00:04:30.367 --> 00:04:33.899
+Modelyer kam poligonli
+boşqaruv karkasi bilan işlaydi,
+
+48
+00:04:33.939 --> 00:04:36.898
+dastur esa har bir bosqiçda yoqlarni maydalab,
+
+49
+00:04:36.938 --> 00:04:41.767
+yangi uçlarni qöşnilarning vaznli
+örtaçasi sifatida joylaştiradi.
+
+50
+00:04:42.567 --> 00:04:45.773
+Eng keng tarqalgan
+Catmull–Clark sxemasida har bir
+
+51
+00:04:45.813 --> 00:04:50.267
+törtburçak bir qadamda törtta
+yangi törtburçakka bölinadi.
+
+52
+00:04:52.300 --> 00:04:53.800
+Kub misolida hisoblaymiz.
+
+53
+00:04:54.100 --> 00:04:59.477
+Boşida 6 ta yoq bor, birinçi darajada 24 ta,
+
+54
+00:04:59.517 --> 00:05:07.000
+ikkinçida 96 ta, uçinçida 384
+ta: yoqlar soni Fₖ = 6 · 4ᵏ.
+
+55
+00:05:08.000 --> 00:05:11.649
+Birinçi darajada uçlar 26 ta: 8 ta eski uç,
+
+56
+00:05:11.689 --> 00:05:16.800
+12 ta qirra nuqtasi va 6 ta yoq
+nuqtasi, qirralar esa 48 ta.
+
+57
+00:05:17.200 --> 00:05:25.700
+Tekşiramiz: 26 − 48 + 24 = 2.
+
+58
+00:05:26.400 --> 00:05:30.474
+Çeksiz bölişda bu sirt bikubik
+B-spline sirtga aylanadi:
+
+59
+00:05:30.514 --> 00:05:34.300
+bu polygonal va spline
+usullari orasidagi köprik.
+
+60
+00:05:36.433 --> 00:05:41.652
+Blenderda subdivision Subdivision
+Surface modifikatori bilan qöşiladi,
+
+61
+00:05:41.692 --> 00:05:45.133
+Ctrl+1, Ctrl+2 tugmalari darajani tanlaydi.
+
+62
+00:05:46.133 --> 00:05:51.133
+3ds Maxʼda buning uçun TurboSmooth
+yoki OpenSubdiv modifikatorlari bor.
+
+63
+00:05:51.533 --> 00:05:54.338
+Qirralar keskin qolişi uçun
+ularning yoniga yordamçi
+
+64
+00:05:54.378 --> 00:05:57.833
+qirra halqalari qöşiladi yoki
+Crease parametri işlatiladi.
+
+65
+00:05:59.700 --> 00:06:00.700
+Xulosa qilaylik.
+
+66
+00:06:01.100 --> 00:06:04.492
+Modellaştiriş usullari
+geometriyani ifodalaş şakli,
+
+67
+00:06:04.532 --> 00:06:09.200
+yaratiş usuli, maʼlumot manbai va
+aniqlik turi böyiça tasniflanadi.
+
+68
+00:06:09.400 --> 00:06:15.900
+Polygonal tör universal va real vaqt grafikasining
+asosi, subdivision esa undan silliq sirt oladi.
+
+69
+00:06:17.200 --> 00:06:21.279
+Keyingi qismda egri çiziqlar
+va algoritmlar tiliga ötamiz:
+
+70
+00:06:21.319 --> 00:06:25.560
+spline, NURBS, parametrik va
+protsedurali modellaştiriş.
+
+71
+00:06:25.600 --> 00:06:26.400
+Körişgunça!
