@@ -6,7 +6,7 @@
   var AUTHORS = [
     { id: "nuraliyev", name: "F.M. Nuraliyev", role: "Texnika fanlari doktori, professor", img: "assets/img/authors/nuraliyev.jpg" },
     { id: "nazirova", name: "E.Ş. Nazirova", role: "Texnika fanlari doktori, professor", img: "assets/img/authors/nazirova.jpg" },
-    { id: "ibodullayev", name: "S.N. Ibodullayev", role: "Katta öqituvçi", img: "assets/img/authors/ibodullayev_full.jpg", pos: "50% 28%" }
+    { id: "ibodullayev", name: "S.N. Ibodullayev", role: "Katta öqituvçi, mustaqil izlanuvçi", img: "assets/img/authors/ibodullayev_full.jpg", pos: "50% 28%" }
   ];
   var AX = [["X", "#FF5A5F", [1, 0, 0]], ["Y", "#3DD68C", [0, 1, 0]], ["Z", "#5B8CFF", [0, 0, 1]]];
 

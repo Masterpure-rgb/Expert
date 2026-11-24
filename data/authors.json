@@ -6,10 +6,10 @@
    "full": "Nuraliyev Faxriddin Murodillayeviç",
    "role": "Texnika fanlari doktori, professor",
    "img": "assets/img/authors/nuraliyev.jpg",
-   "full_img": "assets/img/authors/nuraliyev.jpg",
+   "full_img": "assets/img/authors/nuraliyev_full.jpg",
    "bio": [
-    "Muhammad al-Xorazmiy nomidagi TATU «Televizion va media texnologiyalar» kafedrasi mudiri. 2011-yildan «Kompyuter grafikasi va dizayn» kafedrasiga rahbarlik qilgan.",
-    "«Kompyuter grafikasi va dizayn» öquv qöllanmasi hammuallifi (Toşkent: Fan va texnologiya, 2015)."
+    "TATUning Televizion va media texnologiyalar kafedrasi mudiri (2012–2021-yillarda fakultet dekani).",
+    "U R-funksiyalar nazariyasi asosida matematik va geometrik modellaştiriş, hisoblaş matematikasi, kompyuter grafikasi va virtual reallik sohalarida 30 yildan ortiq tajribaga ega olim hamda öz ilmiy maktabi asosçisidir."
    ]
   },
   {
@@ -20,20 +20,21 @@
    "img": "assets/img/authors/nazirova.jpg",
    "full_img": "assets/img/authors/nazirova.jpg",
    "bio": [
-    "Ilmiy işlari suyuqlik va gaz filtratsiyasini matematik modellaştirişga bağişlangan.",
-    "«Web ilovalarni yaratiş» (Aloqaçi, 2018) va multimedia maʼlumotlar bazalari böyiça öquv qöllanma (Aloqaçi, 2020) muallifi."
+    "TATUning Televizion texnologiyalar fakulteti dekani (2015–2023-yillarda Multimedia texnologiyalari kafedrasi mudiri).",
+    "U filtratsiya jarayonlarini matematik modellaştiriş hamda özbek va turkiy tillar uçun maşina tarjimasi tizimlarini işlab çiqiş yönalişlarida tadqiqotlar olib boruvçi olima va darsliklar muallifidir."
    ]
   },
   {
    "id": "ibodullayev",
    "name": "S.N. Ibodullayev",
    "full": "Ibodullayev Sardor Nasriddin öğli",
-   "role": "Katta öqituvçi",
+   "role": "Katta öqituvçi, mustaqil izlanuvçi",
    "img": "assets/img/authors/ibodullayev_full.jpg",
    "pos": "50% 28%",
    "full_img": "assets/img/authors/ibodullayev_full.jpg",
    "bio": [
-    "Muhammad al-Xorazmiy nomidagi TATU «Televizion va media texnologiyalar» kafedrasi katta öqituvçisi. Ilmiy yönalişi — taʼlimda virtual reallik va 3D vizuallaştiriş."
+    "TATUning Televizion va media texnologiyalar kafedrasi katta öqituvçisi, mustaqil izlanuvçi. U virtual muhitlarda 3D avatar obyektlarini geometrik modellaştiriş mavzusida ilmiy işlarini olib boradi, hamda 50 dan ortiq ilmiy işlar muallifi hisoblanadi.",
+    "Ilmiy qiziqişlari kompyuter grafikasi, avatar texnologiyalari, metaborliq va sun’iy intellekt yönalişlarini qamrab oladi. Beruniy nomidagi davlat stipendiyasi va «Mehr-saxovat» kökrak nişoni (2020) sohibi."
    ]
   }
  ]
